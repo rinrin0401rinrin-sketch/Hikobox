@@ -1,0 +1,7 @@
+interface:
+  display_name: "Light Novel Writer"
+  short_description: "Markdownで1作品単位のライトノベルを設計・執筆する"
+  default_prompt: "Use $light-novel-writer to draft one complete light-novel-style story in Markdown from this premise."
+
+policy:
+  allow_implicit_invocation: true
