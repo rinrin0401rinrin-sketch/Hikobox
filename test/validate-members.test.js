@@ -80,6 +80,42 @@ test("validateMemberRecord detects block mismatch for single-member records", as
   assert.equal(errors.some((error) => error.includes('block must be empty when electionType is "single"')), true);
 });
 
+test("validateMemberRecord requires source information for verified records", async () => {
+  const rootDir = await fs.mkdtemp(path.join(os.tmpdir(), "member-verified-"));
+  const photoDir = path.join(rootDir, "data", "photos");
+  await fs.mkdir(photoDir, { recursive: true });
+  await fs.writeFile(path.join(photoDir, "hr-0001.jpg"), "placeholder");
+
+  const record = {
+    id: "hr-0001",
+    name: "青山繁晴",
+    nameKana: "あおやましげはる",
+    party: "自由民主党",
+    electionType: "single",
+    district: "兵庫8区",
+    block: "",
+    prefecture: "兵庫県",
+    wins: 1,
+    birthDate: "1952-07-25",
+    age: 73,
+    career: ["共同通信記者"],
+    photo: "/data/photos/hr-0001.jpg",
+    sourcePdf: "",
+    sourcePage: null,
+    status: "verified",
+    notes: "",
+  };
+
+  const errors = await validateMemberRecord(record, {
+    filename: "hr-0001.json",
+    rootDir,
+    photoDir,
+  });
+
+  assert.equal(errors.some((error) => error.includes('sourcePdf is required when status is "verified"')), true);
+  assert.equal(errors.some((error) => error.includes('sourcePage is required when status is "verified"')), true);
+});
+
 test("validateMembersProject detects duplicate ids across member files", async () => {
   const rootDir = await fs.mkdtemp(path.join(os.tmpdir(), "member-project-"));
   const membersDir = path.join(rootDir, "data", "members");

@@ -1,9 +1,11 @@
 {
   "id": "batch-00-sample",
   "name": "完成見本1名",
-  "status": "active",
+  "status": "complete",
+  "referenceMemberId": "hr-0001",
+  "referenceMemberName": "青山繁晴",
   "memberIds": [
     "hr-0001"
   ],
-  "goal": "完成見本1名でJSON構造、UI、バリデーションの基準を固定する。"
+  "goal": "青山繁晴の完成見本1名でJSON構造、UI、バリデーション、出典記録の基準を固定する。"
 }

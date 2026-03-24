@@ -127,6 +127,14 @@ export async function validateMemberRecord(member, context) {
     errors.push(`${filename}: sourcePdf must be a string.`);
   }
 
+  if (member.status === "verified" && isBlankString(member.sourcePdf)) {
+    errors.push(`${filename}: sourcePdf is required when status is "verified".`);
+  }
+
+  if (member.status === "verified" && member.sourcePage === null) {
+    errors.push(`${filename}: sourcePage is required when status is "verified".`);
+  }
+
   if (typeof member.photo !== "string" || isBlankString(member.photo)) {
     errors.push(`${filename}: photo must be a non-empty string.`);
   }
@@ -134,6 +142,10 @@ export async function validateMemberRecord(member, context) {
   const expectedPhotoPath = `/data/photos/${member.id}.jpg`;
   if (member.photo !== expectedPhotoPath) {
     errors.push(`${filename}: photo must match "${expectedPhotoPath}".`);
+  }
+
+  if (normalizeText(member.sourcePdf) && !member.sourcePdf.startsWith("/data/source-pdf/")) {
+    errors.push(`${filename}: sourcePdf must be under "/data/source-pdf/".`);
   }
 
   if (member.electionType === "single") {
@@ -165,6 +177,13 @@ export async function validateMemberRecord(member, context) {
     const absolutePhoto = path.join(photoDir, `${member.id}.jpg`);
     if (!(await fileExists(absolutePhoto))) {
       errors.push(`${filename}: photo file is missing at /data/photos/${member.id}.jpg.`);
+    }
+  }
+
+  if (normalizeText(member.sourcePdf)) {
+    const absoluteSourcePdf = path.join(rootDir, member.sourcePdf.replace(/^\//, ""));
+    if (!(await fileExists(absoluteSourcePdf))) {
+      errors.push(`${filename}: sourcePdf file is missing at ${member.sourcePdf}.`);
     }
   }
 
