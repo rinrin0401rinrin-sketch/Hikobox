@@ -1,0 +1,9 @@
+{
+  "name": "house-members-flashcards",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "validate": "node ./scripts/validate-members.js"
+  }
+}

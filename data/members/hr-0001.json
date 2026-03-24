@@ -1,0 +1,23 @@
+{
+  "id": "hr-0001",
+  "name": "青山繁晴",
+  "nameKana": "あおやましげはる",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "兵庫8区",
+  "block": "",
+  "prefecture": "兵庫県",
+  "wins": 1,
+  "birthDate": "1952-07-25",
+  "age": 73,
+  "career": [
+    "環境副大臣",
+    "参議院環境委員長",
+    "共同通信記者"
+  ],
+  "photo": "/data/photos/hr-0001.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 4,
+  "status": "verified",
+  "notes": "members.pdf 4ページ左上の掲載情報をもとに作成。略号『自新①』は自由民主党・新人・1回当選として反映。"
+}

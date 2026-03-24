@@ -1,0 +1,16 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" fill="#D9E4EA"/>
+  <rect x="44" y="44" width="812" height="1112" rx="40" fill="#F9F1E2"/>
+  <path d="M146 1028C176 882 298 786 450 786C602 786 724 882 754 1028V1114H146V1028Z" fill="#2D4864"/>
+  <circle cx="450" cy="432" r="222" fill="#F0C7A7"/>
+  <path d="M264 408C264 286 356 190 450 190C544 190 636 286 636 408V508H264V408Z" fill="#2F2A31"/>
+  <path d="M315 351C343 276 392 238 450 238C508 238 557 276 585 351" stroke="#3D3641" stroke-width="40" stroke-linecap="round"/>
+  <path d="M366 470C389 446 421 434 450 434C479 434 511 446 534 470" stroke="#B06E58" stroke-width="18" stroke-linecap="round"/>
+  <path d="M350 544C383 575 418 590 450 590C482 590 517 575 550 544" stroke="#A34F42" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="376" cy="478" r="18" fill="#2F2A31"/>
+  <circle cx="524" cy="478" r="18" fill="#2F2A31"/>
+  <path d="M340 782L450 948L560 782H632L512 1114H388L268 782H340Z" fill="#FAFBFC"/>
+  <rect x="96" y="76" width="256" height="48" rx="24" fill="#8B2A23"/>
+  <text x="224" y="108" text-anchor="middle" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="26" font-weight="700" fill="#FFF8F1">完成見本</text>
+  <text x="450" y="1092" text-anchor="middle" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="42" font-weight="700" fill="#FFF8F1">HR-0001 SAMPLE</text>
+</svg>

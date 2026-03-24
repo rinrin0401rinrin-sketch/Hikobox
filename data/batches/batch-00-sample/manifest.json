@@ -1,0 +1,9 @@
+{
+  "id": "batch-00-sample",
+  "name": "完成見本1名",
+  "status": "active",
+  "memberIds": [
+    "hr-0001"
+  ],
+  "goal": "完成見本1名でJSON構造、UI、バリデーションの基準を固定する。"
+}
