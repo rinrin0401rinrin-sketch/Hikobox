@@ -1,0 +1,23 @@
+{
+  "id": "hr-0080",
+  "name": "衛藤博昭",
+  "nameKana": "えとうひろあき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "大分1区",
+  "block": "",
+  "prefecture": "大分県",
+  "wins": 1,
+  "birthDate": "1979-11-25",
+  "age": 46,
+  "career": [
+    "社会福祉法人理事長",
+    "大分県議",
+    "三菱重工社員"
+  ],
+  "photo": "/data/photos/hr-0080.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 17,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

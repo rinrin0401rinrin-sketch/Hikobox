@@ -1,0 +1,23 @@
+{
+  "id": "hr-0044",
+  "name": "漆間譲司",
+  "nameKana": "うるまじょうじ",
+  "party": "日本維新の会",
+  "electionType": "single",
+  "district": "大阪8区",
+  "block": "",
+  "prefecture": "大阪府",
+  "wins": 3,
+  "birthDate": "1974-09-14",
+  "age": 51,
+  "career": [
+    "元党国対委員長",
+    "予算委理事",
+    "大阪府議"
+  ],
+  "photo": "/data/photos/hr-0044.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 16,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

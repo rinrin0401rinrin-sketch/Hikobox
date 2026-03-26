@@ -1,0 +1,23 @@
+{
+  "id": "hr-0083",
+  "name": "大野敬太郎",
+  "nameKana": "おおのけいたろう",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "香川3区",
+  "block": "",
+  "prefecture": "香川県",
+  "wins": 6,
+  "birthDate": "1968-11-01",
+  "age": 57,
+  "career": [
+    "党総務副会長",
+    "内閣府副大臣",
+    "議員秘書"
+  ],
+  "photo": "/data/photos/hr-0083.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 18,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0040",
+  "name": "池下卓",
+  "nameKana": "いけしたたく",
+  "party": "日本維新の会",
+  "electionType": "single",
+  "district": "大阪10区",
+  "block": "",
+  "prefecture": "大阪府",
+  "wins": 3,
+  "birthDate": "1975-04-10",
+  "age": 50,
+  "career": [
+    "党財務局長",
+    "法務委理事",
+    "大阪府議"
+  ],
+  "photo": "/data/photos/hr-0040.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 7,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。chunk-02 の source 確認と UI 通し確認まで完了。"
+}

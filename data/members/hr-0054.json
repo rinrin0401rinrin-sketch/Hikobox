@@ -1,0 +1,22 @@
+{
+  "id": "hr-0054",
+  "name": "伊佐進一",
+  "nameKana": "いさしんいち",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 5,
+  "birthDate": "1974-12-10",
+  "age": 51,
+  "career": [
+    "元厚労副大臣",
+    "文部科学省職員"
+  ],
+  "photo": "/data/photos/hr-0054.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 8,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

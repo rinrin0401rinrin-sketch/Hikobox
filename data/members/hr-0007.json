@@ -1,0 +1,22 @@
+{
+  "id": "hr-0007",
+  "name": "浅田真澄美",
+  "nameKana": "あさだますみ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1966-09-12",
+  "age": 59,
+  "career": [
+    "元長崎県議",
+    "党県総務会長"
+  ],
+  "photo": "/data/photos/hr-0007.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 5,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認完了。"
+}

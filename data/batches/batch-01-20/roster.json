@@ -1,0 +1,351 @@
+{
+  "batchId": "batch-01-20",
+  "referenceMemberId": "hr-0001",
+  "referenceMemberName": "青山繁晴",
+  "targetMembers": 20,
+  "targetAdditionalMembers": 19,
+  "allocationSummary": [
+    {
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "count": 8
+    },
+    {
+      "groupId": "g02-single-variant",
+      "groupName": "小選挙区変動型",
+      "count": 4
+    },
+    {
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "count": 8
+    },
+    {
+      "groupId": "g04-hold",
+      "groupName": "保留・例外型",
+      "count": 0
+    }
+  ],
+  "slots": [
+    {
+      "slotNo": 1,
+      "id": "hr-0001",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "青山繁晴",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 4,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 2,
+      "id": "hr-0002",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "逢沢一郎",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 4,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 3,
+      "id": "hr-0003",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "青山周平",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 4,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 4,
+      "id": "hr-0005",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "赤沢亮正",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 4,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 5,
+      "id": "hr-0010",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "赤間二郎",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 5,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 6,
+      "id": "hr-0011",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "東国幹",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 5,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 7,
+      "id": "hr-0016",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "畦元将吾",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 6,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 8,
+      "id": "hr-0018",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "麻生太郎",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 6,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 9,
+      "id": "hr-0006",
+      "groupId": "g02-single-variant",
+      "groupName": "小選挙区変動型",
+      "name": "青柳仁士",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 4,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 10,
+      "id": "hr-0009",
+      "groupId": "g02-single-variant",
+      "groupName": "小選挙区変動型",
+      "name": "浅野哲",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 5,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 11,
+      "id": "hr-0013",
+      "groupId": "g02-single-variant",
+      "groupName": "小選挙区変動型",
+      "name": "阿部圭史",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 6,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 12,
+      "id": "hr-0014",
+      "groupId": "g02-single-variant",
+      "groupName": "小選挙区変動型",
+      "name": "東徹",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 6,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 13,
+      "id": "hr-0004",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "青木ひとみ",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 4,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 14,
+      "id": "hr-0007",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "浅田真澄美",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 5,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 15,
+      "id": "hr-0008",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "赤羽一嘉",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 5,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 16,
+      "id": "hr-0012",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "秋葉賢也",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 5,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 17,
+      "id": "hr-0015",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "阿部司",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 6,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 18,
+      "id": "hr-0017",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "阿部俊子",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 6,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 19,
+      "id": "hr-0019",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "飯泉嘉門",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 7,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    },
+    {
+      "slotNo": 20,
+      "id": "hr-0020",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "阿部弘樹",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 7,
+      "notes": [
+        "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認は未実施。"
+      ]
+    }
+  ]
+}

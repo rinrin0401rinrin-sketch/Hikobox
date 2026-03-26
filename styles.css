@@ -190,27 +190,21 @@ h2 {
 
 .flashcard {
   position: relative;
-  min-height: 530px;
+  min-height: 720px;
   margin-top: 16px;
   border-radius: 28px;
-  transform-style: preserve-3d;
-  transition: transform 520ms ease;
   cursor: pointer;
-}
-
-.flashcard[data-side="back"] {
-  transform: rotateY(180deg);
 }
 
 .card-face {
   position: absolute;
   inset: 0;
   display: grid;
+  align-content: start;
   gap: 18px;
   border-radius: 28px;
   padding: 22px;
   border: 1px solid rgba(126, 108, 81, 0.18);
-  backface-visibility: hidden;
   overflow: hidden;
 }
 
@@ -228,18 +222,40 @@ h2 {
   background: var(--card-front);
 }
 
+.card-face-front-photo {
+  justify-items: center;
+  align-content: center;
+  gap: 16px;
+}
+
 .card-face-back {
   background: var(--card-back);
-  transform: rotateY(180deg);
+  display: none;
+}
+
+.flashcard[data-side="front"] .card-face-front {
+  display: grid;
+}
+
+.flashcard[data-side="front"] .card-face-back {
+  display: none;
+}
+
+.flashcard[data-side="back"] .card-face-front {
+  display: none;
+}
+
+.flashcard[data-side="back"] .card-face-back {
+  display: grid;
 }
 
 .card-media {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
+  grid-template-columns: 150px minmax(0, 1fr);
   gap: 18px;
-  align-items: center;
+  align-items: start;
 }
 
 .card-photo {
@@ -249,6 +265,33 @@ h2 {
   border-radius: 22px;
   border: 1px solid rgba(126, 108, 81, 0.18);
   background: #ebdfd0;
+}
+
+.front-photo-shell {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 430px);
+}
+
+.card-photo-front {
+  display: block;
+  width: 100%;
+  aspect-ratio: auto;
+  max-height: 620px;
+  object-fit: contain;
+  border-radius: 24px;
+  background: transparent;
+}
+
+.front-position {
+  position: relative;
+  z-index: 1;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 247, 239, 0.9);
+  border: 1px solid rgba(163, 73, 47, 0.16);
+  font-size: 0.92rem;
+  color: var(--text-muted);
 }
 
 .status-pill,
@@ -278,8 +321,13 @@ h2 {
 
 .card-name {
   margin-top: 12px;
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-size: clamp(1.6rem, 3.2vw, 2.3rem);
   line-height: 1.1;
+}
+
+.back-header {
+  position: relative;
+  z-index: 1;
 }
 
 .card-summary {
@@ -308,20 +356,28 @@ h2 {
 .summary-block dd {
   margin: 0;
   font-weight: 700;
+  line-height: 1.45;
 }
 
 .back-grid {
   position: relative;
   z-index: 1;
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
+}
+
+.back-grid .detail-block:nth-child(4),
+.back-grid .detail-block:nth-child(5),
+.back-grid .detail-block:nth-child(6) {
+  grid-column: 1 / -1;
 }
 
 .detail-value,
 .career-list,
 .notes-text {
   margin: 0;
-  line-height: 1.7;
+  line-height: 1.55;
 }
 
 .career-list {
@@ -443,6 +499,7 @@ h2 {
   }
 
   .card-summary,
+  .back-grid,
   .filters,
   .card-controls,
   .future-controls {
@@ -450,7 +507,7 @@ h2 {
   }
 
   .flashcard {
-    min-height: 680px;
+    min-height: 860px;
   }
 
   .member-row {

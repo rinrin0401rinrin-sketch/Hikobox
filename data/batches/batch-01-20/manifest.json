@@ -1,7 +1,42 @@
 {
   "id": "batch-01-20",
   "name": "検証用20名",
-  "status": "active",
-  "memberIds": [],
-  "goal": "青山繁晴を完成見本の基準カードとして、同型グループから20名の検証投入を開始する。"
+  "status": "complete",
+  "memberIds": [
+    "hr-0001",
+    "hr-0002",
+    "hr-0003",
+    "hr-0004",
+    "hr-0005",
+    "hr-0006",
+    "hr-0007",
+    "hr-0008",
+    "hr-0009",
+    "hr-0010",
+    "hr-0011",
+    "hr-0012",
+    "hr-0013",
+    "hr-0014",
+    "hr-0015",
+    "hr-0016",
+    "hr-0017",
+    "hr-0018",
+    "hr-0019",
+    "hr-0020"
+  ],
+  "goal": "青山繁晴を基準カードにした20名セットを、グループ配分とレビュー台帳付きで固定する。",
+  "referenceMemberId": "hr-0001",
+  "referenceMemberName": "青山繁晴",
+  "targetMembers": 20,
+  "targetAdditionalMembers": 19,
+  "completedMembers": 20,
+  "validatedAt": "2026-03-24",
+  "uiReviewStatus": "checked",
+  "uiCheckedAt": "2026-03-24",
+  "groupCounts": {
+    "g01-single-basic": 8,
+    "g02-single-variant": 4,
+    "g03-proportional": 8,
+    "g04-hold": 0
+  }
 }

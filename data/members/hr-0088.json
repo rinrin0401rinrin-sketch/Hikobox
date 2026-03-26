@@ -1,0 +1,23 @@
+{
+  "id": "hr-0088",
+  "name": "岡本康宏",
+  "nameKana": "おかもとやすひろ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "愛知5区",
+  "block": "",
+  "prefecture": "愛知県",
+  "wins": 1,
+  "birthDate": "1982-03-13",
+  "age": 43,
+  "career": [
+    "歯科医",
+    "病院口腔外科部長",
+    "厚労省技官"
+  ],
+  "photo": "/data/photos/hr-0088.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 19,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

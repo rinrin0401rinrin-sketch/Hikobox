@@ -1,0 +1,22 @@
+{
+  "id": "hr-0015",
+  "name": "阿部司",
+  "nameKana": "あべつかさ",
+  "party": "日本維新の会",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東京",
+  "prefecture": "",
+  "wins": 3,
+  "birthDate": "1982-06-18",
+  "age": 43,
+  "career": [
+    "元党総務会長",
+    "政策シンクタンク社員"
+  ],
+  "photo": "/data/photos/hr-0015.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 6,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0090",
+  "name": "岡本三成",
+  "nameKana": "おかもとみつなり",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東京",
+  "prefecture": "",
+  "wins": 6,
+  "birthDate": "1965-05-05",
+  "age": 60,
+  "career": [
+    "党共同政調会長",
+    "公明政調会長",
+    "財務副大臣"
+  ],
+  "photo": "/data/photos/hr-0090.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 19,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

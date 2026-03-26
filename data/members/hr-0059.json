@@ -1,0 +1,23 @@
+{
+  "id": "hr-0059",
+  "name": "一谷勇一郎",
+  "nameKana": "いちたにゆういちろう",
+  "party": "日本維新の会",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 2,
+  "birthDate": "1975-01-22",
+  "age": 51,
+  "career": [
+    "会社役員",
+    "党国対副委員長",
+    "整骨院長"
+  ],
+  "photo": "/data/photos/hr-0059.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 10,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

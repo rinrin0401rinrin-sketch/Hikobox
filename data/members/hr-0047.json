@@ -1,0 +1,23 @@
+{
+  "id": "hr-0047",
+  "name": "遠藤敬",
+  "nameKana": "えんどうたかし",
+  "party": "日本維新の会",
+  "electionType": "single",
+  "district": "大阪18区",
+  "block": "",
+  "prefecture": "大阪府",
+  "wins": 6,
+  "birthDate": "1968-06-06",
+  "age": 57,
+  "career": [
+    "党国対委員長",
+    "首相補佐官",
+    "法人理事長"
+  ],
+  "photo": "/data/photos/hr-0047.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 17,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

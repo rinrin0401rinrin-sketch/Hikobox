@@ -1,0 +1,23 @@
+{
+  "id": "hr-0003",
+  "name": "青山周平",
+  "nameKana": "あおやましゅうへい",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "愛知12区",
+  "block": "",
+  "prefecture": "愛知県",
+  "wins": 5,
+  "birthDate": "1977-04-28",
+  "age": 48,
+  "career": [
+    "元文科副大臣",
+    "国対副委員長",
+    "幼稚園園長"
+  ],
+  "photo": "/data/photos/hr-0003.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 4,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認完了。"
+}

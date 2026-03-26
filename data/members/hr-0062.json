@@ -1,0 +1,23 @@
+{
+  "id": "hr-0062",
+  "name": "伊東良孝",
+  "nameKana": "いとうよしたか",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北海道",
+  "prefecture": "",
+  "wins": 7,
+  "birthDate": "1948-11-24",
+  "age": 77,
+  "career": [
+    "党総務",
+    "地方創生担当相",
+    "市長"
+  ],
+  "photo": "/data/photos/hr-0062.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 11,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

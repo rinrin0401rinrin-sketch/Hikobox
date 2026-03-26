@@ -1,0 +1,23 @@
+{
+  "id": "hr-0017",
+  "name": "阿部俊子",
+  "nameKana": "あべとしこ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "中国",
+  "prefecture": "",
+  "wins": 8,
+  "birthDate": "1959-05-19",
+  "age": 66,
+  "career": [
+    "前文科相",
+    "外務委員長",
+    "外務副大臣"
+  ],
+  "photo": "/data/photos/hr-0017.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 6,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認完了。"
+}

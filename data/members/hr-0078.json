@@ -1,0 +1,23 @@
+{
+  "id": "hr-0078",
+  "name": "大岡敏孝",
+  "nameKana": "おおおかとしたか",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "滋賀1区",
+  "block": "",
+  "prefecture": "滋賀県",
+  "wins": 6,
+  "birthDate": "1972-04-16",
+  "age": 53,
+  "career": [
+    "元環境副大臣",
+    "内閣委員長",
+    "静岡県議"
+  ],
+  "photo": "/data/photos/hr-0078.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 17,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

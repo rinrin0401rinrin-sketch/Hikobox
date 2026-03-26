@@ -1,0 +1,23 @@
+{
+  "id": "hr-0056",
+  "name": "石田真敏",
+  "nameKana": "いしだまさとし",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 10,
+  "birthDate": "1952-04-11",
+  "age": 73,
+  "career": [
+    "党両院総会副会長",
+    "党選対委員長代理",
+    "総務相"
+  ],
+  "photo": "/data/photos/hr-0056.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 9,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

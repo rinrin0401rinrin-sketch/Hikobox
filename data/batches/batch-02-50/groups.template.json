@@ -1,0 +1,244 @@
+{
+  "batchId": "batch-02-50",
+  "referenceBatchId": "batch-01-20",
+  "referenceMemberId": "hr-0001",
+  "referenceMemberName": "青山繁晴",
+  "startedAt": null,
+  "groupStrategy": "batch-01-20 と同じく、小選挙区の自由民主党を g01、その他小選挙区を g02、比例代表を g03、保留・例外を g04 に置く。",
+  "allocationRule": "batch-01-20 の実績比率 8:4:8 を50枠へ拡張し、保留・例外 g04 を2枠確保したうえで g01=19, g02=10, g03=19, g04=2 に配分する。",
+  "workOrder": [
+    "g01-single-basic",
+    "g02-single-variant",
+    "g03-proportional",
+    "g04-hold"
+  ],
+  "groups": [
+    {
+      "id": "g01-single-basic",
+      "name": "小選挙区基本型",
+      "status": "photo-ready",
+      "priority": 1,
+      "basedOnMemberId": "hr-0001",
+      "targetCount": 19,
+      "memberIds": [
+        "hr-0021",
+        "hr-0022",
+        "hr-0023",
+        "hr-0024",
+        "hr-0025",
+        "hr-0026",
+        "hr-0027",
+        "hr-0028",
+        "hr-0029",
+        "hr-0030",
+        "hr-0031",
+        "hr-0032",
+        "hr-0033",
+        "hr-0034",
+        "hr-0035",
+        "hr-0036",
+        "hr-0037",
+        "hr-0038",
+        "hr-0039"
+      ],
+      "memberNames": [
+        "五十嵐清",
+        "安藤高夫",
+        "石井拓",
+        "石橋林太郎",
+        "石原宏高",
+        "石原正敬",
+        "石坂太",
+        "石破茂",
+        "井出庸生",
+        "伊藤達也",
+        "伊藤忠彦",
+        "井野俊郎",
+        "井上信治",
+        "井上貴博",
+        "稲田朋美",
+        "稲葉大輔",
+        "井原隆",
+        "今枝宗一郎",
+        "今岡植"
+      ],
+      "criteria": {
+        "electionType": "single",
+        "party": "自由民主党",
+        "requiredFields": [
+          "district",
+          "prefecture",
+          "wins",
+          "birthDate",
+          "age",
+          "career",
+          "photo"
+        ],
+        "mustBeBlankFields": [
+          "block"
+        ]
+      },
+      "notes": [
+        "青山繁晴と同じJSON形。量産の主軸グループ。",
+        "まずここを埋めてから他グループへ進む。",
+        "実名は入力済み。残りは JSON と写真と sourcePage の実投入。"
+      ]
+    },
+    {
+      "id": "g02-single-variant",
+      "name": "小選挙区変動型",
+      "status": "photo-ready",
+      "priority": 2,
+      "basedOnMemberId": "hr-0001",
+      "targetCount": 10,
+      "memberIds": [
+        "hr-0040",
+        "hr-0041",
+        "hr-0042",
+        "hr-0043",
+        "hr-0044",
+        "hr-0045",
+        "hr-0046",
+        "hr-0047",
+        "hr-0048",
+        "hr-0049"
+      ],
+      "memberNames": [
+        "池下卓",
+        "泉健太",
+        "井上英孝",
+        "岩谷良平",
+        "漆間譲司",
+        "梅村聡",
+        "浦野靖人",
+        "遠藤敬",
+        "小川淳也",
+        "奥下剛光"
+      ],
+      "criteria": {
+        "electionType": "single",
+        "party": "other_than_自由民主党",
+        "requiredFields": [
+          "district",
+          "prefecture",
+          "wins",
+          "photo"
+        ],
+        "mustBeBlankFields": [
+          "block"
+        ],
+        "watchPoints": [
+          "party表記ゆれ",
+          "氏名旧字体",
+          "career行数差",
+          "sourcePage差"
+        ]
+      },
+      "notes": [
+        "小選挙区だが青山繁晴と異なる政党・表記差分を含むグループ。",
+        "実名は入力済み。残りは JSON と写真と sourcePage の実投入。"
+      ]
+    },
+    {
+      "id": "g03-proportional",
+      "name": "比例代表型",
+      "status": "photo-ready",
+      "priority": 3,
+      "basedOnMemberId": "hr-0001",
+      "targetCount": 19,
+      "memberIds": [
+        "hr-0050",
+        "hr-0051",
+        "hr-0052",
+        "hr-0053",
+        "hr-0054",
+        "hr-0055",
+        "hr-0056",
+        "hr-0057",
+        "hr-0058",
+        "hr-0059",
+        "hr-0060",
+        "hr-0061",
+        "hr-0062",
+        "hr-0063",
+        "hr-0064",
+        "hr-0065",
+        "hr-0066",
+        "hr-0067",
+        "hr-0068"
+      ],
+      "memberNames": [
+        "有田芳生",
+        "石川昭政",
+        "石川勝",
+        "池畑浩太朗",
+        "伊佐進一",
+        "石井啓一",
+        "石田真敏",
+        "井戸正枝",
+        "伊藤恵介",
+        "一谷勇一郎",
+        "市村浩一郎",
+        "伊東信久",
+        "伊東良孝",
+        "伊藤聡",
+        "伊藤信太郎",
+        "犬飼明佳",
+        "岩崎比菜",
+        "浮島智子",
+        "臼木秀剛"
+      ],
+      "criteria": {
+        "electionType": "proportional",
+        "requiredFields": [
+          "block",
+          "wins",
+          "photo"
+        ],
+        "mustBeBlankFields": [
+          "district"
+        ],
+        "watchPoints": [
+          "block正式表記",
+          "districtとの混在防止",
+          "prefecture空欄運用"
+        ]
+      },
+      "notes": [
+        "比例代表は district を入れない。",
+        "block 表記統一を最優先で確認する。",
+        "実名は入力済み。残りは JSON と写真と sourcePage の実投入。"
+      ]
+    },
+    {
+      "id": "g04-hold",
+      "name": "保留・例外型",
+      "status": "photo-ready",
+      "priority": 4,
+      "basedOnMemberId": "hr-0001",
+      "targetCount": 2,
+      "memberIds": [
+        "hr-0069",
+        "hr-0070"
+      ],
+      "memberNames": [
+        "宇佐美登",
+        "緒方林太郎"
+      ],
+      "criteria": {
+        "holdReasons": [
+          "写真未確定",
+          "party要再確認",
+          "district要再確認",
+          "sourcePage未確定",
+          "通常ルールで入れると誤登録の恐れ"
+        ]
+      },
+      "notes": [
+        "量産を止めないための退避グループ。",
+        "保留から戻した時は review と worklist の両方を更新する。",
+        "実名は入力済み。残りは JSON と写真と sourcePage の実投入。"
+      ]
+    }
+  ]
+}

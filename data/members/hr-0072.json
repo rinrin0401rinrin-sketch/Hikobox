@@ -1,0 +1,22 @@
+{
+  "id": "hr-0072",
+  "name": "上野宏史",
+  "nameKana": "うえのひろし",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 3,
+  "birthDate": "1971-02-23",
+  "age": 54,
+  "career": [
+    "元厚労政務官",
+    "経産省職員"
+  ],
+  "photo": "/data/photos/hr-0072.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 15,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

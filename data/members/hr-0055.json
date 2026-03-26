@@ -1,0 +1,23 @@
+{
+  "id": "hr-0055",
+  "name": "石井啓一",
+  "nameKana": "いしいけいいち",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北関東",
+  "prefecture": "",
+  "wins": 11,
+  "birthDate": "1958-03-20",
+  "age": 67,
+  "career": [
+    "元公明代表",
+    "公明幹事長",
+    "国交相"
+  ],
+  "photo": "/data/photos/hr-0055.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 8,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0057",
+  "name": "井戸正枝",
+  "nameKana": "いどまさえ",
+  "party": "国民民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東京",
+  "prefecture": "",
+  "wins": 2,
+  "birthDate": "1965-12-13",
+  "age": 60,
+  "career": [
+    "ジャーナリスト",
+    "内閣委理事",
+    "兵庫県議"
+  ],
+  "photo": "/data/photos/hr-0057.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 10,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

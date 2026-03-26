@@ -1,0 +1,23 @@
+{
+  "id": "hr-0077",
+  "name": "遠藤寛明",
+  "nameKana": "えんどうひろあき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "山形1区",
+  "block": "",
+  "prefecture": "山形県",
+  "wins": 1,
+  "birthDate": "1986-11-21",
+  "age": 39,
+  "career": [
+    "元山形県議",
+    "議員秘書",
+    "米シンクタンク職員"
+  ],
+  "photo": "/data/photos/hr-0077.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 17,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

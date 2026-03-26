@@ -1,0 +1,23 @@
+{
+  "id": "hr-0030",
+  "name": "伊藤達也",
+  "nameKana": "いとうたつや",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京22区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 11,
+  "birthDate": "1961-07-06",
+  "age": 64,
+  "career": [
+    "党金融調査会長",
+    "首相補佐官",
+    "金融担当相"
+  ],
+  "photo": "/data/photos/hr-0030.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 11,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。chunk-01 の source 確認と UI 通し確認まで完了。"
+}

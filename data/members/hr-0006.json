@@ -1,0 +1,23 @@
+{
+  "id": "hr-0006",
+  "name": "青柳仁士",
+  "nameKana": "あおやぎひとし",
+  "party": "日本維新の会",
+  "electionType": "single",
+  "district": "大阪14区",
+  "block": "",
+  "prefecture": "大阪府",
+  "wins": 3,
+  "birthDate": "1978-11-07",
+  "age": 47,
+  "career": [
+    "元党政調会長",
+    "予算委理事",
+    "国連職員"
+  ],
+  "photo": "/data/photos/hr-0006.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 4,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認完了。"
+}

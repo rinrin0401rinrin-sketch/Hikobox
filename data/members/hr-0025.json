@@ -1,0 +1,23 @@
+{
+  "id": "hr-0025",
+  "name": "石原宏高",
+  "nameKana": "いしはらひろたか",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京3区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 7,
+  "birthDate": "1964-06-19",
+  "age": 61,
+  "career": [
+    "環境相",
+    "首相補佐官",
+    "環境委員長"
+  ],
+  "photo": "/data/photos/hr-0025.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 9,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。chunk-01 の source 確認と UI 通し確認まで完了。"
+}

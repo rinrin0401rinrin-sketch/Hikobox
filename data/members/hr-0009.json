@@ -1,0 +1,23 @@
+{
+  "id": "hr-0009",
+  "name": "浅野哲",
+  "nameKana": "あさのさとし",
+  "party": "国民民主党",
+  "electionType": "single",
+  "district": "茨城5区",
+  "block": "",
+  "prefecture": "茨城県",
+  "wins": 4,
+  "birthDate": "1982-09-25",
+  "age": 43,
+  "career": [
+    "幹事長代行",
+    "選対委員長代理",
+    "議員秘書"
+  ],
+  "photo": "/data/photos/hr-0009.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 5,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "hr-0081",
+  "name": "英利アルフィヤ",
+  "nameKana": "えりあるふぃや",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "千葉5区",
+  "block": "",
+  "prefecture": "千葉県",
+  "wins": 3,
+  "birthDate": "1988-10-16",
+  "age": 37,
+  "career": [
+    "外務政務官",
+    "国連職員"
+  ],
+  "photo": "/data/photos/hr-0081.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 17,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

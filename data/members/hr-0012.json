@@ -1,0 +1,23 @@
+{
+  "id": "hr-0012",
+  "name": "秋葉賢也",
+  "nameKana": "あきばけんや",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東北",
+  "prefecture": "",
+  "wins": 8,
+  "birthDate": "1962-07-03",
+  "age": 63,
+  "career": [
+    "元復興相",
+    "消費者特委員長",
+    "宮城県議"
+  ],
+  "photo": "/data/photos/hr-0012.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 5,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認完了。"
+}

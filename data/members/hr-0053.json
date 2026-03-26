@@ -1,0 +1,22 @@
+{
+  "id": "hr-0053",
+  "name": "池畑浩太朗",
+  "nameKana": "いけはたこうたろう",
+  "party": "日本維新の会",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 3,
+  "birthDate": "1974-09-26",
+  "age": 51,
+  "career": [
+    "元農水委理事",
+    "兵庫県議"
+  ],
+  "photo": "/data/photos/hr-0053.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 8,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

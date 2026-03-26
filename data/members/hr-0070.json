@@ -1,0 +1,23 @@
+{
+  "id": "hr-0070",
+  "name": "緒方林太郎",
+  "nameKana": "おがたりんたろう",
+  "party": "無所属",
+  "electionType": "single",
+  "district": "福岡9区",
+  "block": "",
+  "prefecture": "福岡県",
+  "wins": 5,
+  "birthDate": "1973-01-08",
+  "age": 53,
+  "career": [
+    "元予算委員",
+    "内閣委員",
+    "外務省職員"
+  ],
+  "photo": "/data/photos/hr-0070.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 19,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

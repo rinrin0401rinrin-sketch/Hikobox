@@ -1,0 +1,23 @@
+{
+  "id": "hr-0085",
+  "name": "大島敦",
+  "nameKana": "おおしまあつし",
+  "party": "立憲民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北関東",
+  "prefecture": "",
+  "wins": 10,
+  "birthDate": "1956-12-21",
+  "age": 69,
+  "career": [
+    "元経産委員",
+    "立民組織委員長",
+    "総務副大臣"
+  ],
+  "photo": "/data/photos/hr-0085.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 18,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

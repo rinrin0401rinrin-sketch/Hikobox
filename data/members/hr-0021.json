@@ -1,0 +1,23 @@
+{
+  "id": "hr-0021",
+  "name": "五十嵐清",
+  "nameKana": "いがらしきよし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "栃木2区",
+  "block": "",
+  "prefecture": "栃木県",
+  "wins": 3,
+  "birthDate": "1969-12-14",
+  "age": 56,
+  "career": [
+    "党部会長代理",
+    "環境政務官",
+    "栃木県議"
+  ],
+  "photo": "/data/photos/hr-0021.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 7,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。chunk-01 の source 確認と UI 通し確認まで完了。"
+}

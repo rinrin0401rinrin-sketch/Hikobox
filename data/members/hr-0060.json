@@ -1,0 +1,23 @@
+{
+  "id": "hr-0060",
+  "name": "市村浩一郎",
+  "nameKana": "いちむらこういちろう",
+  "party": "日本維新の会",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 6,
+  "birthDate": "1964-07-16",
+  "age": 61,
+  "career": [
+    "元沖北特委理事",
+    "国交政務官",
+    "政党職員"
+  ],
+  "photo": "/data/photos/hr-0060.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 10,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

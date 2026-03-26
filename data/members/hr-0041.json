@@ -1,0 +1,23 @@
+{
+  "id": "hr-0041",
+  "name": "泉健太",
+  "nameKana": "いずみけんた",
+  "party": "中道改革連合",
+  "electionType": "single",
+  "district": "京都3区",
+  "block": "",
+  "prefecture": "京都府",
+  "wins": 10,
+  "birthDate": "1974-07-29",
+  "age": 51,
+  "career": [
+    "元立民代表",
+    "環境委員長",
+    "内閣府政務官"
+  ],
+  "photo": "/data/photos/hr-0041.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 10,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

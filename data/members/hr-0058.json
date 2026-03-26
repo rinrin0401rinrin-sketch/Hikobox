@@ -1,0 +1,22 @@
+{
+  "id": "hr-0058",
+  "name": "伊藤恵介",
+  "nameKana": "いとうけいすけ",
+  "party": "参政党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東海",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1978-12-01",
+  "age": 47,
+  "career": [
+    "介護事業運営会社役員",
+    "党岐阜県会長"
+  ],
+  "photo": "/data/photos/hr-0058.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 10,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

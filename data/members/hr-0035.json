@@ -1,0 +1,23 @@
+{
+  "id": "hr-0035",
+  "name": "稲田朋美",
+  "nameKana": "いなだともみ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "福井1区",
+  "block": "",
+  "prefecture": "福井県",
+  "wins": 8,
+  "birthDate": "1959-02-20",
+  "age": 66,
+  "career": [
+    "防衛相",
+    "党政調会長",
+    "行革担当相"
+  ],
+  "photo": "/data/photos/hr-0035.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 12,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。chunk-02 の source 確認と UI 通し確認まで完了。"
+}

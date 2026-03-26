@@ -1,0 +1,23 @@
+{
+  "id": "hr-0079",
+  "name": "大串正樹",
+  "nameKana": "おおぐしまさき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "兵庫6区",
+  "block": "",
+  "prefecture": "兵庫県",
+  "wins": 6,
+  "birthDate": "1966-01-20",
+  "age": 60,
+  "career": [
+    "前厚労委員長",
+    "経産副大臣",
+    "大学准教授"
+  ],
+  "photo": "/data/photos/hr-0079.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 17,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0018",
+  "name": "麻生太郎",
+  "nameKana": "あそうたろう",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "福岡8区",
+  "block": "",
+  "prefecture": "福岡県",
+  "wins": 16,
+  "birthDate": "1940-09-20",
+  "age": 85,
+  "career": [
+    "党副総裁",
+    "財務相",
+    "首相"
+  ],
+  "photo": "/data/photos/hr-0018.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 6,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認完了。"
+}

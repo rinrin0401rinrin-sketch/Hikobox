@@ -1,0 +1,22 @@
+{
+  "id": "hr-0037",
+  "name": "井原隆",
+  "nameKana": "いはらゆたか",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "埼玉5区",
+  "block": "",
+  "prefecture": "埼玉県",
+  "wins": 1,
+  "birthDate": "1983-01-13",
+  "age": 43,
+  "career": [
+    "元市議",
+    "東芝ソリューション社員"
+  ],
+  "photo": "/data/photos/hr-0037.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 13,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。chunk-02 の source 確認と UI 通し確認まで完了。"
+}

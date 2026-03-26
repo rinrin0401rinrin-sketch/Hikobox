@@ -12,6 +12,9 @@ import {
 } from "./member-store.js";
 
 const elements = {
+  heroCopy: document.querySelector("#hero-copy"),
+  heroCurrentPhase: document.querySelector("#hero-current-phase"),
+  heroTargetMembers: document.querySelector("#hero-target-members"),
   flashcard: document.querySelector("#flashcard"),
   cardStatus: document.querySelector("#card-status"),
   memberCount: document.querySelector("#member-count"),
@@ -52,6 +55,7 @@ async function initialize() {
   try {
     const index = await loadMemberIndex();
     state.members = index.members ?? [];
+    renderHero(index);
 
     populateSelect(elements.filters.party, buildFilterOptions(state.members, "party"), "すべての政党");
     populateSelect(
@@ -65,6 +69,24 @@ async function initialize() {
     await applyFilters();
   } catch (error) {
     renderLoadError(error);
+  }
+}
+
+function renderHero(index) {
+  const totalMembers = Number.isInteger(index.totalMembers) ? index.totalMembers : state.members.length;
+  const targetMembers = Number.isInteger(index.targetMembers) ? index.targetMembers : 465;
+
+  if (elements.heroCurrentPhase) {
+    elements.heroCurrentPhase.textContent = `検証用 ${totalMembers}名`;
+  }
+
+  if (elements.heroTargetMembers) {
+    elements.heroTargetMembers.textContent = `${targetMembers}名`;
+  }
+
+  if (elements.heroCopy) {
+    elements.heroCopy.textContent =
+      `${totalMembers}名の確認セットを基準に、50名単位でも崩れにくい単語帳アプリの土台を整える。`;
   }
 }
 
@@ -194,38 +216,21 @@ function renderCard() {
   const notes = normalizeText(member.notes) || "補足メモは未設定です。";
 
   elements.flashcard.innerHTML = `
-    <section class="card-face card-face-front">
-      <div class="card-media">
-        <img class="card-photo" src="${escapeHtml(member.photo)}" alt="${escapeHtml(member.name)} の写真" />
-        <div>
-          <p class="status-pill">${escapeHtml(STATUS_LABELS[member.status] ?? member.status)}</p>
-          <h3 class="card-name">${escapeHtml(member.name)}</h3>
-          ${nameKana ? `<p class="name-kana">${escapeHtml(nameKana)}</p>` : ""}
-          <p class="party-chip">${escapeHtml(member.party)}</p>
-        </div>
+    <section class="card-face card-face-front card-face-front-photo">
+      <div class="front-photo-shell">
+        <img class="card-photo card-photo-front" src="${escapeHtml(member.photo)}" alt="${escapeHtml(member.name)} の写真" />
       </div>
-
-      <dl class="card-summary">
-        <div class="summary-block">
-          <dt>選出区分</dt>
-          <dd>${escapeHtml(ELECTION_TYPE_LABELS[member.electionType] ?? member.electionType)}</dd>
-        </div>
-        <div class="summary-block">
-          <dt>表示位置</dt>
-          <dd>${summaryIndex + 1} / ${state.filteredMembers.length}</dd>
-        </div>
-        <div class="summary-block">
-          <dt>選挙区 / 比例</dt>
-          <dd>${escapeHtml(locationLabel)}</dd>
-        </div>
-        <div class="summary-block">
-          <dt>都道府県</dt>
-          <dd>${escapeHtml(member.prefecture || "未設定")}</dd>
-        </div>
-      </dl>
+      <p class="front-position">${summaryIndex + 1} / ${state.filteredMembers.length}</p>
     </section>
 
     <section class="card-face card-face-back">
+      <div class="back-header">
+        <p class="status-pill">${escapeHtml(STATUS_LABELS[member.status] ?? member.status)}</p>
+        <h3 class="card-name">${escapeHtml(member.name)}</h3>
+        ${nameKana ? `<p class="name-kana">${escapeHtml(nameKana)}</p>` : ""}
+        <p class="party-chip">${escapeHtml(member.party)}</p>
+      </div>
+
       <div class="back-grid">
         <section class="detail-block">
           <p class="detail-label">選出区分</p>
@@ -260,7 +265,7 @@ function renderCard() {
 
   elements.cardStatus.textContent =
     state.side === "front"
-      ? "表面を表示中です。経歴や補足は「めくる」で確認できます。"
+      ? "表面を表示中です。写真だけで覚えて、答え合わせは「めくる」で確認できます。"
       : "裏面を表示中です。選出区分・経歴・メモを確認できます。";
 }
 

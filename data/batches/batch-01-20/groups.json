@@ -2,6 +2,7 @@
   "baseMemberId": "hr-0001",
   "baseMemberName": "青山繁晴",
   "startedAt": "2026-03-24",
+  "currentStatus": "complete",
   "groupStrategy": "完成見本と同じ形のデータから着手し、差分が少ない順に広げる。",
   "workOrder": [
     "g01-single-basic",
@@ -13,7 +14,7 @@
     {
       "id": "g01-single-basic",
       "name": "小選挙区基本型",
-      "status": "active",
+      "status": "complete",
       "priority": 1,
       "basedOnMemberId": "hr-0001",
       "criteria": {
@@ -33,13 +34,35 @@
       },
       "notes": [
         "青山繁晴と同じJSON形。最初の量産対象。",
-        "表記差分を最小化するため、まずこのグループを固める。"
+        "表記差分を最小化するため、まずこのグループを固める。",
+        "20名セットでは8名の実データ投入と検証を完了。"
+      ],
+      "targetCount": 8,
+      "memberIds": [
+        "hr-0001",
+        "hr-0002",
+        "hr-0003",
+        "hr-0005",
+        "hr-0010",
+        "hr-0011",
+        "hr-0016",
+        "hr-0018"
+      ],
+      "memberNames": [
+        "青山繁晴",
+        "逢沢一郎",
+        "青山周平",
+        "赤沢亮正",
+        "赤間二郎",
+        "東国幹",
+        "畦元将吾",
+        "麻生太郎"
       ]
     },
     {
       "id": "g02-single-variant",
       "name": "小選挙区変動型",
-      "status": "queued",
+      "status": "complete",
       "priority": 2,
       "basedOnMemberId": "hr-0001",
       "criteria": {
@@ -62,13 +85,27 @@
       },
       "notes": [
         "青山繁晴と同じ当選区分だが、表記揺れや文字差分が出やすいケース。",
-        "g01完了後に着手する。"
+        "g01完了後に着手する。",
+        "20名セットでは4名の実データ投入と検証を完了。"
+      ],
+      "targetCount": 4,
+      "memberIds": [
+        "hr-0006",
+        "hr-0009",
+        "hr-0013",
+        "hr-0014"
+      ],
+      "memberNames": [
+        "青柳仁士",
+        "浅野哲",
+        "阿部圭史",
+        "東徹"
       ]
     },
     {
       "id": "g03-proportional",
       "name": "比例代表型",
-      "status": "queued",
+      "status": "complete",
       "priority": 3,
       "basedOnMemberId": "hr-0001",
       "criteria": {
@@ -89,13 +126,35 @@
       },
       "notes": [
         "完成見本と形が変わるため、別グループとして分離する。",
-        "小選挙区グループのルール固定後に投入する。"
+        "小選挙区グループのルール固定後に投入する。",
+        "20名セットでは8名の実データ投入と検証を完了。"
+      ],
+      "targetCount": 8,
+      "memberIds": [
+        "hr-0004",
+        "hr-0007",
+        "hr-0008",
+        "hr-0012",
+        "hr-0015",
+        "hr-0017",
+        "hr-0019",
+        "hr-0020"
+      ],
+      "memberNames": [
+        "青木ひとみ",
+        "浅田真澄美",
+        "赤羽一嘉",
+        "秋葉賢也",
+        "阿部司",
+        "阿部俊子",
+        "飯泉嘉門",
+        "阿部弘樹"
       ]
     },
     {
       "id": "g04-hold",
       "name": "保留・例外型",
-      "status": "queued",
+      "status": "empty",
       "priority": 4,
       "basedOnMemberId": "hr-0001",
       "criteria": {
@@ -109,7 +168,12 @@
       "notes": [
         "量産を止めないための退避グループ。",
         "不確実な件はここへ逃がし、先に他グループを進める。"
-      ]
+      ],
+      "targetCount": 0,
+      "memberIds": [],
+      "memberNames": []
     }
-  ]
+  ],
+  "allocationRule": "20名セットは実在JSONを基準に再配分し、小選挙区の自由民主党を g01、その他小選挙区を g02、比例代表を g03、例外を g04 とする。",
+  "nextAction": "batch-02-50 の named テンプレートをもとに JSON と写真の実投入を始める。"
 }

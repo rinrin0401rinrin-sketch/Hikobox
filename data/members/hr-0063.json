@@ -1,0 +1,21 @@
+{
+  "id": "hr-0063",
+  "name": "伊藤聡",
+  "nameKana": "いとうさとし",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1979-01-24",
+  "age": 47,
+  "career": [
+    "元外務省職員"
+  ],
+  "photo": "/data/photos/hr-0063.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 11,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

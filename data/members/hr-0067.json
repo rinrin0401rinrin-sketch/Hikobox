@@ -1,0 +1,22 @@
+{
+  "id": "hr-0067",
+  "name": "浮島智子",
+  "nameKana": "うきしまともこ",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北海道",
+  "prefecture": "",
+  "wins": 6,
+  "birthDate": "1963-02-01",
+  "age": 63,
+  "career": [
+    "党副代表",
+    "公明政調会長代理"
+  ],
+  "photo": "/data/photos/hr-0067.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 15,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,7 +1,694 @@
 {
   "id": "batch-02-50",
   "name": "標準50名バッチ",
-  "status": "planned",
-  "memberIds": [],
-  "goal": "20名検証後の確定ルールを使って50名単位追加の標準手順を確立する。"
+  "status": "chunk-05-partial-verified",
+  "memberIds": [
+    "hr-0021",
+    "hr-0022",
+    "hr-0023",
+    "hr-0024",
+    "hr-0025",
+    "hr-0026",
+    "hr-0027",
+    "hr-0028",
+    "hr-0029",
+    "hr-0030",
+    "hr-0031",
+    "hr-0032",
+    "hr-0033",
+    "hr-0034",
+    "hr-0035",
+    "hr-0036",
+    "hr-0037",
+    "hr-0038",
+    "hr-0039",
+    "hr-0040",
+    "hr-0041",
+    "hr-0042",
+    "hr-0043",
+    "hr-0044",
+    "hr-0045",
+    "hr-0046",
+    "hr-0047",
+    "hr-0048",
+    "hr-0049",
+    "hr-0050",
+    "hr-0051",
+    "hr-0052",
+    "hr-0053",
+    "hr-0054",
+    "hr-0055",
+    "hr-0056",
+    "hr-0057",
+    "hr-0058",
+    "hr-0059",
+    "hr-0060",
+    "hr-0061",
+    "hr-0062",
+    "hr-0063",
+    "hr-0064",
+    "hr-0065",
+    "hr-0066",
+    "hr-0067",
+    "hr-0068",
+    "hr-0069",
+    "hr-0070"
+  ],
+  "goal": "batch-02-50 の50名分について、基本項目の draft JSON を固めたうえで、career と UI レビューを進められる状態にする。",
+  "startedAt": "2026-03-24",
+  "completedChunks": [
+    {
+      "id": "chunk-01",
+      "memberIds": [
+        "hr-0021",
+        "hr-0022",
+        "hr-0023",
+        "hr-0024",
+        "hr-0025",
+        "hr-0026",
+        "hr-0027",
+        "hr-0028",
+        "hr-0029",
+        "hr-0030"
+      ],
+      "groupId": "g01-single-basic",
+      "status": "verified",
+      "completedAt": "2026-03-25"
+    },
+    {
+      "id": "chunk-02",
+      "memberIds": [
+        "hr-0031",
+        "hr-0032",
+        "hr-0033",
+        "hr-0034",
+        "hr-0035",
+        "hr-0036",
+        "hr-0037",
+        "hr-0038",
+        "hr-0039",
+        "hr-0040"
+      ],
+      "groupId": "g01-single-basic",
+      "status": "verified",
+      "completedAt": "2026-03-24"
+    },
+    {
+      "id": "chunk-03",
+      "memberIds": [
+        "hr-0041",
+        "hr-0042",
+        "hr-0043",
+        "hr-0044",
+        "hr-0045",
+        "hr-0046",
+        "hr-0047",
+        "hr-0048",
+        "hr-0049",
+        "hr-0050"
+      ],
+      "groupId": "g02-single-variant",
+      "status": "verified",
+      "completedAt": "2026-03-26"
+    },
+    {
+      "id": "chunk-04",
+      "memberIds": [
+        "hr-0051",
+        "hr-0052",
+        "hr-0053",
+        "hr-0054",
+        "hr-0055",
+        "hr-0056",
+        "hr-0057",
+        "hr-0058",
+        "hr-0059",
+        "hr-0060"
+      ],
+      "groupId": "g03-proportional",
+      "status": "verified",
+      "completedAt": "2026-03-26"
+    },
+    {
+      "id": "chunk-05",
+      "memberIds": [
+        "hr-0061",
+        "hr-0062",
+        "hr-0063",
+        "hr-0064",
+        "hr-0065",
+        "hr-0066",
+        "hr-0067",
+        "hr-0068",
+        "hr-0069",
+        "hr-0070"
+      ],
+      "groupId": "g03-proportional_and_g04-hold",
+      "status": "partial-verified",
+      "completedAt": "2026-03-26"
+    }
+  ],
+  "nextAction": "hr-0066 から hr-0070 の 5名について source 確認と career・UI 確認を進める。g04-hold の2名は政党・選出区分を優先再確認する。",
+  "referenceBatchId": "batch-01-20",
+  "referenceMemberId": "hr-0001",
+  "referenceMemberName": "青山繁晴",
+  "targetMembers": 50,
+  "plannedMemberIds": [
+    "hr-0021",
+    "hr-0022",
+    "hr-0023",
+    "hr-0024",
+    "hr-0025",
+    "hr-0026",
+    "hr-0027",
+    "hr-0028",
+    "hr-0029",
+    "hr-0030",
+    "hr-0031",
+    "hr-0032",
+    "hr-0033",
+    "hr-0034",
+    "hr-0035",
+    "hr-0036",
+    "hr-0037",
+    "hr-0038",
+    "hr-0039",
+    "hr-0040",
+    "hr-0041",
+    "hr-0042",
+    "hr-0043",
+    "hr-0044",
+    "hr-0045",
+    "hr-0046",
+    "hr-0047",
+    "hr-0048",
+    "hr-0049",
+    "hr-0050",
+    "hr-0051",
+    "hr-0052",
+    "hr-0053",
+    "hr-0054",
+    "hr-0055",
+    "hr-0056",
+    "hr-0057",
+    "hr-0058",
+    "hr-0059",
+    "hr-0060",
+    "hr-0061",
+    "hr-0062",
+    "hr-0063",
+    "hr-0064",
+    "hr-0065",
+    "hr-0066",
+    "hr-0067",
+    "hr-0068",
+    "hr-0069",
+    "hr-0070"
+  ],
+  "plannedIdRange": {
+    "start": "hr-0021",
+    "end": "hr-0070"
+  },
+  "templateFiles": [
+    "/data/batches/batch-02-50/groups.template.json",
+    "/data/batches/batch-02-50/roster.template.json",
+    "/data/batches/batch-02-50/worklist.template.tsv",
+    "/data/batches/batch-02-50/review.template.tsv"
+  ],
+  "groupCounts": {
+    "g01-single-basic": 19,
+    "g02-single-variant": 10,
+    "g03-proportional": 19,
+    "g04-hold": 2
+  },
+  "groupingRule": "batch-01-20 の実績比率を基準に、50枠を g01=19, g02=10, g03=19, g04=2 に先行配分する。",
+  "groupedMemberIds": {
+    "g01-single-basic": [
+      "hr-0021",
+      "hr-0022",
+      "hr-0023",
+      "hr-0024",
+      "hr-0025",
+      "hr-0026",
+      "hr-0027",
+      "hr-0028",
+      "hr-0029",
+      "hr-0030",
+      "hr-0031",
+      "hr-0032",
+      "hr-0033",
+      "hr-0034",
+      "hr-0035",
+      "hr-0036",
+      "hr-0037",
+      "hr-0038",
+      "hr-0039"
+    ],
+    "g02-single-variant": [
+      "hr-0040",
+      "hr-0041",
+      "hr-0042",
+      "hr-0043",
+      "hr-0044",
+      "hr-0045",
+      "hr-0046",
+      "hr-0047",
+      "hr-0048",
+      "hr-0049"
+    ],
+    "g03-proportional": [
+      "hr-0050",
+      "hr-0051",
+      "hr-0052",
+      "hr-0053",
+      "hr-0054",
+      "hr-0055",
+      "hr-0056",
+      "hr-0057",
+      "hr-0058",
+      "hr-0059",
+      "hr-0060",
+      "hr-0061",
+      "hr-0062",
+      "hr-0063",
+      "hr-0064",
+      "hr-0065",
+      "hr-0066",
+      "hr-0067",
+      "hr-0068"
+    ],
+    "g04-hold": [
+      "hr-0069",
+      "hr-0070"
+    ]
+  },
+  "namedCount": 50,
+  "namingRule": "PDF掲載順を基準に、各グループの枠へ実名と sourcePage を割り当てた。",
+  "namedMembers": [
+    {
+      "id": "hr-0021",
+      "name": "五十嵐清",
+      "groupId": "g01-single-basic",
+      "sourcePage": 7
+    },
+    {
+      "id": "hr-0022",
+      "name": "安藤高夫",
+      "groupId": "g01-single-basic",
+      "sourcePage": 7
+    },
+    {
+      "id": "hr-0023",
+      "name": "石井拓",
+      "groupId": "g01-single-basic",
+      "sourcePage": 8
+    },
+    {
+      "id": "hr-0024",
+      "name": "石橋林太郎",
+      "groupId": "g01-single-basic",
+      "sourcePage": 9
+    },
+    {
+      "id": "hr-0025",
+      "name": "石原宏高",
+      "groupId": "g01-single-basic",
+      "sourcePage": 9
+    },
+    {
+      "id": "hr-0026",
+      "name": "石原正敬",
+      "groupId": "g01-single-basic",
+      "sourcePage": 9
+    },
+    {
+      "id": "hr-0027",
+      "name": "石坂太",
+      "groupId": "g01-single-basic",
+      "sourcePage": 9
+    },
+    {
+      "id": "hr-0028",
+      "name": "石破茂",
+      "groupId": "g01-single-basic",
+      "sourcePage": 9
+    },
+    {
+      "id": "hr-0029",
+      "name": "井出庸生",
+      "groupId": "g01-single-basic",
+      "sourcePage": 10
+    },
+    {
+      "id": "hr-0030",
+      "name": "伊藤達也",
+      "groupId": "g01-single-basic",
+      "sourcePage": 11
+    },
+    {
+      "id": "hr-0031",
+      "name": "伊藤忠彦",
+      "groupId": "g01-single-basic",
+      "sourcePage": 11
+    },
+    {
+      "id": "hr-0032",
+      "name": "井野俊郎",
+      "groupId": "g01-single-basic",
+      "sourcePage": 12
+    },
+    {
+      "id": "hr-0033",
+      "name": "井上信治",
+      "groupId": "g01-single-basic",
+      "sourcePage": 12
+    },
+    {
+      "id": "hr-0034",
+      "name": "井上貴博",
+      "groupId": "g01-single-basic",
+      "sourcePage": 12
+    },
+    {
+      "id": "hr-0035",
+      "name": "稲田朋美",
+      "groupId": "g01-single-basic",
+      "sourcePage": 12
+    },
+    {
+      "id": "hr-0036",
+      "name": "稲葉大輔",
+      "groupId": "g01-single-basic",
+      "sourcePage": 12
+    },
+    {
+      "id": "hr-0037",
+      "name": "井原隆",
+      "groupId": "g01-single-basic",
+      "sourcePage": 13
+    },
+    {
+      "id": "hr-0038",
+      "name": "今枝宗一郎",
+      "groupId": "g01-single-basic",
+      "sourcePage": 13
+    },
+    {
+      "id": "hr-0039",
+      "name": "今岡植",
+      "groupId": "g01-single-basic",
+      "sourcePage": 13
+    },
+    {
+      "id": "hr-0040",
+      "name": "池下卓",
+      "groupId": "g02-single-variant",
+      "sourcePage": 7
+    },
+    {
+      "id": "hr-0041",
+      "name": "泉健太",
+      "groupId": "g02-single-variant",
+      "sourcePage": 10
+    },
+    {
+      "id": "hr-0042",
+      "name": "井上英孝",
+      "groupId": "g02-single-variant",
+      "sourcePage": 13
+    },
+    {
+      "id": "hr-0043",
+      "name": "岩谷良平",
+      "groupId": "g02-single-variant",
+      "sourcePage": 14
+    },
+    {
+      "id": "hr-0044",
+      "name": "漆間譲司",
+      "groupId": "g02-single-variant",
+      "sourcePage": 16
+    },
+    {
+      "id": "hr-0045",
+      "name": "梅村聡",
+      "groupId": "g02-single-variant",
+      "sourcePage": 16
+    },
+    {
+      "id": "hr-0046",
+      "name": "浦野靖人",
+      "groupId": "g02-single-variant",
+      "sourcePage": 16
+    },
+    {
+      "id": "hr-0047",
+      "name": "遠藤敬",
+      "groupId": "g02-single-variant",
+      "sourcePage": 17
+    },
+    {
+      "id": "hr-0048",
+      "name": "小川淳也",
+      "groupId": "g02-single-variant",
+      "sourcePage": 19
+    },
+    {
+      "id": "hr-0049",
+      "name": "奥下剛光",
+      "groupId": "g02-single-variant",
+      "sourcePage": 19
+    },
+    {
+      "id": "hr-0050",
+      "name": "有田芳生",
+      "groupId": "g03-proportional",
+      "sourcePage": 7
+    },
+    {
+      "id": "hr-0051",
+      "name": "石川昭政",
+      "groupId": "g03-proportional",
+      "sourcePage": 8
+    },
+    {
+      "id": "hr-0052",
+      "name": "石川勝",
+      "groupId": "g03-proportional",
+      "sourcePage": 8
+    },
+    {
+      "id": "hr-0053",
+      "name": "池畑浩太朗",
+      "groupId": "g03-proportional",
+      "sourcePage": 8
+    },
+    {
+      "id": "hr-0054",
+      "name": "伊佐進一",
+      "groupId": "g03-proportional",
+      "sourcePage": 8
+    },
+    {
+      "id": "hr-0055",
+      "name": "石井啓一",
+      "groupId": "g03-proportional",
+      "sourcePage": 8
+    },
+    {
+      "id": "hr-0056",
+      "name": "石田真敏",
+      "groupId": "g03-proportional",
+      "sourcePage": 9
+    },
+    {
+      "id": "hr-0057",
+      "name": "井戸正枝",
+      "groupId": "g03-proportional",
+      "sourcePage": 10
+    },
+    {
+      "id": "hr-0058",
+      "name": "伊藤恵介",
+      "groupId": "g03-proportional",
+      "sourcePage": 10
+    },
+    {
+      "id": "hr-0059",
+      "name": "一谷勇一郎",
+      "groupId": "g03-proportional",
+      "sourcePage": 10
+    },
+    {
+      "id": "hr-0060",
+      "name": "市村浩一郎",
+      "groupId": "g03-proportional",
+      "sourcePage": 10
+    },
+    {
+      "id": "hr-0061",
+      "name": "伊東信久",
+      "groupId": "g03-proportional",
+      "sourcePage": 11
+    },
+    {
+      "id": "hr-0062",
+      "name": "伊東良孝",
+      "groupId": "g03-proportional",
+      "sourcePage": 11
+    },
+    {
+      "id": "hr-0063",
+      "name": "伊藤聡",
+      "groupId": "g03-proportional",
+      "sourcePage": 11
+    },
+    {
+      "id": "hr-0064",
+      "name": "伊藤信太郎",
+      "groupId": "g03-proportional",
+      "sourcePage": 11
+    },
+    {
+      "id": "hr-0065",
+      "name": "犬飼明佳",
+      "groupId": "g03-proportional",
+      "sourcePage": 12
+    },
+    {
+      "id": "hr-0066",
+      "name": "岩崎比菜",
+      "groupId": "g03-proportional",
+      "sourcePage": 14
+    },
+    {
+      "id": "hr-0067",
+      "name": "浮島智子",
+      "groupId": "g03-proportional",
+      "sourcePage": 15
+    },
+    {
+      "id": "hr-0068",
+      "name": "臼木秀剛",
+      "groupId": "g03-proportional",
+      "sourcePage": 15
+    },
+    {
+      "id": "hr-0069",
+      "name": "宇佐美登",
+      "groupId": "g04-hold",
+      "sourcePage": 15
+    },
+    {
+      "id": "hr-0070",
+      "name": "緒方林太郎",
+      "groupId": "g04-hold",
+      "sourcePage": 19
+    }
+  ],
+  "photoGeneratedCount": 50,
+  "photoSource": "/data/source-pdf/members.pdf",
+  "entryCriteria": [
+    "batch-01-20 の UI 通し確認が完了している",
+    "npm run validate と npm test が通っている",
+    "batch-02-50 の 50名分について実名、sourcePage、写真がそろっている",
+    "groups / roster / worklist / review の実作業ファイルがそろっている"
+  ],
+  "entryCriteriaMet": true,
+  "workUnit": {
+    "size": 10,
+    "reason": "AI の修正範囲と人の差分確認量を小さく保つため、50名を 10名ずつ 5回で閉じる。"
+  },
+  "chunks": [
+    {
+      "id": "chunk-01",
+      "memberIds": [
+        "hr-0021",
+        "hr-0022",
+        "hr-0023",
+        "hr-0024",
+        "hr-0025",
+        "hr-0026",
+        "hr-0027",
+        "hr-0028",
+        "hr-0029",
+        "hr-0030"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "chunk-02",
+      "memberIds": [
+        "hr-0031",
+        "hr-0032",
+        "hr-0033",
+        "hr-0034",
+        "hr-0035",
+        "hr-0036",
+        "hr-0037",
+        "hr-0038",
+        "hr-0039",
+        "hr-0040"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "chunk-03",
+      "memberIds": [
+        "hr-0041",
+        "hr-0042",
+        "hr-0043",
+        "hr-0044",
+        "hr-0045",
+        "hr-0046",
+        "hr-0047",
+        "hr-0048",
+        "hr-0049",
+        "hr-0050"
+      ],
+      "status": "source-verified"
+    },
+    {
+      "id": "chunk-04",
+      "memberIds": [
+        "hr-0051",
+        "hr-0052",
+        "hr-0053",
+        "hr-0054",
+        "hr-0055",
+        "hr-0056",
+        "hr-0057",
+        "hr-0058",
+        "hr-0059",
+        "hr-0060"
+      ],
+      "status": "source-verified"
+    },
+    {
+      "id": "chunk-05",
+      "memberIds": [
+        "hr-0061",
+        "hr-0062",
+        "hr-0063",
+        "hr-0064",
+        "hr-0065",
+        "hr-0066",
+        "hr-0067",
+        "hr-0068",
+        "hr-0069",
+        "hr-0070"
+      ],
+      "status": "ready"
+    }
+  ],
+  "currentChunkId": "chunk-05",
+  "jsonCreatedCount": 50,
+  "draftCount": 30,
+  "validatedAt": "2026-03-25",
+  "operationalFiles": [
+    "/data/batches/batch-02-50/groups.json",
+    "/data/batches/batch-02-50/roster.json",
+    "/data/batches/batch-02-50/worklist.tsv",
+    "/data/batches/batch-02-50/review.tsv"
+  ]
 }

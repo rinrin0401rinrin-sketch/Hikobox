@@ -67,3 +67,12 @@
 - 行を追加して同じ列を使う
 - 5名ずつ確認し、各5名の終了時に validate と差分確認を行う
 - 列を増やしたくなったら、先に `docs/rules.md` とこのファイルを更新してから追加する
+
+## 50名テンプレートの使い方
+- `data/batches/batch-02-50/groups.template.json` に実名配分を入れる
+- `data/batches/batch-02-50/roster.template.json` の `slot` ごとに `name` `groupId` `sourcePage` を埋める
+- `data/batches/batch-02-50/worklist.template.tsv` を日次作業台帳として使う
+- `data/batches/batch-02-50/review.template.tsv` をレビュー記録として使う
+- 実データ投入後は template ファイルを複製して、拡張子 `.template` を外した運用ファイルへ切り替える
+- batch-02-50 はすでに運用ファイル `groups.json` `roster.json` `worklist.tsv` `review.tsv` に切り替わっている
+- 保留が出た件は `g04-hold` へ逃がし、他の49件の流れを止めない

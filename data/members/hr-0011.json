@@ -1,0 +1,23 @@
+{
+  "id": "hr-0011",
+  "name": "東国幹",
+  "nameKana": "あずまくによし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "北海道6区",
+  "block": "",
+  "prefecture": "北海道",
+  "wins": 3,
+  "birthDate": "1968-02-17",
+  "age": 57,
+  "career": [
+    "党部会長代理",
+    "副幹事長",
+    "財務政務官"
+  ],
+  "photo": "/data/photos/hr-0011.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 5,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認完了。"
+}

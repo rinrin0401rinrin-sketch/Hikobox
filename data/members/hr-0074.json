@@ -1,0 +1,23 @@
+{
+  "id": "hr-0074",
+  "name": "江渡聡徳",
+  "nameKana": "えとあきのり",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東北",
+  "prefecture": "",
+  "wins": 10,
+  "birthDate": "1955-10-12",
+  "age": 70,
+  "career": [
+    "元防衛相",
+    "原子力特委員長",
+    "党総務会長代行"
+  ],
+  "photo": "/data/photos/hr-0074.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 16,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

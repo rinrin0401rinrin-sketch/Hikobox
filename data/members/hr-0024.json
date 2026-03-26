@@ -1,0 +1,23 @@
+{
+  "id": "hr-0024",
+  "name": "石橋林太郎",
+  "nameKana": "いしばしりんたろう",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "広島3区",
+  "block": "",
+  "prefecture": "広島県",
+  "wins": 3,
+  "birthDate": "1978-05-02",
+  "age": 47,
+  "career": [
+    "党副幹事長",
+    "国交政務官",
+    "広島県議"
+  ],
+  "photo": "/data/photos/hr-0024.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 9,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。chunk-01 の source 確認と UI 通し確認まで完了。"
+}

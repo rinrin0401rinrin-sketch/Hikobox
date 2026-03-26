@@ -1,0 +1,23 @@
+{
+  "id": "hr-0008",
+  "name": "赤羽一嘉",
+  "nameKana": "あかばかずよし",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 11,
+  "birthDate": "1958-05-07",
+  "age": 67,
+  "career": [
+    "党副代表",
+    "公明党副代表",
+    "国交相"
+  ],
+  "photo": "/data/photos/hr-0008.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 5,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用20名セットとして作成。UI通し確認完了。"
+}

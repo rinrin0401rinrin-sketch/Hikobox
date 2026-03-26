@@ -1,0 +1,23 @@
+{
+  "id": "hr-0043",
+  "name": "岩谷良平",
+  "nameKana": "いわたにりょうへい",
+  "party": "日本維新の会",
+  "electionType": "single",
+  "district": "大阪13区",
+  "block": "",
+  "prefecture": "大阪府",
+  "wins": 3,
+  "birthDate": "1980-06-07",
+  "age": 45,
+  "career": [
+    "前党幹事長",
+    "総務委理事",
+    "副幹事長"
+  ],
+  "photo": "/data/photos/hr-0043.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 14,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}
