@@ -1,0 +1,23 @@
+{
+  "id": "hr-0102",
+  "name": "尾花瑛仁",
+  "nameKana": "おばなあきひと",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "埼玉6区",
+  "block": "",
+  "prefecture": "埼玉県",
+  "wins": 1,
+  "birthDate": "1983-10-04",
+  "age": 42,
+  "career": [
+    "元埼玉県議",
+    "市議",
+    "制作会社員"
+  ],
+  "photo": "/data/photos/hr-0102.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 21,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+}

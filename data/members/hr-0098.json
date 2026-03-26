@@ -1,0 +1,23 @@
+{
+  "id": "hr-0098",
+  "name": "鬼木誠",
+  "nameKana": "おにきまこと",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "福岡2区",
+  "block": "",
+  "prefecture": "福岡県",
+  "wins": 6,
+  "birthDate": "1972-10-16",
+  "age": 53,
+  "career": [
+    "党厚生労働部会長",
+    "防衛副大臣",
+    "福岡県議"
+  ],
+  "photo": "/data/photos/hr-0098.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 21,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+}

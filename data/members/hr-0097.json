@@ -1,0 +1,23 @@
+{
+  "id": "hr-0097",
+  "name": "小渕優子",
+  "nameKana": "おぶちゆうこ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "群馬5区",
+  "block": "",
+  "prefecture": "群馬県",
+  "wins": 10,
+  "birthDate": "1973-12-11",
+  "age": 52,
+  "career": [
+    "党沖縄振興調査会長",
+    "党選対委員長",
+    "経産相"
+  ],
+  "photo": "/data/photos/hr-0097.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 21,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+}

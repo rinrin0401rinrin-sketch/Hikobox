@@ -1,0 +1,22 @@
+{
+  "id": "hr-0114",
+  "name": "加藤貴弘",
+  "nameKana": "かとうたかひろ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "北海道1区",
+  "block": "",
+  "prefecture": "北海道",
+  "wins": 1,
+  "birthDate": "1983-01-22",
+  "age": 43,
+  "career": [
+    "元道議",
+    "パン製造販売会社社長"
+  ],
+  "photo": "/data/photos/hr-0114.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 23,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+}

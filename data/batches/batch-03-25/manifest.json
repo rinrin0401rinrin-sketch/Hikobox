@@ -1,0 +1,41 @@
+{
+  "id": "batch-03-25",
+  "name": "追加25名バッチ",
+  "status": "complete",
+  "memberIds": [
+    "hr-0071",
+    "hr-0072",
+    "hr-0073",
+    "hr-0074",
+    "hr-0075",
+    "hr-0076",
+    "hr-0077",
+    "hr-0078",
+    "hr-0079",
+    "hr-0080",
+    "hr-0081",
+    "hr-0082",
+    "hr-0083",
+    "hr-0084",
+    "hr-0085",
+    "hr-0086",
+    "hr-0087",
+    "hr-0088",
+    "hr-0089",
+    "hr-0090"
+  ],
+  "goal": "20名完成版の仕様を固定見本として、次段階の追加25名のうち新規20名を同一形式で管理する。",
+  "referenceMemberId": "hr-0001",
+  "referenceMemberName": "青山繁晴",
+  "targetMembers": 20,
+  "completedMembers": 20,
+  "validatedAt": "2026-03-26",
+  "uiReviewStatus": "checked",
+  "uiCheckedAt": "2026-03-26",
+  "groupCounts": {
+    "g01-single-basic": 13,
+    "g02-single-variant": 0,
+    "g03-proportional": 7,
+    "g04-hold": 0
+  }
+}

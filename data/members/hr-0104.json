@@ -1,0 +1,22 @@
+{
+  "id": "hr-0104",
+  "name": "鹿嶋祐介",
+  "nameKana": "かしまゆうすけ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "千葉4区",
+  "block": "",
+  "prefecture": "千葉県",
+  "wins": 1,
+  "birthDate": "1980-11-23",
+  "age": 45,
+  "career": [
+    "元参院議員秘書",
+    "陸上自衛官"
+  ],
+  "photo": "/data/photos/hr-0104.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 22,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+}

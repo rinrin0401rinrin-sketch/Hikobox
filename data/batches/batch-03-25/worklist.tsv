@@ -1,0 +1,21 @@
+slot_no	id	group_id	group_name	name	status	json_created	photo_placed	source_checked	reviewed	source_page	notes
+1	hr-0071	g01-single-basic	小選挙区基本型	上野賢一郎	verified	yes	yes	yes	yes	15	上野賢一郎。sourcePage 15。career と UI 確認完了。
+2	hr-0072	g03-proportional	比例代表型	上野宏史	verified	yes	yes	yes	yes	15	上野宏史。sourcePage 15。career と UI 確認完了。
+3	hr-0073	g01-single-basic	小選挙区基本型	上原正裕	verified	yes	yes	yes	yes	15	上原正裕。sourcePage 15。career と UI 確認完了。
+4	hr-0074	g03-proportional	比例代表型	江渡聡徳	verified	yes	yes	yes	yes	16	江渡聡徳。sourcePage 16。career と UI 確認完了。
+5	hr-0075	g03-proportional	比例代表型	江藤拓	verified	yes	yes	yes	yes	16	江藤拓。sourcePage 16。career と UI 確認完了。
+6	hr-0076	g01-single-basic	小選挙区基本型	内山航	verified	yes	yes	yes	yes	16	内山航。sourcePage 16。career と UI 確認完了。
+7	hr-0077	g01-single-basic	小選挙区基本型	遠藤寛明	verified	yes	yes	yes	yes	17	遠藤寛明。sourcePage 17。career と UI 確認完了。
+8	hr-0078	g01-single-basic	小選挙区基本型	大岡敏孝	verified	yes	yes	yes	yes	17	大岡敏孝。sourcePage 17。career と UI 確認完了。
+9	hr-0079	g01-single-basic	小選挙区基本型	大串正樹	verified	yes	yes	yes	yes	17	大串正樹。sourcePage 17。career と UI 確認完了。
+10	hr-0080	g01-single-basic	小選挙区基本型	衛藤博昭	verified	yes	yes	yes	yes	17	衛藤博昭。sourcePage 17。career と UI 確認完了。
+11	hr-0081	g01-single-basic	小選挙区基本型	英利アルフィヤ	verified	yes	yes	yes	yes	17	英利アルフィヤ。sourcePage 17。career と UI 確認完了。
+12	hr-0082	g01-single-basic	小選挙区基本型	大西洋平	verified	yes	yes	yes	yes	18	大西洋平。sourcePage 18。career と UI 確認完了。
+13	hr-0083	g01-single-basic	小選挙区基本型	大野敬太郎	verified	yes	yes	yes	yes	18	大野敬太郎。sourcePage 18。career と UI 確認完了。
+14	hr-0084	g03-proportional	比例代表型	大森江里子	verified	yes	yes	yes	yes	18	大森江里子。sourcePage 18。career と UI 確認完了。
+15	hr-0085	g03-proportional	比例代表型	大島敦	verified	yes	yes	yes	yes	18	大島敦。sourcePage 18。career と UI 確認完了。
+16	hr-0086	g01-single-basic	小選挙区基本型	大空幸星	verified	yes	yes	yes	yes	18	大空幸星。sourcePage 18。career と UI 確認完了。
+17	hr-0087	g01-single-basic	小選挙区基本型	大塚拓	verified	yes	yes	yes	yes	18	大塚拓。sourcePage 18。career と UI 確認完了。
+18	hr-0088	g01-single-basic	小選挙区基本型	岡本康宏	verified	yes	yes	yes	yes	19	岡本康宏。sourcePage 19。career と UI 確認完了。
+19	hr-0089	g03-proportional	比例代表型	岡野純子	verified	yes	yes	yes	yes	19	岡野純子。sourcePage 19。career と UI 確認完了。
+20	hr-0090	g03-proportional	比例代表型	岡本三成	verified	yes	yes	yes	yes	19	岡本三成。sourcePage 19。career と UI 確認完了。

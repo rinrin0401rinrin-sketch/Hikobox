@@ -1,0 +1,66 @@
+[
+  {
+    "id": "g01-single-basic",
+    "name": "小選挙区基本型",
+    "status": "verified",
+    "priority": 1,
+    "basedOnMemberId": "hr-0001",
+    "targetCount": 13,
+    "memberIds": [
+      "hr-0071",
+      "hr-0073",
+      "hr-0076",
+      "hr-0077",
+      "hr-0078",
+      "hr-0079",
+      "hr-0080",
+      "hr-0081",
+      "hr-0082",
+      "hr-0083",
+      "hr-0086",
+      "hr-0087",
+      "hr-0088"
+    ],
+    "memberNames": [
+      "上野賢一郎",
+      "上原正裕",
+      "内山航",
+      "遠藤寛明",
+      "大岡敏孝",
+      "大串正樹",
+      "衛藤博昭",
+      "英利アルフィヤ",
+      "大西洋平",
+      "大野敬太郎",
+      "大空幸星",
+      "大塚拓",
+      "岡本康宏"
+    ]
+  },
+  {
+    "id": "g03-proportional",
+    "name": "比例代表型",
+    "status": "verified",
+    "priority": 2,
+    "basedOnMemberId": "hr-0001",
+    "targetCount": 7,
+    "memberIds": [
+      "hr-0072",
+      "hr-0074",
+      "hr-0075",
+      "hr-0084",
+      "hr-0085",
+      "hr-0089",
+      "hr-0090"
+    ],
+    "memberNames": [
+      "上野宏史",
+      "江渡聡徳",
+      "江藤拓",
+      "大森江里子",
+      "大島敦",
+      "岡野純子",
+      "岡本三成"
+    ]
+  }
+]

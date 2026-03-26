@@ -1,0 +1,23 @@
+{
+  "id": "hr-0092",
+  "name": "尾崎正直",
+  "nameKana": "おざきまさなお",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "高知2区",
+  "block": "",
+  "prefecture": "高知県",
+  "wins": 3,
+  "birthDate": "1967-09-14",
+  "age": 58,
+  "career": [
+    "元官房副長官",
+    "国交政務官",
+    "高知県知事"
+  ],
+  "photo": "/data/photos/hr-0092.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 20,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0096",
+  "name": "小里泰弘",
+  "nameKana": "おざとやすひろ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 7,
+  "birthDate": "1958-09-29",
+  "age": 67,
+  "career": [
+    "元農相",
+    "首相補佐官",
+    "農水副大臣"
+  ],
+  "photo": "/data/photos/hr-0096.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 20,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+}

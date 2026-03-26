@@ -1,0 +1,23 @@
+{
+  "id": "hr-0103",
+  "name": "勝俣孝明",
+  "nameKana": "かつまたたかあき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "静岡6区",
+  "block": "",
+  "prefecture": "静岡県",
+  "wins": 6,
+  "birthDate": "1976-04-07",
+  "age": 49,
+  "career": [
+    "党選対副委員長",
+    "農水副大臣",
+    "銀行員"
+  ],
+  "photo": "/data/photos/hr-0103.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 22,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+}

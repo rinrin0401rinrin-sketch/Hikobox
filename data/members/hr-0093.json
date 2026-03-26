@@ -1,0 +1,23 @@
+{
+  "id": "hr-0093",
+  "name": "小田原潔",
+  "nameKana": "おだわらきよし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京21区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 5,
+  "birthDate": "1964-05-23",
+  "age": 61,
+  "career": [
+    "元外務副大臣",
+    "外務政務官",
+    "証券会社員"
+  ],
+  "photo": "/data/photos/hr-0093.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 20,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+}

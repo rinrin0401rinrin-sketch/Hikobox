@@ -1,0 +1,22 @@
+{
+  "id": "hr-0109",
+  "name": "加藤大博",
+  "nameKana": "かとうともひろ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "岐阜4区",
+  "block": "",
+  "prefecture": "岐阜県",
+  "wins": 1,
+  "birthDate": "1979-06-30",
+  "age": 46,
+  "career": [
+    "元県会副議長",
+    "議員秘書"
+  ],
+  "photo": "/data/photos/hr-0109.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 23,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+}

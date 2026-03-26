@@ -1,7 +1,7 @@
 {
   "id": "batch-02-50",
   "name": "標準50名バッチ",
-  "status": "chunk-05-partial-verified",
+  "status": "complete",
   "memberIds": [
     "hr-0021",
     "hr-0022",
@@ -144,11 +144,11 @@
         "hr-0070"
       ],
       "groupId": "g03-proportional_and_g04-hold",
-      "status": "partial-verified",
+      "status": "verified",
       "completedAt": "2026-03-26"
     }
   ],
-  "nextAction": "hr-0066 から hr-0070 の 5名について source 確認と career・UI 確認を進める。g04-hold の2名は政党・選出区分を優先再確認する。",
+  "nextAction": "batch-03-25 の 20名を確認済みデータとしてそのまま次フェーズへ引き継ぐ。",
   "referenceBatchId": "batch-01-20",
   "referenceMemberId": "hr-0001",
   "referenceMemberName": "青山繁晴",
@@ -684,11 +684,13 @@
   "currentChunkId": "chunk-05",
   "jsonCreatedCount": 50,
   "draftCount": 30,
-  "validatedAt": "2026-03-25",
+  "validatedAt": "2026-03-26",
   "operationalFiles": [
     "/data/batches/batch-02-50/groups.json",
     "/data/batches/batch-02-50/roster.json",
     "/data/batches/batch-02-50/worklist.tsv",
     "/data/batches/batch-02-50/review.tsv"
-  ]
+  ],
+  "uiReviewStatus": "checked",
+  "uiCheckedAt": "2026-03-26"
 }

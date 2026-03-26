@@ -1,0 +1,23 @@
+{
+  "id": "hr-0099",
+  "name": "尾身朝子",
+  "nameKana": "おみあさこ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北関東",
+  "prefecture": "",
+  "wins": 4,
+  "birthDate": "1961-04-26",
+  "age": 64,
+  "career": [
+    "元総務副大臣",
+    "NPO法人職員",
+    "会社員"
+  ],
+  "photo": "/data/photos/hr-0099.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 21,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+}
