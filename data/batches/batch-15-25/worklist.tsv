@@ -1,0 +1,26 @@
+slot_no	id	group_id	group_name	name	status	json_created	photo_placed	source_checked	reviewed	source_page	notes
+1	hr-0366	g01-single-basic	小選挙区基本型	前原誠司	verified	yes	yes	yes	yes	67	前原誠司。sourcePage 67。career と UI 確認完了。
+2	hr-0367	g01-single-basic	小選挙区基本型	牧島かれん	verified	yes	yes	yes	yes	67	牧島かれん。sourcePage 67。career と UI 確認完了。
+3	hr-0368	g03-proportional	比例代表型	牧野俊一	verified	yes	yes	yes	yes	67	牧野俊一。sourcePage 67。career と UI 確認完了。
+4	hr-0369	g01-single-basic	小選挙区基本型	堀内詔子	verified	yes	yes	yes	yes	67	堀内詔子。sourcePage 67。career と UI 確認完了。
+5	hr-0370	g01-single-basic	小選挙区基本型	本田太郎	verified	yes	yes	yes	yes	67	本田太郎。sourcePage 67。career と UI 確認完了。
+6	hr-0371	g03-proportional	比例代表型	前川恵	verified	yes	yes	yes	yes	67	前川恵。sourcePage 67。career と UI 確認完了。
+7	hr-0372	g01-single-basic	小選挙区基本型	松本泉	verified	yes	yes	yes	yes	68	松本泉。sourcePage 68。career と UI 確認完了。
+8	hr-0373	g01-single-basic	小選挙区基本型	松本尚	verified	yes	yes	yes	yes	68	松本尚。sourcePage 68。career と UI 確認完了。
+9	hr-0374	g01-single-basic	小選挙区基本型	松本洋平	verified	yes	yes	yes	yes	68	松本洋平。sourcePage 68。career と UI 確認完了。
+10	hr-0375	g01-single-basic	小選挙区基本型	松下英樹	verified	yes	yes	yes	yes	68	松下英樹。sourcePage 68。career と UI 確認完了。
+11	hr-0376	g01-single-basic	小選挙区基本型	松島みどり	verified	yes	yes	yes	yes	68	松島みどり。sourcePage 68。career と UI 確認完了。
+12	hr-0377	g01-single-basic	小選挙区基本型	松野博一	verified	yes	yes	yes	yes	68	松野博一。sourcePage 68。career と UI 確認完了。
+13	hr-0378	g03-proportional	比例代表型	三木圭恵	verified	yes	yes	yes	yes	69	三木圭恵。sourcePage 69。career と UI 確認完了。
+14	hr-0379	g01-single-basic	小選挙区基本型	水野良彦	verified	yes	yes	yes	yes	69	水野良彦。sourcePage 69。career と UI 確認完了。
+15	hr-0380	g01-single-basic	小選挙区基本型	三反園訓	verified	yes	yes	yes	yes	69	三反園訓。sourcePage 69。career と UI 確認完了。
+16	hr-0381	g01-single-basic	小選挙区基本型	丸尾南都子	verified	yes	yes	yes	yes	69	丸尾南都子。sourcePage 69。career と UI 確認完了。
+17	hr-0382	g01-single-basic	小選挙区基本型	丸川珠代	verified	yes	yes	yes	yes	69	丸川珠代。sourcePage 69。career と UI 確認完了。
+18	hr-0383	g01-single-basic	小選挙区基本型	丸田康一郎	verified	yes	yes	yes	yes	69	丸田康一郎。sourcePage 69。career と UI 確認完了。
+19	hr-0384	g01-single-basic	小選挙区基本型	美延映夫	verified	yes	yes	yes	yes	70	美延映夫。sourcePage 70。career と UI 確認完了。
+20	hr-0385	g03-proportional	比例代表型	御法川信英	verified	yes	yes	yes	yes	70	御法川信英。sourcePage 70。career と UI 確認完了。
+21	hr-0386	g03-proportional	比例代表型	三原朝利	verified	yes	yes	yes	yes	70	三原朝利。sourcePage 70。career と UI 確認完了。
+22	hr-0387	g01-single-basic	小選挙区基本型	三谷英弘	verified	yes	yes	yes	yes	70	三谷英弘。sourcePage 70。career と UI 確認完了。
+23	hr-0388	g01-single-basic	小選挙区基本型	三ツ林裕巳	verified	yes	yes	yes	yes	70	三ツ林裕巳。sourcePage 70。career と UI 確認完了。
+24	hr-0389	g03-proportional	比例代表型	峰島侑也	verified	yes	yes	yes	yes	70	峰島侑也。sourcePage 70。career と UI 確認完了。
+25	hr-0390	g01-single-basic	小選挙区基本型	宮下一郎	verified	yes	yes	yes	yes	71	宮下一郎。sourcePage 71。career と UI 確認完了。

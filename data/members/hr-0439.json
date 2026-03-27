@@ -1,0 +1,23 @@
+{
+  "id": "hr-0439",
+  "name": "若山慎司",
+  "nameKana": "わかやましんじ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "愛知10区",
+  "block": "",
+  "prefecture": "愛知県",
+  "wins": 2,
+  "birthDate": "1973-07-15",
+  "age": 52,
+  "career": [
+    "内閣府政務官",
+    "党国対委員",
+    "衆院議員秘書"
+  ],
+  "photo": "/data/photos/hr-0439.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 79,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0183",
+  "name": "塩川鉄也",
+  "nameKana": "しおかわてつや",
+  "party": "日本共産党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北関東",
+  "prefecture": "",
+  "wins": 10,
+  "birthDate": "1961-12-18",
+  "age": 64,
+  "career": [
+    "党幹部会委員",
+    "国対委員長",
+    "市職員"
+  ],
+  "photo": "/data/photos/hr-0183.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 36,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

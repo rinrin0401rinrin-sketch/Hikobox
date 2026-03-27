@@ -1,0 +1,22 @@
+{
+  "id": "hr-0280",
+  "name": "長友慎治",
+  "nameKana": "ながともしんじ",
+  "party": "国民民主党",
+  "electionType": "single",
+  "district": "宮崎2区",
+  "block": "",
+  "prefecture": "宮崎県",
+  "wins": 3,
+  "birthDate": "1977-06-22",
+  "age": 48,
+  "career": [
+    "元党政調副会長",
+    "ＮＰＯ法人理事長"
+  ],
+  "photo": "/data/photos/hr-0280.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 52,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

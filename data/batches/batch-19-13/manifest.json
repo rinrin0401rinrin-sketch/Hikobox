@@ -1,0 +1,34 @@
+{
+  "id": "batch-19-13",
+  "name": "補正13名バッチ",
+  "status": "complete",
+  "memberIds": [
+    "hr-0453",
+    "hr-0454",
+    "hr-0455",
+    "hr-0456",
+    "hr-0457",
+    "hr-0458",
+    "hr-0459",
+    "hr-0460",
+    "hr-0461",
+    "hr-0462",
+    "hr-0463",
+    "hr-0464",
+    "hr-0465"
+  ],
+  "goal": "PDF再確認で判明した不足13名を、20名完成版の仕様に合わせて補正投入する。",
+  "referenceMemberId": "hr-0001",
+  "referenceMemberName": "青山繁晴",
+  "targetMembers": 13,
+  "completedMembers": 13,
+  "validatedAt": "2026-03-26",
+  "uiReviewStatus": "checked",
+  "uiCheckedAt": "2026-03-26",
+  "groupCounts": {
+    "g01-single-basic": 10,
+    "g02-single-variant": 0,
+    "g03-proportional": 3,
+    "g04-hold": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0209",
+  "name": "住吉寛紀",
+  "nameKana": "すみよしひろき",
+  "party": "日本維新の会",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 2,
+  "birthDate": "1985-01-24",
+  "age": 41,
+  "career": [
+    "会社社長",
+    "党政調副会長",
+    "兵庫県議"
+  ],
+  "photo": "/data/photos/hr-0209.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 40,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

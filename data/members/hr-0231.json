@@ -1,0 +1,23 @@
+{
+  "id": "hr-0231",
+  "name": "田嶋要",
+  "nameKana": "たじまかなめ",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 9,
+  "birthDate": "1961-09-22",
+  "age": 64,
+  "career": [
+    "元環境委理事",
+    "経産政務官",
+    "NTT社員"
+  ],
+  "photo": "/data/photos/hr-0231.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 44,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

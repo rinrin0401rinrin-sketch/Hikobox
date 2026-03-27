@@ -1,0 +1,23 @@
+{
+  "id": "hr-0360",
+  "name": "船田元",
+  "nameKana": "ふなだはじめ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "栃木1区",
+  "block": "",
+  "prefecture": "栃木県",
+  "wins": 15,
+  "birthDate": "1953-11-22",
+  "age": 72,
+  "career": [
+    "党衆院議員会長",
+    "弾劾裁判長",
+    "経企庁長官"
+  ],
+  "photo": "/data/photos/hr-0360.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 65,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

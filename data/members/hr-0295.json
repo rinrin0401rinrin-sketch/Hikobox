@@ -1,0 +1,23 @@
+{
+  "id": "hr-0295",
+  "name": "西岡秀子",
+  "nameKana": "にしおかひでこ",
+  "party": "国民民主党",
+  "electionType": "single",
+  "district": "長崎1区",
+  "block": "",
+  "prefecture": "長崎県",
+  "wins": 4,
+  "birthDate": "1964-03-15",
+  "age": 61,
+  "career": [
+    "党国対委員長代行",
+    "党副幹事長",
+    "議員秘書"
+  ],
+  "photo": "/data/photos/hr-0295.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 54,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

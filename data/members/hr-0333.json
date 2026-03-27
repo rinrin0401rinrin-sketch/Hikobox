@@ -1,0 +1,23 @@
+{
+  "id": "hr-0333",
+  "name": "平口洋",
+  "nameKana": "ひらぐちひろし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "広島2区",
+  "block": "",
+  "prefecture": "広島県",
+  "wins": 7,
+  "birthDate": "1948-08-01",
+  "age": 77,
+  "career": [
+    "法相",
+    "党政調副会長",
+    "国交省局次長"
+  ],
+  "photo": "/data/photos/hr-0333.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 61,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

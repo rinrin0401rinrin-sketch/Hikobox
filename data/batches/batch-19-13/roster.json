@@ -1,0 +1,238 @@
+{
+  "batchId": "batch-19-13",
+  "referenceMemberId": "hr-0001",
+  "referenceMemberName": "青山繁晴",
+  "targetMembers": 13,
+  "allocationSummary": [
+    {
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "count": 10
+    },
+    {
+      "groupId": "g02-single-variant",
+      "groupName": "小選挙区変動型",
+      "count": 0
+    },
+    {
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "count": 3
+    },
+    {
+      "groupId": "g04-hold",
+      "groupName": "保留・例外型",
+      "count": 0
+    }
+  ],
+  "slots": [
+    {
+      "slotNo": 1,
+      "id": "hr-0453",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "井林辰憲",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 13,
+      "notes": [
+        "井林辰憲。sourcePage 13。補正投入と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 2,
+      "id": "hr-0454",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "井原巧",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 13,
+      "notes": [
+        "井原巧。sourcePage 13。補正投入と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 3,
+      "id": "hr-0455",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "岩屋毅",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 14,
+      "notes": [
+        "岩屋毅。sourcePage 14。補正投入と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 4,
+      "id": "hr-0456",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "上杉謙太郎",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 14,
+      "notes": [
+        "上杉謙太郎。sourcePage 14。補正投入と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 5,
+      "id": "hr-0457",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "上田英俊",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 14,
+      "notes": [
+        "上田英俊。sourcePage 14。補正投入と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 6,
+      "id": "hr-0458",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "岩田和親",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 14,
+      "notes": [
+        "岩田和親。sourcePage 14。補正投入と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 7,
+      "id": "hr-0459",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "小林修平",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 32,
+      "notes": [
+        "小林修平。sourcePage 32。補正投入と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 8,
+      "id": "hr-0460",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "後藤茂之",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 32,
+      "notes": [
+        "後藤茂之。sourcePage 32。補正投入と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 9,
+      "id": "hr-0461",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "後藤祐一",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 32,
+      "notes": [
+        "後藤祐一。sourcePage 32。補正投入と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 10,
+      "id": "hr-0462",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "今洋佑",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 33,
+      "notes": [
+        "今洋佑。sourcePage 33。補正投入と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 11,
+      "id": "hr-0463",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "古川禎久",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 66,
+      "notes": [
+        "古川禎久。sourcePage 66。補正投入と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 12,
+      "id": "hr-0464",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "古屋圭司",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 66,
+      "notes": [
+        "古屋圭司。sourcePage 66。補正投入と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 13,
+      "id": "hr-0465",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "穂坂泰",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 66,
+      "notes": [
+        "穂坂泰。sourcePage 66。補正投入と UI 確認完了。"
+      ]
+    }
+  ]
+}

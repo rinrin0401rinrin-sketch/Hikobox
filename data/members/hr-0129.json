@@ -1,0 +1,23 @@
+{
+  "id": "hr-0129",
+  "name": "神田潤一",
+  "nameKana": "かんだじゅんいち",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "青森2区",
+  "block": "",
+  "prefecture": "青森県",
+  "wins": 3,
+  "birthDate": "1970-09-27",
+  "age": 55,
+  "career": [
+    "党国対副委員長",
+    "法務政務官",
+    "日銀職員"
+  ],
+  "photo": "/data/photos/hr-0129.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 26,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

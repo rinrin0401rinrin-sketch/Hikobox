@@ -1,0 +1,22 @@
+{
+  "id": "hr-0244",
+  "name": "田畑裕明",
+  "nameKana": "たばたひろあき",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北信越",
+  "prefecture": "",
+  "wins": 6,
+  "birthDate": "1973-01-02",
+  "age": 53,
+  "career": [
+    "元総務副大臣",
+    "富山県議"
+  ],
+  "photo": "/data/photos/hr-0244.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 46,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

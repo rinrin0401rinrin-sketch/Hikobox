@@ -1,0 +1,23 @@
+{
+  "id": "hr-0395",
+  "name": "宮路拓馬",
+  "nameKana": "みやじたくま",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "鹿児島1区",
+  "block": "",
+  "prefecture": "鹿児島県",
+  "wins": 5,
+  "birthDate": "1979-12-06",
+  "age": 46,
+  "career": [
+    "党国対副委員長",
+    "外務副大臣",
+    "総務省職員"
+  ],
+  "photo": "/data/photos/hr-0395.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 71,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

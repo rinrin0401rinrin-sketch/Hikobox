@@ -1,0 +1,22 @@
+{
+  "id": "hr-0212",
+  "name": "鈴木美香",
+  "nameKana": "すずきみか",
+  "party": "参政党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東京",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1964-08-03",
+  "age": 61,
+  "career": [
+    "元全日空客室乗務員",
+    "司会業"
+  ],
+  "photo": "/data/photos/hr-0212.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 40,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

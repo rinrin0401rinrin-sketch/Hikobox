@@ -1,0 +1,21 @@
+{
+  "id": "hr-0175",
+  "name": "西條昌良",
+  "nameKana": "さいじょうまさよし",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北関東",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1954-11-14",
+  "age": 71,
+  "career": [
+    "元茨城県会議長"
+  ],
+  "photo": "/data/photos/hr-0175.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 34,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

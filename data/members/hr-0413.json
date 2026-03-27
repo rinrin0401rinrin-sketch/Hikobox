@@ -1,0 +1,23 @@
+{
+  "id": "hr-0413",
+  "name": "盛山正仁",
+  "nameKana": "もりやままさひと",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "兵庫1区",
+  "block": "",
+  "prefecture": "兵庫県",
+  "wins": 6,
+  "birthDate": "1953-12-14",
+  "age": 72,
+  "career": [
+    "元文科相",
+    "法務副大臣",
+    "国交省部長"
+  ],
+  "photo": "/data/photos/hr-0413.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 74,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

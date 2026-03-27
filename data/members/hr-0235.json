@@ -1,0 +1,23 @@
+{
+  "id": "hr-0235",
+  "name": "武部新",
+  "nameKana": "たけべあらた",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "北海道12区",
+  "block": "",
+  "prefecture": "北海道",
+  "wins": 6,
+  "birthDate": "1970-07-20",
+  "age": 55,
+  "career": [
+    "党政調副会長",
+    "文科副大臣",
+    "議員秘書"
+  ],
+  "photo": "/data/photos/hr-0235.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 44,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

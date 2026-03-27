@@ -1,0 +1,23 @@
+{
+  "id": "hr-0142",
+  "name": "木原誠二",
+  "nameKana": "きはらせいじ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京20区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 7,
+  "birthDate": "1970-06-08",
+  "age": 55,
+  "career": [
+    "元党選対委員長",
+    "党幹事長代理",
+    "官房副長官"
+  ],
+  "photo": "/data/photos/hr-0142.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 28,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

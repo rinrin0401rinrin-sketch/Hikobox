@@ -1,0 +1,22 @@
+{
+  "id": "hr-0229",
+  "name": "高橋祐介",
+  "nameKana": "たかはしゆうすけ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "北海道2区",
+  "block": "",
+  "prefecture": "北海道",
+  "wins": 2,
+  "birthDate": "1980-09-12",
+  "age": 45,
+  "career": [
+    "元衆院議員秘書",
+    "日本病院会政治連盟職員"
+  ],
+  "photo": "/data/photos/hr-0229.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 43,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0414",
+  "name": "山口壮",
+  "nameKana": "やまぐちつよし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "兵庫12区",
+  "block": "",
+  "prefecture": "兵庫県",
+  "wins": 9,
+  "birthDate": "1954-10-03",
+  "age": 71,
+  "career": [
+    "党国際局長",
+    "環境相",
+    "外務副大臣"
+  ],
+  "photo": "/data/photos/hr-0414.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 75,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

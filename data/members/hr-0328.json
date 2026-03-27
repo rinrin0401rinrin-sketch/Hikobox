@@ -1,0 +1,22 @@
+{
+  "id": "hr-0328",
+  "name": "原田直樹",
+  "nameKana": "はらだなおき",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1990-11-22",
+  "age": 35,
+  "career": [
+    "元野村総研社員",
+    "公明局次長"
+  ],
+  "photo": "/data/photos/hr-0328.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 60,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

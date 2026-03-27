@@ -1,0 +1,23 @@
+{
+  "id": "hr-0150",
+  "name": "国定勇人",
+  "nameKana": "くにさだいさと",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "新潟2区",
+  "block": "",
+  "prefecture": "新潟県",
+  "wins": 3,
+  "birthDate": "1972-08-30",
+  "age": 53,
+  "career": [
+    "党国交部会長代理",
+    "国交政務官",
+    "三条市長"
+  ],
+  "photo": "/data/photos/hr-0150.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 29,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

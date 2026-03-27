@@ -1,0 +1,222 @@
+{
+  "batchId": "batch-18-25",
+  "referenceMemberId": "hr-0001",
+  "referenceMemberName": "青山繁晴",
+  "targetMembers": 12,
+  "allocationSummary": [
+    {
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "count": 6
+    },
+    {
+      "groupId": "g02-single-variant",
+      "groupName": "小選挙区変動型",
+      "count": 0
+    },
+    {
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "count": 6
+    },
+    {
+      "groupId": "g04-hold",
+      "groupName": "保留・例外型",
+      "count": 0
+    }
+  ],
+  "slots": [
+    {
+      "slotNo": 1,
+      "id": "hr-0441",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "笠浩史",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 79,
+      "notes": [
+        "笠浩史。sourcePage 79。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 2,
+      "id": "hr-0442",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "若狭清史",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 79,
+      "notes": [
+        "若狭清史。sourcePage 79。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 3,
+      "id": "hr-0443",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "若林健太",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 79,
+      "notes": [
+        "若林健太。sourcePage 79。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 4,
+      "id": "hr-0444",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "渡辺藍理",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 80,
+      "notes": [
+        "渡辺藍理。sourcePage 80。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 5,
+      "id": "hr-0445",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "渡辺勝幸",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 80,
+      "notes": [
+        "渡辺勝幸。sourcePage 80。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 6,
+      "id": "hr-0446",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "渡辺孝一",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 80,
+      "notes": [
+        "渡辺孝一。sourcePage 80。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 7,
+      "id": "hr-0447",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "早稲田夕季",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 80,
+      "notes": [
+        "早稲田夕季。sourcePage 80。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 8,
+      "id": "hr-0448",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "和田政宗",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 80,
+      "notes": [
+        "和田政宗。sourcePage 80。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 9,
+      "id": "hr-0449",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "和田義明",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 80,
+      "notes": [
+        "和田義明。sourcePage 80。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 10,
+      "id": "hr-0450",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "渡辺真太朗",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 81,
+      "notes": [
+        "渡辺真太朗。sourcePage 81。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 11,
+      "id": "hr-0451",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "渡辺創",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 81,
+      "notes": [
+        "渡辺創。sourcePage 81。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 12,
+      "id": "hr-0452",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "渡辺博道",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 81,
+      "notes": [
+        "渡辺博道。sourcePage 81。career と UI 確認完了。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0180",
+  "name": "斉藤里恵",
+  "nameKana": "さいとうりえ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東海",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1984-02-03",
+  "age": 42,
+  "career": [
+    "元都議",
+    "都北区議",
+    "接客業"
+  ],
+  "photo": "/data/photos/hr-0180.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 35,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

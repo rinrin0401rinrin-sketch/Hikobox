@@ -1,0 +1,22 @@
+{
+  "id": "hr-0161",
+  "name": "輿水恵一",
+  "nameKana": "こしみずけいいち",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北関東",
+  "prefecture": "",
+  "wins": 5,
+  "birthDate": "1962-02-04",
+  "age": 64,
+  "career": [
+    "元復興副大臣",
+    "市議"
+  ],
+  "photo": "/data/photos/hr-0161.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 31,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

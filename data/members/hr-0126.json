@@ -1,0 +1,23 @@
+{
+  "id": "hr-0126",
+  "name": "河井昭成",
+  "nameKana": "かわいあきなり",
+  "party": "国民民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1973-07-22",
+  "age": 52,
+  "career": [
+    "党滋賀県代表",
+    "県議",
+    "大津市議"
+  ],
+  "photo": "/data/photos/hr-0126.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 25,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

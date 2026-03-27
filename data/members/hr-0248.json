@@ -1,0 +1,23 @@
+{
+  "id": "hr-0248",
+  "name": "谷川とむ",
+  "nameKana": "たにがわとむ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "大阪19区",
+  "block": "",
+  "prefecture": "大阪府",
+  "wins": 4,
+  "birthDate": "1976-04-27",
+  "age": 49,
+  "career": [
+    "僧侶",
+    "党大阪府会長",
+    "総務政務官"
+  ],
+  "photo": "/data/photos/hr-0248.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 46,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

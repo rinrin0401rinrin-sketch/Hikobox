@@ -1,0 +1,22 @@
+{
+  "id": "hr-0459",
+  "name": "小林修平",
+  "nameKana": "こばやししゅうへい",
+  "party": "チームみらい",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1990-08-06",
+  "age": 35,
+  "career": [
+    "ウェブエンジニア",
+    "会社員"
+  ],
+  "photo": "/data/photos/hr-0459.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 32,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用補正セットとして作成。UI通し確認完了。"
+}

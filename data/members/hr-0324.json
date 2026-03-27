@@ -1,0 +1,23 @@
+{
+  "id": "hr-0324",
+  "name": "橋本幹彦",
+  "nameKana": "はしもとみきひこ",
+  "party": "国民民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北関東",
+  "prefecture": "",
+  "wins": 2,
+  "birthDate": "1995-12-27",
+  "age": 30,
+  "career": [
+    "党国対副委員長",
+    "政調副会長",
+    "航空自衛官"
+  ],
+  "photo": "/data/photos/hr-0324.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 59,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

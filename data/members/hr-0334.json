@@ -1,0 +1,23 @@
+{
+  "id": "hr-0334",
+  "name": "平沢勝栄",
+  "nameKana": "ひらさわかつえい",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京17区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 11,
+  "birthDate": "1945-09-04",
+  "age": 80,
+  "career": [
+    "元復興相",
+    "党選対委員長代理",
+    "拉致特委委員長"
+  ],
+  "photo": "/data/photos/hr-0334.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 61,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0451",
+  "name": "渡辺創",
+  "nameKana": "わたなべそう",
+  "party": "中道改革連合",
+  "electionType": "single",
+  "district": "宮崎1区",
+  "block": "",
+  "prefecture": "宮崎県",
+  "wins": 3,
+  "birthDate": "1977-10-03",
+  "age": 48,
+  "career": [
+    "元農水委員",
+    "立民広報委員長",
+    "宮崎県議"
+  ],
+  "photo": "/data/photos/hr-0451.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 81,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用最終セットとして作成。UI通し確認完了。"
+}

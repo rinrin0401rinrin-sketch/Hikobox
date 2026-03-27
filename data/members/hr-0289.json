@@ -1,0 +1,22 @@
+{
+  "id": "hr-0289",
+  "name": "長野春信",
+  "nameKana": "ながのはるのぶ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1972-02-13",
+  "age": 53,
+  "career": [
+    "社会福祉法人理事長",
+    "船橋市議"
+  ],
+  "photo": "/data/photos/hr-0289.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 53,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

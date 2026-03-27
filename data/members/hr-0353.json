@@ -1,0 +1,23 @@
+{
+  "id": "hr-0353",
+  "name": "文月涼",
+  "nameKana": "ふづきりょう",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1967-08-10",
+  "age": 58,
+  "career": [
+    "会社社長",
+    "内閣官房職員",
+    "日産自動車社員"
+  ],
+  "photo": "/data/photos/hr-0353.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 64,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

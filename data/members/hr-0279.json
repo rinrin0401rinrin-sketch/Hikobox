@@ -1,0 +1,23 @@
+{
+  "id": "hr-0279",
+  "name": "長妻昭",
+  "nameKana": "ながつまあきら",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東京",
+  "prefecture": "",
+  "wins": 10,
+  "birthDate": "1960-06-14",
+  "age": 65,
+  "career": [
+    "元立民代表代行",
+    "立民政調会長",
+    "厚労相"
+  ],
+  "photo": "/data/photos/hr-0279.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 52,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

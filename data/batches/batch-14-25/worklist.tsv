@@ -1,0 +1,26 @@
+slot_no	id	group_id	group_name	name	status	json_created	photo_placed	source_checked	reviewed	source_page	notes
+1	hr-0341	g01-single-basic	小選挙区基本型	福田かおる	verified	yes	yes	yes	yes	62	福田かおる。sourcePage 62。career と UI 確認完了。
+2	hr-0342	g03-proportional	比例代表型	平林晃	verified	yes	yes	yes	yes	62	平林晃。sourcePage 62。career と UI 確認完了。
+3	hr-0343	g01-single-basic	小選挙区基本型	広瀬建	verified	yes	yes	yes	yes	62	広瀬建。sourcePage 62。career と UI 確認完了。
+4	hr-0344	g03-proportional	比例代表型	深作ヘスス	verified	yes	yes	yes	yes	62	深作ヘスス。sourcePage 62。career と UI 確認完了。
+5	hr-0345	g01-single-basic	小選挙区基本型	藤井比早之	verified	yes	yes	yes	yes	63	藤井比早之。sourcePage 63。career と UI 確認完了。
+6	hr-0346	g03-proportional	比例代表型	藤沢忠盛	verified	yes	yes	yes	yes	63	藤沢忠盛。sourcePage 63。career と UI 確認完了。
+7	hr-0347	g01-single-basic	小選挙区基本型	藤田ひかる	verified	yes	yes	yes	yes	63	藤田ひかる。sourcePage 63。career と UI 確認完了。
+8	hr-0348	g01-single-basic	小選挙区基本型	福田達夫	verified	yes	yes	yes	yes	63	福田達夫。sourcePage 63。career と UI 確認完了。
+9	hr-0349	g03-proportional	比例代表型	福田徹	verified	yes	yes	yes	yes	63	福田徹。sourcePage 63。career と UI 確認完了。
+10	hr-0350	g01-single-basic	小選挙区基本型	福原淳嗣	verified	yes	yes	yes	yes	63	福原淳嗣。sourcePage 63。career と UI 確認完了。
+11	hr-0351	g01-single-basic	小選挙区基本型	藤丸敏	verified	yes	yes	yes	yes	64	藤丸敏。sourcePage 64。career と UI 確認完了。
+12	hr-0352	g01-single-basic	小選挙区基本型	藤原崇	verified	yes	yes	yes	yes	64	藤原崇。sourcePage 64。career と UI 確認完了。
+13	hr-0353	g03-proportional	比例代表型	文月涼	verified	yes	yes	yes	yes	64	文月涼。sourcePage 64。career と UI 確認完了。
+14	hr-0354	g01-single-basic	小選挙区基本型	藤田文武	verified	yes	yes	yes	yes	64	藤田文武。sourcePage 64。career と UI 確認完了。
+15	hr-0355	g01-single-basic	小選挙区基本型	藤田誠	verified	yes	yes	yes	yes	64	藤田誠。sourcePage 64。career と UI 確認完了。
+16	hr-0356	g03-proportional	比例代表型	藤田洋司	verified	yes	yes	yes	yes	64	藤田洋司。sourcePage 64。career と UI 確認完了。
+17	hr-0357	g01-single-basic	小選挙区基本型	古川直季	verified	yes	yes	yes	yes	65	古川直季。sourcePage 65。career と UI 確認完了。
+18	hr-0358	g01-single-basic	小選挙区基本型	古川元久	verified	yes	yes	yes	yes	65	古川元久。sourcePage 65。career と UI 確認完了。
+19	hr-0359	g01-single-basic	小選挙区基本型	古川康	verified	yes	yes	yes	yes	65	古川康。sourcePage 65。career と UI 確認完了。
+20	hr-0360	g01-single-basic	小選挙区基本型	船田元	verified	yes	yes	yes	yes	65	船田元。sourcePage 65。career と UI 確認完了。
+21	hr-0361	g03-proportional	比例代表型	古井康介	verified	yes	yes	yes	yes	65	古井康介。sourcePage 65。career と UI 確認完了。
+22	hr-0362	g03-proportional	比例代表型	古川あおい	verified	yes	yes	yes	yes	65	古川あおい。sourcePage 65。career と UI 確認完了。
+23	hr-0363	g01-single-basic	小選挙区基本型	星野剛士	verified	yes	yes	yes	yes	66	星野剛士。sourcePage 66。career と UI 確認完了。
+24	hr-0364	g03-proportional	比例代表型	細田健一	verified	yes	yes	yes	yes	66	細田健一。sourcePage 66。career と UI 確認完了。
+25	hr-0365	g01-single-basic	小選挙区基本型	細野豪志	verified	yes	yes	yes	yes	66	細野豪志。sourcePage 66。career と UI 確認完了。

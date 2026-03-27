@@ -1,0 +1,23 @@
+{
+  "id": "hr-0205",
+  "name": "鈴木馨祐",
+  "nameKana": "すずきけいすけ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "神奈川7区",
+  "block": "",
+  "prefecture": "神奈川県",
+  "wins": 7,
+  "birthDate": "1977-02-09",
+  "age": 49,
+  "career": [
+    "前法相",
+    "法務委員長",
+    "外務副大臣"
+  ],
+  "photo": "/data/photos/hr-0205.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 39,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

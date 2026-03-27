@@ -1,0 +1,23 @@
+{
+  "id": "hr-0219",
+  "name": "高木啓",
+  "nameKana": "たかぎけい",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京12区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 4,
+  "birthDate": "1965-03-16",
+  "age": 61,
+  "career": [
+    "党外交部会長",
+    "国対副委員長",
+    "外務政務官"
+  ],
+  "photo": "/data/photos/hr-0219.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 42,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

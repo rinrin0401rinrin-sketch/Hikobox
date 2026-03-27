@@ -1,0 +1,23 @@
+{
+  "id": "hr-0331",
+  "name": "浜地雅一",
+  "nameKana": "はまちまさかず",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 6,
+  "birthDate": "1970-05-08",
+  "age": 55,
+  "career": [
+    "弁護士",
+    "公明政調会長代理",
+    "厚労副大臣"
+  ],
+  "photo": "/data/photos/hr-0331.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 60,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

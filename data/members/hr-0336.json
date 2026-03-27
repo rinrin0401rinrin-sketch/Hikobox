@@ -1,0 +1,23 @@
+{
+  "id": "hr-0336",
+  "name": "東田淳平",
+  "nameKana": "ひがしだじゅんぺい",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1983-01-09",
+  "age": 43,
+  "career": [
+    "党国対副委員長",
+    "政調副会長",
+    "会社社長"
+  ],
+  "photo": "/data/photos/hr-0336.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 61,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

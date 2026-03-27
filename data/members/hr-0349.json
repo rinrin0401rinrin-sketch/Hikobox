@@ -1,0 +1,23 @@
+{
+  "id": "hr-0349",
+  "name": "福田徹",
+  "nameKana": "ふくだとおる",
+  "party": "国民民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東海",
+  "prefecture": "",
+  "wins": 2,
+  "birthDate": "1982-06-02",
+  "age": 43,
+  "career": [
+    "党国対副委員長",
+    "医師",
+    "病院救急科医長"
+  ],
+  "photo": "/data/photos/hr-0349.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 63,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0253",
+  "name": "田村智子",
+  "nameKana": "たむらともこ",
+  "party": "日本共産党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東京",
+  "prefecture": "",
+  "wins": 2,
+  "birthDate": "1965-07-04",
+  "age": 60,
+  "career": [
+    "党委員長",
+    "党政策委員長",
+    "議員秘書"
+  ],
+  "photo": "/data/photos/hr-0253.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 47,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

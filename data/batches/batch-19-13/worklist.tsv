@@ -1,0 +1,14 @@
+slot_no	id	group_id	group_name	name	status	json_created	photo_placed	source_checked	reviewed	source_page	notes
+1	hr-0453	g01-single-basic	小選挙区基本型	井林辰憲	verified	yes	yes	yes	yes	13	井林辰憲。sourcePage 13。補正投入と UI 確認完了。
+2	hr-0454	g01-single-basic	小選挙区基本型	井原巧	verified	yes	yes	yes	yes	13	井原巧。sourcePage 13。補正投入と UI 確認完了。
+3	hr-0455	g01-single-basic	小選挙区基本型	岩屋毅	verified	yes	yes	yes	yes	14	岩屋毅。sourcePage 14。補正投入と UI 確認完了。
+4	hr-0456	g01-single-basic	小選挙区基本型	上杉謙太郎	verified	yes	yes	yes	yes	14	上杉謙太郎。sourcePage 14。補正投入と UI 確認完了。
+5	hr-0457	g01-single-basic	小選挙区基本型	上田英俊	verified	yes	yes	yes	yes	14	上田英俊。sourcePage 14。補正投入と UI 確認完了。
+6	hr-0458	g01-single-basic	小選挙区基本型	岩田和親	verified	yes	yes	yes	yes	14	岩田和親。sourcePage 14。補正投入と UI 確認完了。
+7	hr-0459	g03-proportional	比例代表型	小林修平	verified	yes	yes	yes	yes	32	小林修平。sourcePage 32。補正投入と UI 確認完了。
+8	hr-0460	g01-single-basic	小選挙区基本型	後藤茂之	verified	yes	yes	yes	yes	32	後藤茂之。sourcePage 32。補正投入と UI 確認完了。
+9	hr-0461	g03-proportional	比例代表型	後藤祐一	verified	yes	yes	yes	yes	32	後藤祐一。sourcePage 32。補正投入と UI 確認完了。
+10	hr-0462	g03-proportional	比例代表型	今洋佑	verified	yes	yes	yes	yes	33	今洋佑。sourcePage 33。補正投入と UI 確認完了。
+11	hr-0463	g01-single-basic	小選挙区基本型	古川禎久	verified	yes	yes	yes	yes	66	古川禎久。sourcePage 66。補正投入と UI 確認完了。
+12	hr-0464	g01-single-basic	小選挙区基本型	古屋圭司	verified	yes	yes	yes	yes	66	古屋圭司。sourcePage 66。補正投入と UI 確認完了。
+13	hr-0465	g01-single-basic	小選挙区基本型	穂坂泰	verified	yes	yes	yes	yes	66	穂坂泰。sourcePage 66。補正投入と UI 確認完了。

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0443",
+  "name": "若林健太",
+  "nameKana": "わかばやしけんた",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "長野1区",
+  "block": "",
+  "prefecture": "長野県",
+  "wins": 2,
+  "birthDate": "1964-01-11",
+  "age": 62,
+  "career": [
+    "公認会計士",
+    "国対副委員長",
+    "外務政務官"
+  ],
+  "photo": "/data/photos/hr-0443.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 79,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用最終セットとして作成。UI通し確認完了。"
+}

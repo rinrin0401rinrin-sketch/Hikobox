@@ -1,0 +1,22 @@
+{
+  "id": "hr-0344",
+  "name": "深作ヘスス",
+  "nameKana": "ふかさくへすす",
+  "party": "国民民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 2,
+  "birthDate": "1985-01-04",
+  "age": 41,
+  "career": [
+    "党国対副委員長",
+    "政調副会長"
+  ],
+  "photo": "/data/photos/hr-0344.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 62,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

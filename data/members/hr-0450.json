@@ -1,0 +1,22 @@
+{
+  "id": "hr-0450",
+  "name": "渡辺真太朗",
+  "nameKana": "わたなべしんたろう",
+  "party": "無所属",
+  "electionType": "single",
+  "district": "栃木3区",
+  "block": "",
+  "prefecture": "栃木県",
+  "wins": 1,
+  "birthDate": "1992-11-08",
+  "age": 33,
+  "career": [
+    "元足利銀行員",
+    "栃木県知事事務所員"
+  ],
+  "photo": "/data/photos/hr-0450.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 81,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用最終セットとして作成。UI通し確認完了。"
+}

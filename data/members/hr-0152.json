@@ -1,0 +1,23 @@
+{
+  "id": "hr-0152",
+  "name": "小泉進次郎",
+  "nameKana": "こいずみしんじろう",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "神奈川11区",
+  "block": "",
+  "prefecture": "神奈川県",
+  "wins": 7,
+  "birthDate": "1981-04-14",
+  "age": 44,
+  "career": [
+    "防衛相",
+    "農相",
+    "党選対委員長"
+  ],
+  "photo": "/data/photos/hr-0152.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 30,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

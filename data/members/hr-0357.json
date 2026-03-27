@@ -1,0 +1,23 @@
+{
+  "id": "hr-0357",
+  "name": "古川直季",
+  "nameKana": "ふるかわなおき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "神奈川6区",
+  "block": "",
+  "prefecture": "神奈川県",
+  "wins": 3,
+  "birthDate": "1968-08-31",
+  "age": 57,
+  "career": [
+    "内閣府政務官",
+    "総務政務官",
+    "市議"
+  ],
+  "photo": "/data/photos/hr-0357.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 65,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

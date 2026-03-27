@@ -1,0 +1,23 @@
+{
+  "id": "hr-0274",
+  "name": "中田宏",
+  "nameKana": "なかだひろし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "富山1区",
+  "block": "",
+  "prefecture": "富山県",
+  "wins": 5,
+  "birthDate": "1964-09-20",
+  "age": 61,
+  "career": [
+    "元環境副大臣",
+    "横浜市長",
+    "参院議員"
+  ],
+  "photo": "/data/photos/hr-0274.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 51,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

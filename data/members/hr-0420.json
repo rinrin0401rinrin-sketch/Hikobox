@@ -1,0 +1,23 @@
+{
+  "id": "hr-0420",
+  "name": "山田美樹",
+  "nameKana": "やまだみき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京1区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 5,
+  "birthDate": "1974-03-15",
+  "age": 52,
+  "career": [
+    "元環境副大臣",
+    "党副幹事長",
+    "経済産業省職員"
+  ],
+  "photo": "/data/photos/hr-0420.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 76,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

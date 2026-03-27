@@ -1,0 +1,23 @@
+{
+  "id": "hr-0125",
+  "name": "河野正美",
+  "nameKana": "かわのまさみ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 3,
+  "birthDate": "1961-06-30",
+  "age": 64,
+  "career": [
+    "医師",
+    "医療法人理事長",
+    "内閣委理事"
+  ],
+  "photo": "/data/photos/hr-0125.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 25,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

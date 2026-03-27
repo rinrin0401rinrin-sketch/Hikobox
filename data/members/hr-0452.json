@@ -1,0 +1,23 @@
+{
+  "id": "hr-0452",
+  "name": "渡辺博道",
+  "nameKana": "わたなべひろみち",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "千葉6区",
+  "block": "",
+  "prefecture": "千葉県",
+  "wins": 9,
+  "birthDate": "1950-08-03",
+  "age": 75,
+  "career": [
+    "元復興相",
+    "党財務委員長",
+    "原子力特別委員長"
+  ],
+  "photo": "/data/photos/hr-0452.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 81,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用最終セットとして作成。UI通し確認完了。"
+}

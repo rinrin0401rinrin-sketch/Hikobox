@@ -1,0 +1,23 @@
+{
+  "id": "hr-0461",
+  "name": "後藤祐一",
+  "nameKana": "ごとうゆういち",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 7,
+  "birthDate": "1969-03-25",
+  "age": 56,
+  "career": [
+    "元財金委員",
+    "立民幹事長代理",
+    "経産省職員"
+  ],
+  "photo": "/data/photos/hr-0461.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 32,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用補正セットとして作成。UI通し確認完了。"
+}

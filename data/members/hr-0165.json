@@ -1,0 +1,23 @@
+{
+  "id": "hr-0165",
+  "name": "小寺裕雄",
+  "nameKana": "こでらひろお",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 4,
+  "birthDate": "1960-09-18",
+  "age": 65,
+  "career": [
+    "党国対副委員長",
+    "内閣府政務官",
+    "滋賀県議"
+  ],
+  "photo": "/data/photos/hr-0165.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 32,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

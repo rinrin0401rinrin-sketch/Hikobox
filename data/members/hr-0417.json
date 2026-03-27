@@ -1,0 +1,23 @@
+{
+  "id": "hr-0417",
+  "name": "山際大志郎",
+  "nameKana": "やまぎわだいしろう",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "神奈川18区",
+  "block": "",
+  "prefecture": "神奈川県",
+  "wins": 8,
+  "birthDate": "1968-09-12",
+  "age": 57,
+  "career": [
+    "党調査会長",
+    "獣医師",
+    "経済再生担当相"
+  ],
+  "photo": "/data/photos/hr-0417.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 75,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

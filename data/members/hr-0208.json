@@ -1,0 +1,22 @@
+{
+  "id": "hr-0208",
+  "name": "須田英太郎",
+  "nameKana": "すだえいたろう",
+  "party": "チームみらい",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東海",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1990-10-27",
+  "age": 35,
+  "career": [
+    "党国対委員長",
+    "ＩＴ会社経営"
+  ],
+  "photo": "/data/photos/hr-0208.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 40,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

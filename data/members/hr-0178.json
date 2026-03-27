@@ -1,0 +1,23 @@
+{
+  "id": "hr-0178",
+  "name": "笹川博義",
+  "nameKana": "ささがわひろよし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "群馬3区",
+  "block": "",
+  "prefecture": "群馬県",
+  "wins": 6,
+  "birthDate": "1966-08-29",
+  "age": 60,
+  "career": [
+    "党政調副会長",
+    "農水副大臣",
+    "群馬県議"
+  ],
+  "photo": "/data/photos/hr-0178.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 35,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0276",
+  "name": "長坂康正",
+  "nameKana": "ながさかやすまさ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "愛知9区",
+  "block": "",
+  "prefecture": "愛知県",
+  "wins": 6,
+  "birthDate": "1957-04-10",
+  "age": 68,
+  "career": [
+    "厚労副大臣",
+    "国交委員長",
+    "愛知県議"
+  ],
+  "photo": "/data/photos/hr-0276.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 51,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

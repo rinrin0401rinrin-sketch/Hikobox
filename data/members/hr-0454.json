@@ -1,0 +1,23 @@
+{
+  "id": "hr-0454",
+  "name": "井原巧",
+  "nameKana": "いはらたくみ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "愛媛2区",
+  "block": "",
+  "prefecture": "愛媛県",
+  "wins": 2,
+  "birthDate": "1963-11-13",
+  "age": 62,
+  "career": [
+    "元経産政務官",
+    "市長",
+    "参院議員"
+  ],
+  "photo": "/data/photos/hr-0454.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 13,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用補正セットとして作成。UI通し確認完了。"
+}

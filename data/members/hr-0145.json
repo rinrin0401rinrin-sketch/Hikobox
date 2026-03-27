@@ -1,0 +1,22 @@
+{
+  "id": "hr-0145",
+  "name": "国重徹",
+  "nameKana": "くにしげとおる",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 5,
+  "birthDate": "1974-11-23",
+  "age": 51,
+  "career": [
+    "弁護士",
+    "総務政務官"
+  ],
+  "photo": "/data/photos/hr-0145.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 29,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

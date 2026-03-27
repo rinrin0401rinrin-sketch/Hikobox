@@ -1,0 +1,24 @@
+{
+  "id": "hr-0311",
+  "name": "野田佳彦",
+  "nameKana": "のだよしひこ",
+  "party": "中道改革連合",
+  "electionType": "single",
+  "district": "千葉14区",
+  "block": "",
+  "prefecture": "千葉県",
+  "wins": 11,
+  "birthDate": "1957-05-20",
+  "age": 68,
+  "career": [
+    "党共同代表",
+    "立民代表",
+    "首相",
+    "財務相"
+  ],
+  "photo": "/data/photos/hr-0311.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 57,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

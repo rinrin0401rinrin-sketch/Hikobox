@@ -1,0 +1,23 @@
+{
+  "id": "hr-0408",
+  "name": "保岡宏武",
+  "nameKana": "やすおかひろたけ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 2,
+  "birthDate": "1973-05-06",
+  "age": 52,
+  "career": [
+    "元総務委員",
+    "衆院議員秘書",
+    "会社員"
+  ],
+  "photo": "/data/photos/hr-0408.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 74,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

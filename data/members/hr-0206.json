@@ -1,0 +1,23 @@
+{
+  "id": "hr-0206",
+  "name": "鈴木俊一",
+  "nameKana": "すずきしゅんいち",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "岩手2区",
+  "block": "",
+  "prefecture": "岩手県",
+  "wins": 12,
+  "birthDate": "1953-04-13",
+  "age": 72,
+  "career": [
+    "党幹事長",
+    "総務会長",
+    "財務相"
+  ],
+  "photo": "/data/photos/hr-0206.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 39,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

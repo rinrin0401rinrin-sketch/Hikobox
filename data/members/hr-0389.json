@@ -1,0 +1,23 @@
+{
+  "id": "hr-0389",
+  "name": "峰島侑也",
+  "nameKana": "みねしまゆうや",
+  "party": "チームみらい",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東京",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1990-06-12",
+  "age": 35,
+  "career": [
+    "党政調会長",
+    "IT関連会社役員",
+    "投資銀行員"
+  ],
+  "photo": "/data/photos/hr-0389.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 70,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

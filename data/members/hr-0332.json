@@ -1,0 +1,21 @@
+{
+  "id": "hr-0332",
+  "name": "林拓海",
+  "nameKana": "はやしたくみ",
+  "party": "チームみらい",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東北",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1997-09-01",
+  "age": 28,
+  "career": [
+    "私立高校職員"
+  ],
+  "photo": "/data/photos/hr-0332.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 60,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

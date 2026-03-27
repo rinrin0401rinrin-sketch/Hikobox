@@ -1,0 +1,23 @@
+{
+  "id": "hr-0158",
+  "name": "国場幸之助",
+  "nameKana": "こくばこうのすけ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "沖縄1区",
+  "block": "",
+  "prefecture": "沖縄県",
+  "wins": 6,
+  "birthDate": "1973-01-10",
+  "age": 53,
+  "career": [
+    "前外務委員長",
+    "国交副大臣",
+    "沖縄県議"
+  ],
+  "photo": "/data/photos/hr-0158.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 31,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

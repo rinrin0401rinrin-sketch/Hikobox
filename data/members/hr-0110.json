@@ -1,23 +1,23 @@
 {
   "id": "hr-0110",
-  "name": "加藤鮎子",
-  "nameKana": "かとうあゆこ",
+  "name": "加藤竜祥",
+  "nameKana": "かとうりゅうしょう",
   "party": "自由民主党",
   "electionType": "single",
-  "district": "山形3区",
+  "district": "長崎2区",
   "block": "",
-  "prefecture": "山形県",
-  "wins": 5,
-  "birthDate": "1979-04-19",
+  "prefecture": "長崎県",
+  "wins": 3,
+  "birthDate": "1980-02-10",
   "age": 46,
   "career": [
-    "党国土交通部会長",
-    "こども政策相",
-    "会社員"
+    "国交政務官",
+    "党青年局次長",
+    "議員秘書"
   ],
   "photo": "/data/photos/hr-0110.jpg",
   "sourcePdf": "/data/source-pdf/members.pdf",
   "sourcePage": 23,
   "status": "verified",
-  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
 }

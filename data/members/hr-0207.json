@@ -1,0 +1,23 @@
+{
+  "id": "hr-0207",
+  "name": "鈴木義弘",
+  "nameKana": "すずきよしひろ",
+  "party": "国民民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北関東",
+  "prefecture": "",
+  "wins": 5,
+  "birthDate": "1962-11-10",
+  "age": 63,
+  "career": [
+    "党副代表",
+    "決算委員長",
+    "幹事長代理"
+  ],
+  "photo": "/data/photos/hr-0207.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 40,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

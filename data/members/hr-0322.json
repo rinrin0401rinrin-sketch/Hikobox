@@ -1,0 +1,23 @@
+{
+  "id": "hr-0322",
+  "name": "葉梨康弘",
+  "nameKana": "はなしやすひろ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "茨城3区",
+  "block": "",
+  "prefecture": "茨城県",
+  "wins": 8,
+  "birthDate": "1959-10-12",
+  "age": 66,
+  "career": [
+    "元法相",
+    "農水副大臣",
+    "警察庁理事官"
+  ],
+  "photo": "/data/photos/hr-0322.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 59,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "hr-0251",
+  "name": "辻清人",
+  "nameKana": "つじきよと",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京2区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 6,
+  "birthDate": "1979-09-07",
+  "age": 46,
+  "career": [
+    "環境副大臣",
+    "米国際問題研究所員"
+  ],
+  "photo": "/data/photos/hr-0251.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 47,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

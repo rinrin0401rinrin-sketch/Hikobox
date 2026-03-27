@@ -1,0 +1,23 @@
+{
+  "id": "hr-0224",
+  "name": "高階恵美子",
+  "nameKana": "たかがいえみこ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "島根1区",
+  "block": "",
+  "prefecture": "島根県",
+  "wins": 2,
+  "birthDate": "1963-12-21",
+  "age": 62,
+  "career": [
+    "元厚労副大臣",
+    "復興特委員長",
+    "参院議員"
+  ],
+  "photo": "/data/photos/hr-0224.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 42,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

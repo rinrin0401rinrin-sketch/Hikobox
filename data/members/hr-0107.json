@@ -1,22 +1,23 @@
 {
   "id": "hr-0107",
-  "name": "門寛子",
-  "nameKana": "かどひろこ",
+  "name": "梶山弘志",
+  "nameKana": "かじやまひろし",
   "party": "自由民主党",
   "electionType": "single",
-  "district": "東京8区",
+  "district": "茨城4区",
   "block": "",
-  "prefecture": "東京都",
-  "wins": 1,
-  "birthDate": "1980-06-11",
-  "age": 45,
+  "prefecture": "茨城県",
+  "wins": 10,
+  "birthDate": "1955-10-18",
+  "age": 70,
   "career": [
-    "米州弁護士",
-    "経済産業省室長"
+    "党国対委員長",
+    "経産相",
+    "地方創生相"
   ],
   "photo": "/data/photos/hr-0107.jpg",
   "sourcePdf": "/data/source-pdf/members.pdf",
   "sourcePage": 22,
   "status": "verified",
-  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
 }

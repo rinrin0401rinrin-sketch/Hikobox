@@ -1,0 +1,23 @@
+{
+  "id": "hr-0228",
+  "name": "高鳥修一",
+  "nameKana": "たかとりしゅういち",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "新潟5区",
+  "block": "",
+  "prefecture": "新潟県",
+  "wins": 6,
+  "birthDate": "1960-09-29",
+  "age": 65,
+  "career": [
+    "元農水副大臣",
+    "党政調会長代理",
+    "議員秘書"
+  ],
+  "photo": "/data/photos/hr-0228.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 43,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

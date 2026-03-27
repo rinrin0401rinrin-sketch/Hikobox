@@ -1,0 +1,23 @@
+{
+  "id": "hr-0275",
+  "name": "永田磨梨奈",
+  "nameKana": "ながたまりな",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "神奈川4区",
+  "block": "",
+  "prefecture": "神奈川県",
+  "wins": 1,
+  "birthDate": "1983-02-19",
+  "age": 42,
+  "career": [
+    "元神奈川県議",
+    "市議",
+    "フリーアナウンサー"
+  ],
+  "photo": "/data/photos/hr-0275.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 51,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

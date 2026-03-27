@@ -1,0 +1,23 @@
+{
+  "id": "hr-0340",
+  "name": "福重隆浩",
+  "nameKana": "ふくしげたかひろ",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北関東",
+  "prefecture": "",
+  "wins": 3,
+  "birthDate": "1962-05-03",
+  "age": 63,
+  "career": [
+    "元災害特別委員",
+    "公明遊説局長",
+    "群馬県議"
+  ],
+  "photo": "/data/photos/hr-0340.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 62,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

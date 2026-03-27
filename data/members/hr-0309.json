@@ -1,0 +1,23 @@
+{
+  "id": "hr-0309",
+  "name": "根本幸典",
+  "nameKana": "ねもとゆきのり",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "愛知15区",
+  "block": "",
+  "prefecture": "愛知県",
+  "wins": 6,
+  "birthDate": "1965-02-21",
+  "age": 60,
+  "career": [
+    "農水副大臣",
+    "国交政務官",
+    "市議"
+  ],
+  "photo": "/data/photos/hr-0309.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 57,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

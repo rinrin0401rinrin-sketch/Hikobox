@@ -1,0 +1,23 @@
+{
+  "id": "hr-0396",
+  "name": "村井英樹",
+  "nameKana": "むらいひでき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "埼玉1区",
+  "block": "",
+  "prefecture": "埼玉県",
+  "wins": 6,
+  "birthDate": "1980-05-14",
+  "age": 45,
+  "career": [
+    "党国対副委員長",
+    "官房副長官",
+    "財務省職員"
+  ],
+  "photo": "/data/photos/hr-0396.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 72,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

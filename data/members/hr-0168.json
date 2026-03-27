@@ -1,0 +1,22 @@
+{
+  "id": "hr-0168",
+  "name": "小林鷹之",
+  "nameKana": "こばやしたかゆき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "千葉2区",
+  "block": "",
+  "prefecture": "千葉県",
+  "wins": 6,
+  "birthDate": "1974-11-29",
+  "age": 51,
+  "career": [
+    "党政調会長",
+    "経済安保担当相"
+  ],
+  "photo": "/data/photos/hr-0168.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 33,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

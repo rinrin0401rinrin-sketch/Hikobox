@@ -1,0 +1,22 @@
+{
+  "id": "hr-0240",
+  "name": "田所嘉徳",
+  "nameKana": "たどころよしのり",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "茨城1区",
+  "block": "",
+  "prefecture": "茨城県",
+  "wins": 6,
+  "birthDate": "1954-01-19",
+  "age": 72,
+  "career": [
+    "復興副大臣",
+    "茨城県議"
+  ],
+  "photo": "/data/photos/hr-0240.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 45,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

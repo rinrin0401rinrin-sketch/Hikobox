@@ -1,0 +1,22 @@
+{
+  "id": "hr-0386",
+  "name": "三原朝利",
+  "nameKana": "みはらあさと",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1977-12-08",
+  "age": 48,
+  "career": [
+    "元北九州市議",
+    "衆院議員秘書"
+  ],
+  "photo": "/data/photos/hr-0386.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 70,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

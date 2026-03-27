@@ -1,0 +1,23 @@
+{
+  "id": "hr-0194",
+  "name": "柴山昌彦",
+  "nameKana": "しばやままさひこ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "埼玉8区",
+  "block": "",
+  "prefecture": "埼玉県",
+  "wins": 9,
+  "birthDate": "1965-12-05",
+  "age": 60,
+  "career": [
+    "党政調会長代理",
+    "文科相",
+    "首相補佐官"
+  ],
+  "photo": "/data/photos/hr-0194.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 37,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

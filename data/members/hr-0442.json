@@ -1,0 +1,22 @@
+{
+  "id": "hr-0442",
+  "name": "若狭清史",
+  "nameKana": "わかさきよし",
+  "party": "日本維新の会",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北信越",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1980-07-15",
+  "age": 45,
+  "career": [
+    "コンサルティング会社役員",
+    "税理士法人顧問"
+  ],
+  "photo": "/data/photos/hr-0442.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 79,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用最終セットとして作成。UI通し確認完了。"
+}

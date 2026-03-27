@@ -1,0 +1,23 @@
+{
+  "id": "hr-0339",
+  "name": "深沢陽一",
+  "nameKana": "ふかざわよういち",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "静岡4区",
+  "block": "",
+  "prefecture": "静岡県",
+  "wins": 4,
+  "birthDate": "1976-06-21",
+  "age": 49,
+  "career": [
+    "党文部科学部会長",
+    "外務政務官",
+    "静岡県議"
+  ],
+  "photo": "/data/photos/hr-0339.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 62,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

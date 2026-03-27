@@ -1,0 +1,21 @@
+{
+  "id": "hr-0259",
+  "name": "辻由布子",
+  "nameKana": "つじゆうこ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東京",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1982-07-09",
+  "age": 43,
+  "career": [
+    "元内閣府職員"
+  ],
+  "photo": "/data/photos/hr-0259.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 48,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

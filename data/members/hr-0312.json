@@ -1,0 +1,24 @@
+{
+  "id": "hr-0312",
+  "name": "額賀福志郎",
+  "nameKana": "ぬかがふくしろう",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "茨城2区",
+  "block": "",
+  "prefecture": "茨城県",
+  "wins": 15,
+  "birthDate": "1944-01-11",
+  "age": 82,
+  "career": [
+    "前衆院議長",
+    "財務相",
+    "防衛庁長官",
+    "経企庁長官"
+  ],
+  "photo": "/data/photos/hr-0312.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 57,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

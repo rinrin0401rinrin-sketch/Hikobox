@@ -1,0 +1,23 @@
+{
+  "id": "hr-0329",
+  "name": "原山大亮",
+  "nameKana": "はらやまだいすけ",
+  "party": "日本維新の会",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1976-11-22",
+  "age": 49,
+  "career": [
+    "党奈良県政調会長",
+    "県議",
+    "市議"
+  ],
+  "photo": "/data/photos/hr-0329.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 60,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

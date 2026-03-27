@@ -1,0 +1,23 @@
+{
+  "id": "hr-0464",
+  "name": "古屋圭司",
+  "nameKana": "ふるやけいじ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "岐阜5区",
+  "block": "",
+  "prefecture": "岐阜県",
+  "wins": 13,
+  "birthDate": "1952-11-01",
+  "age": 73,
+  "career": [
+    "党選対委員長",
+    "政調会長代行",
+    "拉致担当相"
+  ],
+  "photo": "/data/photos/hr-0464.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 66,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用補正セットとして作成。UI通し確認完了。"
+}

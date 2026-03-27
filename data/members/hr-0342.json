@@ -1,0 +1,23 @@
+{
+  "id": "hr-0342",
+  "name": "平林晃",
+  "nameKana": "ひらばやしあきら",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "中国",
+  "prefecture": "",
+  "wins": 3,
+  "birthDate": "1971-02-02",
+  "age": 55,
+  "career": [
+    "元法務委員",
+    "公明中央幹事",
+    "大学教授"
+  ],
+  "photo": "/data/photos/hr-0342.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 62,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

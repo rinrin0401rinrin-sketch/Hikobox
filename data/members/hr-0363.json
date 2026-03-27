@@ -1,0 +1,23 @@
+{
+  "id": "hr-0363",
+  "name": "星野剛士",
+  "nameKana": "ほしのつよし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "神奈川12区",
+  "block": "",
+  "prefecture": "神奈川県",
+  "wins": 6,
+  "birthDate": "1963-08-08",
+  "age": 62,
+  "career": [
+    "党総務",
+    "内閣委員長",
+    "内閣府副大臣"
+  ],
+  "photo": "/data/photos/hr-0363.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 66,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

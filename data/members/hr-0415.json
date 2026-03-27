@@ -1,0 +1,22 @@
+{
+  "id": "hr-0415",
+  "name": "山崎正恭",
+  "nameKana": "やまさきまさやす",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "四国",
+  "prefecture": "",
+  "wins": 3,
+  "birthDate": "1971-03-05",
+  "age": 54,
+  "career": [
+    "元文科委員",
+    "高知県議"
+  ],
+  "photo": "/data/photos/hr-0415.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 75,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

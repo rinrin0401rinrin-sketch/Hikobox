@@ -1,23 +1,23 @@
 {
   "id": "hr-0098",
-  "name": "鬼木誠",
-  "nameKana": "おにきまこと",
+  "name": "尾身朝子",
+  "nameKana": "おみあさこ",
   "party": "自由民主党",
-  "electionType": "single",
-  "district": "福岡2区",
-  "block": "",
-  "prefecture": "福岡県",
-  "wins": 6,
-  "birthDate": "1972-10-16",
-  "age": 53,
+  "electionType": "proportional",
+  "district": "",
+  "block": "北関東",
+  "prefecture": "",
+  "wins": 4,
+  "birthDate": "1961-04-26",
+  "age": 64,
   "career": [
-    "党厚生労働部会長",
-    "防衛副大臣",
-    "福岡県議"
+    "元総務副大臣",
+    "NPO法人職員",
+    "会社員"
   ],
   "photo": "/data/photos/hr-0098.jpg",
   "sourcePdf": "/data/source-pdf/members.pdf",
   "sourcePage": 21,
   "status": "verified",
-  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
 }

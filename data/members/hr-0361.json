@@ -1,0 +1,21 @@
+{
+  "id": "hr-0361",
+  "name": "古井康介",
+  "nameKana": "ふるいこうすけ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北信越",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1995-05-25",
+  "age": 30,
+  "career": [
+    "会社役員"
+  ],
+  "photo": "/data/photos/hr-0361.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 65,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

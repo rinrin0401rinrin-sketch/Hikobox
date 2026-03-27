@@ -1,0 +1,23 @@
+{
+  "id": "hr-0160",
+  "name": "高村正大",
+  "nameKana": "こうむらまさひろ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "山口1区",
+  "block": "",
+  "prefecture": "山口県",
+  "wins": 4,
+  "birthDate": "1970-11-14",
+  "age": 55,
+  "career": [
+    "党遊説局長",
+    "法務副大臣",
+    "外務政務官"
+  ],
+  "photo": "/data/photos/hr-0160.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 31,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

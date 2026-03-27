@@ -1,0 +1,23 @@
+{
+  "id": "hr-0193",
+  "name": "階猛",
+  "nameKana": "しなたけし",
+  "party": "中道改革連合",
+  "electionType": "single",
+  "district": "岩手1区",
+  "block": "",
+  "prefecture": "岩手県",
+  "wins": 8,
+  "birthDate": "1966-10-07",
+  "age": 59,
+  "career": [
+    "前法務委員長",
+    "立民政調会長代行",
+    "総務政務官"
+  ],
+  "photo": "/data/photos/hr-0193.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 37,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

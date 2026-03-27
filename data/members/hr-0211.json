@@ -1,0 +1,23 @@
+{
+  "id": "hr-0211",
+  "name": "鈴木隼人",
+  "nameKana": "すずきはやと",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京10区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 5,
+  "birthDate": "1977-08-08",
+  "age": 48,
+  "career": [
+    "内閣府副大臣",
+    "外務政務官",
+    "経済産業省職員"
+  ],
+  "photo": "/data/photos/hr-0211.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 40,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0410",
+  "name": "山岡達丸",
+  "nameKana": "やまおかたつまる",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北海道",
+  "prefecture": "",
+  "wins": 5,
+  "birthDate": "1979-07-22",
+  "age": 46,
+  "career": [
+    "元決算委員",
+    "立民政調会長代理",
+    "ＮＨＫ記者"
+  ],
+  "photo": "/data/photos/hr-0410.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 74,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

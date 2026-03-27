@@ -1,7 +1,11 @@
 import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js";
 
 export async function loadMemberIndex() {
-  const index = await fetchJson("./data/members/index.json");
+  const subset = new URLSearchParams(window.location.search).get("subset");
+  const indexPath = subset === "first140"
+    ? "./data/members/index-first140.json"
+    : "./data/members/index.json";
+  const index = await fetchJson(indexPath);
   return {
     ...index,
     members: Array.isArray(index.members) ? index.members.map(normalizeMember) : [],
@@ -27,7 +31,7 @@ export function normalizeMember(input = {}) {
     birthDate: input.birthDate ?? "",
     age: input.age ?? null,
     career: Array.isArray(input.career) ? input.career : [],
-    photo: input.photo ?? "",
+    photo: withPhotoCacheBust(input.photo ?? ""),
     sourcePdf: input.sourcePdf ?? "",
     sourcePage: input.sourcePage ?? null,
     status: input.status ?? "draft",
@@ -35,6 +39,19 @@ export function normalizeMember(input = {}) {
     memberPath: input.memberPath ?? "",
     batchId: input.batchId ?? "",
   };
+}
+
+function withPhotoCacheBust(photoPath) {
+  if (!photoPath) {
+    return "";
+  }
+
+  if (typeof window === "undefined") {
+    return photoPath;
+  }
+
+  const separator = photoPath.includes("?") ? "&" : "?";
+  return `${photoPath}${separator}v=20260327-fix0465q`;
 }
 
 export function validateMember(member) {

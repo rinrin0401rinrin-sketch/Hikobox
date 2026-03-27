@@ -1,0 +1,23 @@
+{
+  "id": "hr-0402",
+  "name": "森英介",
+  "nameKana": "もりえいすけ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "千葉11区",
+  "block": "",
+  "prefecture": "千葉県",
+  "wins": 13,
+  "birthDate": "1948-08-31",
+  "age": 77,
+  "career": [
+    "党労政局長",
+    "憲法審査会長",
+    "法相"
+  ],
+  "photo": "/data/photos/hr-0402.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 73,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

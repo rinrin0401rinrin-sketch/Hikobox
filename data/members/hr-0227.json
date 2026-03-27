@@ -1,0 +1,22 @@
+{
+  "id": "hr-0227",
+  "name": "武井俊輔",
+  "nameKana": "たけいしゅんすけ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 5,
+  "birthDate": "1975-03-29",
+  "age": 51,
+  "career": [
+    "元外務副大臣",
+    "宮崎県議"
+  ],
+  "photo": "/data/photos/hr-0227.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 43,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,430 @@
+{
+  "batchId": "batch-16-25",
+  "referenceMemberId": "hr-0001",
+  "referenceMemberName": "青山繁晴",
+  "targetMembers": 25,
+  "allocationSummary": [
+    {
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "count": 13
+    },
+    {
+      "groupId": "g02-single-variant",
+      "groupName": "小選挙区変動型",
+      "count": 0
+    },
+    {
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "count": 12
+    },
+    {
+      "groupId": "g04-hold",
+      "groupName": "保留・例外型",
+      "count": 0
+    }
+  ],
+  "slots": [
+    {
+      "slotNo": 1,
+      "id": "hr-0391",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "向山淳",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 71,
+      "notes": [
+        "向山淳。sourcePage 71。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 2,
+      "id": "hr-0392",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "向山好一",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 71,
+      "notes": [
+        "向山好一。sourcePage 71。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 3,
+      "id": "hr-0393",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "宮内秀樹",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 71,
+      "notes": [
+        "宮内秀樹。sourcePage 71。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 4,
+      "id": "hr-0394",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "宮崎政久",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 71,
+      "notes": [
+        "宮崎政久。sourcePage 71。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 5,
+      "id": "hr-0395",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "宮路拓馬",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 71,
+      "notes": [
+        "宮路拓馬。sourcePage 71。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 6,
+      "id": "hr-0396",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "村井英樹",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 72,
+      "notes": [
+        "村井英樹。sourcePage 72。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 7,
+      "id": "hr-0397",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "村岡敏英",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 72,
+      "notes": [
+        "村岡敏英。sourcePage 72。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 8,
+      "id": "hr-0398",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "村上誠一郎",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 72,
+      "notes": [
+        "村上誠一郎。sourcePage 72。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 9,
+      "id": "hr-0399",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "武藤かず子",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 72,
+      "notes": [
+        "武藤かず子。sourcePage 72。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 10,
+      "id": "hr-0400",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "武藤容治",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 72,
+      "notes": [
+        "武藤容治。sourcePage 72。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 11,
+      "id": "hr-0401",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "宗清皇一",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 72,
+      "notes": [
+        "宗清皇一。sourcePage 72。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 12,
+      "id": "hr-0402",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "森英介",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 73,
+      "notes": [
+        "森英介。sourcePage 73。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 13,
+      "id": "hr-0403",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "森洋介",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 73,
+      "notes": [
+        "森洋介。sourcePage 73。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 14,
+      "id": "hr-0404",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "森下千里",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 73,
+      "notes": [
+        "森下千里。sourcePage 73。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 15,
+      "id": "hr-0405",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "村上智信",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 73,
+      "notes": [
+        "村上智信。sourcePage 73。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 16,
+      "id": "hr-0406",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "村木汀",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 73,
+      "notes": [
+        "村木汀。sourcePage 73。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 17,
+      "id": "hr-0407",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "茂木敏充",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 73,
+      "notes": [
+        "茂木敏充。sourcePage 73。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 18,
+      "id": "hr-0408",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "保岡宏武",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 74,
+      "notes": [
+        "保岡宏武。sourcePage 74。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 19,
+      "id": "hr-0409",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "簗和生",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 74,
+      "notes": [
+        "簗和生。sourcePage 74。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 20,
+      "id": "hr-0410",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "山岡達丸",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 74,
+      "notes": [
+        "山岡達丸。sourcePage 74。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 21,
+      "id": "hr-0411",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "森原紀代子",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 74,
+      "notes": [
+        "森原紀代子。sourcePage 74。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 22,
+      "id": "hr-0412",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "森山裕",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 74,
+      "notes": [
+        "森山裕。sourcePage 74。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 23,
+      "id": "hr-0413",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "盛山正仁",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 74,
+      "notes": [
+        "盛山正仁。sourcePage 74。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 24,
+      "id": "hr-0414",
+      "groupId": "g01-single-basic",
+      "groupName": "小選挙区基本型",
+      "name": "山口壮",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 75,
+      "notes": [
+        "山口壮。sourcePage 75。career と UI 確認完了。"
+      ]
+    },
+    {
+      "slotNo": 25,
+      "id": "hr-0415",
+      "groupId": "g03-proportional",
+      "groupName": "比例代表型",
+      "name": "山崎正恭",
+      "status": "verified",
+      "jsonCreated": true,
+      "photoPlaced": true,
+      "sourceChecked": true,
+      "reviewed": true,
+      "sourcePage": 75,
+      "notes": [
+        "山崎正恭。sourcePage 75。career と UI 確認完了。"
+      ]
+    }
+  ]
+}

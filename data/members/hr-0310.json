@@ -1,0 +1,24 @@
+{
+  "id": "hr-0310",
+  "name": "野田聖子",
+  "nameKana": "のだせいこ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "岐阜1区",
+  "block": "",
+  "prefecture": "岐阜県",
+  "wins": 12,
+  "birthDate": "1960-09-03",
+  "age": 65,
+  "career": [
+    "元少子化担当相",
+    "総務相",
+    "消費者相",
+    "郵政相"
+  ],
+  "photo": "/data/photos/hr-0310.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 57,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

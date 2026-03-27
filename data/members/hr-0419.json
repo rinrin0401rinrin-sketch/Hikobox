@@ -1,0 +1,22 @@
+{
+  "id": "hr-0419",
+  "name": "山口晋",
+  "nameKana": "やまぐちすすむ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "埼玉10区",
+  "block": "",
+  "prefecture": "埼玉県",
+  "wins": 2,
+  "birthDate": "1983-07-28",
+  "age": 42,
+  "career": [
+    "元党青年局次長",
+    "議員秘書"
+  ],
+  "photo": "/data/photos/hr-0419.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 75,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

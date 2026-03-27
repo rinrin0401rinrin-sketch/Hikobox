@@ -1,0 +1,23 @@
+{
+  "id": "hr-0301",
+  "name": "西園勝秀",
+  "nameKana": "にしぞのかつひで",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東海",
+  "prefecture": "",
+  "wins": 2,
+  "birthDate": "1968-02-01",
+  "age": 58,
+  "career": [
+    "元外務委員",
+    "公明国際局次長",
+    "国交省職員"
+  ],
+  "photo": "/data/photos/hr-0301.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 55,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

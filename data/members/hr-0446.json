@@ -1,0 +1,23 @@
+{
+  "id": "hr-0446",
+  "name": "渡辺孝一",
+  "nameKana": "わたなべこういち",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北海道",
+  "prefecture": "",
+  "wins": 5,
+  "birthDate": "1957-11-25",
+  "age": 68,
+  "career": [
+    "元総務副大臣",
+    "防衛政務官",
+    "市長"
+  ],
+  "photo": "/data/photos/hr-0446.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 80,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用最終セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0290",
+  "name": "中野英幸",
+  "nameKana": "なかのひでゆき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "埼玉7区",
+  "block": "",
+  "prefecture": "埼玉県",
+  "wins": 3,
+  "birthDate": "1961-09-06",
+  "age": 64,
+  "career": [
+    "総務政務官",
+    "法務政務官",
+    "埼玉県議"
+  ],
+  "photo": "/data/photos/hr-0290.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 53,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

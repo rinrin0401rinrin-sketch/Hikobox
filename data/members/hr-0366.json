@@ -1,0 +1,23 @@
+{
+  "id": "hr-0366",
+  "name": "前原誠司",
+  "nameKana": "まえはらせいじ",
+  "party": "日本維新の会",
+  "electionType": "single",
+  "district": "京都2区",
+  "block": "",
+  "prefecture": "京都府",
+  "wins": 12,
+  "birthDate": "1962-04-30",
+  "age": 63,
+  "career": [
+    "党顧問",
+    "安保委員長",
+    "党共同代表"
+  ],
+  "photo": "/data/photos/hr-0366.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 67,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

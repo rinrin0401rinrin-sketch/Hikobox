@@ -1,0 +1,23 @@
+{
+  "id": "hr-0294",
+  "name": "中山展宏",
+  "nameKana": "なかやまのりひろ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "四国",
+  "prefecture": "",
+  "wins": 5,
+  "birthDate": "1968-09-16",
+  "age": 57,
+  "career": [
+    "会社役員",
+    "国交副大臣",
+    "議員秘書"
+  ],
+  "photo": "/data/photos/hr-0294.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 54,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0156",
+  "name": "黒田征樹",
+  "nameKana": "くろだまさき",
+  "party": "日本維新の会",
+  "electionType": "single",
+  "district": "大阪16区",
+  "block": "",
+  "prefecture": "大阪府",
+  "wins": 2,
+  "birthDate": "1979-12-20",
+  "age": 46,
+  "career": [
+    "党国対副委員長",
+    "総務委理事",
+    "市議"
+  ],
+  "photo": "/data/photos/hr-0156.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 30,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

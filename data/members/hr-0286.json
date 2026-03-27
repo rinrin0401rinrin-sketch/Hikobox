@@ -1,0 +1,23 @@
+{
+  "id": "hr-0286",
+  "name": "中村勇太",
+  "nameKana": "なかむらはやと",
+  "party": "無所属",
+  "electionType": "single",
+  "district": "茨城7区",
+  "block": "",
+  "prefecture": "茨城県",
+  "wins": 2,
+  "birthDate": "1986-10-18",
+  "age": 39,
+  "career": [
+    "元環境委員",
+    "茨城県議",
+    "衆院議員秘書"
+  ],
+  "photo": "/data/photos/hr-0286.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 53,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

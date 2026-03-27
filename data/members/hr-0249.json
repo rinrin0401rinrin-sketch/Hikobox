@@ -1,0 +1,23 @@
+{
+  "id": "hr-0249",
+  "name": "俵田祐児",
+  "nameKana": "たわらだゆうじ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "中国",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1971-05-10",
+  "age": 54,
+  "career": [
+    "会社役員",
+    "山口県議",
+    "市議"
+  ],
+  "photo": "/data/photos/hr-0249.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 47,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0380",
+  "name": "三反園訓",
+  "nameKana": "みたぞのさとし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "鹿児島2区",
+  "block": "",
+  "prefecture": "鹿児島県",
+  "wins": 3,
+  "birthDate": "1958-02-13",
+  "age": 68,
+  "career": [
+    "財務政務官",
+    "鹿児島県知事",
+    "キャスター"
+  ],
+  "photo": "/data/photos/hr-0380.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 69,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

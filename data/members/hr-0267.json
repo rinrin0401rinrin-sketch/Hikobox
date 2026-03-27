@@ -1,0 +1,22 @@
+{
+  "id": "hr-0267",
+  "name": "中川貴元",
+  "nameKana": "なかがわたかもと",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東海",
+  "prefecture": "",
+  "wins": 2,
+  "birthDate": "1967-02-25",
+  "age": 58,
+  "career": [
+    "元総務政務官",
+    "名古屋市会議長"
+  ],
+  "photo": "/data/photos/hr-0267.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 50,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

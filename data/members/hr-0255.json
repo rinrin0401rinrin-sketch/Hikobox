@@ -1,0 +1,23 @@
+{
+  "id": "hr-0255",
+  "name": "土田慎",
+  "nameKana": "つちだしん",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京13区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 3,
+  "birthDate": "1990-10-30",
+  "age": 35,
+  "career": [
+    "党国防副部会長",
+    "財務政務官",
+    "議員秘書"
+  ],
+  "photo": "/data/photos/hr-0255.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 48,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

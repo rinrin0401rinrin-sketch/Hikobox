@@ -1,41 +1,41 @@
 {
-  "renderWidth": 1800,
+  "renderWidth": 1600,
   "boxes": {
     "tl": {
-      "x": 256,
-      "y": 1704,
-      "width": 404,
-      "height": 504
+      "x": 195,
+      "y": 118,
+      "width": 360,
+      "height": 560
     },
     "tr": {
-      "x": 988,
-      "y": 1704,
-      "width": 400,
-      "height": 460
+      "x": 835,
+      "y": 118,
+      "width": 360,
+      "height": 560
     },
     "ml": {
-      "x": 256,
-      "y": 952,
-      "width": 404,
-      "height": 508
+      "x": 195,
+      "y": 874,
+      "width": 360,
+      "height": 560
     },
     "mr": {
-      "x": 988,
-      "y": 952,
-      "width": 400,
-      "height": 480
+      "x": 835,
+      "y": 874,
+      "width": 360,
+      "height": 560
     },
     "bl": {
-      "x": 256,
-      "y": 196,
-      "width": 404,
-      "height": 528
+      "x": 195,
+      "y": 1630,
+      "width": 360,
+      "height": 560
     },
     "br": {
-      "x": 988,
-      "y": 196,
-      "width": 400,
-      "height": 484
+      "x": 835,
+      "y": 1630,
+      "width": 360,
+      "height": 560
     }
   },
   "entries": [
@@ -67,19 +67,19 @@
       "id": "hr-0025",
       "name": "石原宏高",
       "page": 9,
-      "slot": "tr"
+      "slot": "ml"
     },
     {
       "id": "hr-0026",
       "name": "石原正敬",
       "page": 9,
-      "slot": "ml"
+      "slot": "bl"
     },
     {
       "id": "hr-0027",
       "name": "石坂太",
       "page": 9,
-      "slot": "mr"
+      "slot": "tr"
     },
     {
       "id": "hr-0028",
@@ -115,25 +115,25 @@
       "id": "hr-0033",
       "name": "井上信治",
       "page": 12,
-      "slot": "tr"
+      "slot": "ml"
     },
     {
       "id": "hr-0034",
       "name": "井上貴博",
       "page": 12,
-      "slot": "ml"
+      "slot": "bl"
     },
     {
       "id": "hr-0035",
       "name": "稲田朋美",
       "page": 12,
-      "slot": "mr"
+      "slot": "tr"
     },
     {
       "id": "hr-0036",
       "name": "稲葉大輔",
       "page": 12,
-      "slot": "bl"
+      "slot": "mr"
     },
     {
       "id": "hr-0037",
@@ -145,13 +145,13 @@
       "id": "hr-0038",
       "name": "今枝宗一郎",
       "page": 13,
-      "slot": "tr"
+      "slot": "ml"
     },
     {
       "id": "hr-0039",
       "name": "今岡植",
       "page": 13,
-      "slot": "ml"
+      "slot": "bl"
     },
     {
       "id": "hr-0040",
@@ -163,13 +163,13 @@
       "id": "hr-0041",
       "name": "泉健太",
       "page": 10,
-      "slot": "mr"
+      "slot": "tr"
     },
     {
       "id": "hr-0042",
       "name": "井上英孝",
       "page": 13,
-      "slot": "mr"
+      "slot": "tr"
     },
     {
       "id": "hr-0043",
@@ -187,7 +187,7 @@
       "id": "hr-0045",
       "name": "梅村聡",
       "page": 16,
-      "slot": "bl"
+      "slot": "mr"
     },
     {
       "id": "hr-0046",
@@ -205,13 +205,13 @@
       "id": "hr-0048",
       "name": "小川淳也",
       "page": 19,
-      "slot": "tr"
+      "slot": "ml"
     },
     {
       "id": "hr-0049",
       "name": "奥下剛光",
       "page": 19,
-      "slot": "ml"
+      "slot": "bl"
     },
     {
       "id": "hr-0050",
@@ -223,25 +223,25 @@
       "id": "hr-0051",
       "name": "石川昭政",
       "page": 8,
-      "slot": "tr"
+      "slot": "ml"
     },
     {
       "id": "hr-0052",
       "name": "石川勝",
       "page": 8,
-      "slot": "ml"
+      "slot": "bl"
     },
     {
       "id": "hr-0053",
       "name": "池畑浩太朗",
       "page": 8,
-      "slot": "mr"
+      "slot": "tr"
     },
     {
       "id": "hr-0054",
       "name": "伊佐進一",
       "page": 8,
-      "slot": "bl"
+      "slot": "mr"
     },
     {
       "id": "hr-0055",
@@ -253,25 +253,25 @@
       "id": "hr-0056",
       "name": "石田真敏",
       "page": 9,
-      "slot": "bl"
+      "slot": "mr"
     },
     {
       "id": "hr-0057",
       "name": "井戸正枝",
       "page": 10,
-      "slot": "tr"
+      "slot": "ml"
     },
     {
       "id": "hr-0058",
       "name": "伊藤恵介",
       "page": 10,
-      "slot": "ml"
+      "slot": "bl"
     },
     {
       "id": "hr-0059",
       "name": "一谷勇一郎",
       "page": 10,
-      "slot": "bl"
+      "slot": "mr"
     },
     {
       "id": "hr-0060",
@@ -283,25 +283,25 @@
       "id": "hr-0061",
       "name": "伊東信久",
       "page": 11,
-      "slot": "tr"
+      "slot": "ml"
     },
     {
       "id": "hr-0062",
       "name": "伊東良孝",
       "page": 11,
-      "slot": "ml"
+      "slot": "bl"
     },
     {
       "id": "hr-0063",
       "name": "伊藤聡",
       "page": 11,
-      "slot": "mr"
+      "slot": "tr"
     },
     {
       "id": "hr-0064",
       "name": "伊藤信太郎",
       "page": 11,
-      "slot": "bl"
+      "slot": "mr"
     },
     {
       "id": "hr-0065",
@@ -313,7 +313,7 @@
       "id": "hr-0066",
       "name": "岩崎比菜",
       "page": 14,
-      "slot": "mr"
+      "slot": "tr"
     },
     {
       "id": "hr-0067",
@@ -325,19 +325,19 @@
       "id": "hr-0068",
       "name": "臼木秀剛",
       "page": 15,
-      "slot": "ml"
+      "slot": "bl"
     },
     {
       "id": "hr-0069",
       "name": "宇佐美登",
       "page": 15,
-      "slot": "tr"
+      "slot": "ml"
     },
     {
       "id": "hr-0070",
       "name": "緒方林太郎",
       "page": 19,
-      "slot": "mr"
+      "slot": "tr"
     }
   ]
 }

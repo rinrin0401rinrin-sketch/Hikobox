@@ -1,0 +1,23 @@
+{
+  "id": "hr-0448",
+  "name": "和田政宗",
+  "nameKana": "わだまさむね",
+  "party": "参政党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東北",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1974-10-14",
+  "age": 51,
+  "career": [
+    "元参内閣委員長",
+    "国交政務官",
+    "参院議員"
+  ],
+  "photo": "/data/photos/hr-0448.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 80,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用最終セットとして作成。UI通し確認完了。"
+}

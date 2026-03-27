@@ -1,0 +1,33 @@
+{
+  "id": "batch-18-25",
+  "name": "追加最終バッチ 16",
+  "status": "complete",
+  "memberIds": [
+    "hr-0441",
+    "hr-0442",
+    "hr-0443",
+    "hr-0444",
+    "hr-0445",
+    "hr-0446",
+    "hr-0447",
+    "hr-0448",
+    "hr-0449",
+    "hr-0450",
+    "hr-0451",
+    "hr-0452"
+  ],
+  "goal": "20名完成版の仕様を固定見本として、最終残件を同一形式で管理する。",
+  "referenceMemberId": "hr-0001",
+  "referenceMemberName": "青山繁晴",
+  "targetMembers": 12,
+  "completedMembers": 12,
+  "validatedAt": "2026-03-26",
+  "uiReviewStatus": "checked",
+  "uiCheckedAt": "2026-03-26",
+  "groupCounts": {
+    "g01-single-basic": 6,
+    "g02-single-variant": 0,
+    "g03-proportional": 6,
+    "g04-hold": 0
+  }
+}

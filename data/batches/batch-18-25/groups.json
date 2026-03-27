@@ -1,0 +1,50 @@
+[
+  {
+    "id": "g01-single-basic",
+    "name": "小選挙区基本型",
+    "status": "verified",
+    "priority": 1,
+    "basedOnMemberId": "hr-0001",
+    "targetCount": 6,
+    "memberIds": [
+      "hr-0443",
+      "hr-0445",
+      "hr-0449",
+      "hr-0450",
+      "hr-0451",
+      "hr-0452"
+    ],
+    "memberNames": [
+      "若林健太",
+      "渡辺勝幸",
+      "和田義明",
+      "渡辺真太朗",
+      "渡辺創",
+      "渡辺博道"
+    ]
+  },
+  {
+    "id": "g03-proportional",
+    "name": "比例代表型",
+    "status": "verified",
+    "priority": 2,
+    "basedOnMemberId": "hr-0001",
+    "targetCount": 6,
+    "memberIds": [
+      "hr-0441",
+      "hr-0442",
+      "hr-0444",
+      "hr-0446",
+      "hr-0447",
+      "hr-0448"
+    ],
+    "memberNames": [
+      "笠浩史",
+      "若狭清史",
+      "渡辺藍理",
+      "渡辺孝一",
+      "早稲田夕季",
+      "和田政宗"
+    ]
+  }
+]

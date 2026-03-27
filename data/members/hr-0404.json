@@ -1,0 +1,22 @@
+{
+  "id": "hr-0404",
+  "name": "森下千里",
+  "nameKana": "もりしたちさと",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "宮城4区",
+  "block": "",
+  "prefecture": "宮城県",
+  "wins": 2,
+  "birthDate": "1981-09-01",
+  "age": 44,
+  "career": [
+    "環境政務官",
+    "タレント"
+  ],
+  "photo": "/data/photos/hr-0404.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 73,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

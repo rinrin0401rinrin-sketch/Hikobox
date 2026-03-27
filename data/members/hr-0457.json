@@ -1,0 +1,23 @@
+{
+  "id": "hr-0457",
+  "name": "上田英俊",
+  "nameKana": "うえだえいしゅん",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "富山2区",
+  "block": "",
+  "prefecture": "富山県",
+  "wins": 3,
+  "birthDate": "1965-01-22",
+  "age": 61,
+  "career": [
+    "国交政務官",
+    "党農林部会長代理",
+    "県議"
+  ],
+  "photo": "/data/photos/hr-0457.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 14,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用補正セットとして作成。UI通し確認完了。"
+}

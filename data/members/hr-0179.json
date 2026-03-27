@@ -1,0 +1,23 @@
+{
+  "id": "hr-0179",
+  "name": "佐々木紀",
+  "nameKana": "ささきはじめ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "石川2区",
+  "block": "",
+  "prefecture": "石川県",
+  "wins": 6,
+  "birthDate": "1974-10-18",
+  "age": 51,
+  "career": [
+    "国交副大臣",
+    "国交政務官",
+    "会社役員"
+  ],
+  "photo": "/data/photos/hr-0179.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 35,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

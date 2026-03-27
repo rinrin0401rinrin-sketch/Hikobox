@@ -1,0 +1,23 @@
+{
+  "id": "hr-0385",
+  "name": "御法川信英",
+  "nameKana": "みのりかわのぶひで",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東北",
+  "prefecture": "",
+  "wins": 8,
+  "birthDate": "1964-05-25",
+  "age": 61,
+  "career": [
+    "党国対委員長代理",
+    "農水委員長",
+    "国交副大臣"
+  ],
+  "photo": "/data/photos/hr-0385.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 70,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

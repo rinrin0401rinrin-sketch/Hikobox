@@ -1,0 +1,23 @@
+{
+  "id": "hr-0434",
+  "name": "米内紘正",
+  "nameKana": "よないひろまさ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東北",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1987-05-14",
+  "age": 38,
+  "career": [
+    "元岩手県議",
+    "党県政調会長",
+    "衆院議員秘書"
+  ],
+  "photo": "/data/photos/hr-0434.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 78,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

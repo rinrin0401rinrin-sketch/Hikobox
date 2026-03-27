@@ -1,0 +1,23 @@
+{
+  "id": "hr-0167",
+  "name": "近藤雅彦",
+  "nameKana": "こんどうまさひこ",
+  "party": "国民民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1975-01-03",
+  "age": 51,
+  "career": [
+    "元久留米市職員",
+    "金融取引会社員",
+    "記者"
+  ],
+  "photo": "/data/photos/hr-0167.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 33,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

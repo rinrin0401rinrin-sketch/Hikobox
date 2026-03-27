@@ -1,0 +1,23 @@
+{
+  "id": "hr-0423",
+  "name": "山下貴司",
+  "nameKana": "やましたたかし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "岡山2区",
+  "block": "",
+  "prefecture": "岡山県",
+  "wins": 6,
+  "birthDate": "1965-09-08",
+  "age": 60,
+  "career": [
+    "元法相",
+    "内閣委員長",
+    "党政調副会長"
+  ],
+  "photo": "/data/photos/hr-0423.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 76,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

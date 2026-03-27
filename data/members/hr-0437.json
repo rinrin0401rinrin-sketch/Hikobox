@@ -1,0 +1,23 @@
+{
+  "id": "hr-0437",
+  "name": "吉田宣弘",
+  "nameKana": "よしだのぶひろ",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 5,
+  "birthDate": "1967-12-08",
+  "age": 58,
+  "career": [
+    "元経産政務官",
+    "公明国対委員長代理",
+    "福岡県議"
+  ],
+  "photo": "/data/photos/hr-0437.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 78,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

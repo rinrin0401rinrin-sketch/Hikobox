@@ -1,0 +1,22 @@
+{
+  "id": "hr-0362",
+  "name": "古川あおい",
+  "nameKana": "ふるかわあおい",
+  "party": "チームみらい",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1991-06-27",
+  "age": 34,
+  "career": [
+    "エンジニア",
+    "厚生労働省職員"
+  ],
+  "photo": "/data/photos/hr-0362.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 65,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

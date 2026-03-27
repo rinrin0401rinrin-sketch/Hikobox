@@ -1,0 +1,23 @@
+{
+  "id": "hr-0128",
+  "name": "河野義博",
+  "nameKana": "かわのよしひろ",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1977-12-01",
+  "age": 48,
+  "career": [
+    "元農水政務官",
+    "公明中央幹事",
+    "丸紅社員"
+  ],
+  "photo": "/data/photos/hr-0128.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 26,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

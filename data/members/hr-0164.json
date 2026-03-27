@@ -1,0 +1,23 @@
+{
+  "id": "hr-0164",
+  "name": "小林茂樹",
+  "nameKana": "こばやししげき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "奈良1区",
+  "block": "",
+  "prefecture": "奈良県",
+  "wins": 5,
+  "birthDate": "1964-10-09",
+  "age": 61,
+  "career": [
+    "文科副大臣",
+    "環境副大臣",
+    "奈良県議"
+  ],
+  "photo": "/data/photos/hr-0164.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 32,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

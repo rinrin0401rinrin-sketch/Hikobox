@@ -1,0 +1,23 @@
+{
+  "id": "hr-0398",
+  "name": "村上誠一郎",
+  "nameKana": "むらかみせいいちろう",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "四国",
+  "prefecture": "",
+  "wins": 14,
+  "birthDate": "1952-05-11",
+  "age": 73,
+  "career": [
+    "前総務相",
+    "政治倫理審査会長",
+    "行革担当相"
+  ],
+  "photo": "/data/photos/hr-0398.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 72,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

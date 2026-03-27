@@ -1,0 +1,23 @@
+{
+  "id": "hr-0153",
+  "name": "栗原渉",
+  "nameKana": "くりはらわたる",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "福岡5区",
+  "block": "",
+  "prefecture": "福岡県",
+  "wins": 2,
+  "birthDate": "1965-09-27",
+  "age": 60,
+  "career": [
+    "厚労政務官",
+    "党県総務会長",
+    "福岡県議"
+  ],
+  "photo": "/data/photos/hr-0153.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 30,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "hr-0247",
+  "name": "谷浩一郎",
+  "nameKana": "たにこういちろう",
+  "party": "参政党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "近畿",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1981-10-24",
+  "age": 44,
+  "career": [
+    "オペラ歌手",
+    "同志社女大嘱託講師"
+  ],
+  "photo": "/data/photos/hr-0247.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 46,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

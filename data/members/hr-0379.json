@@ -1,0 +1,22 @@
+{
+  "id": "hr-0379",
+  "name": "水野良彦",
+  "nameKana": "みずのよしひこ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "愛知3区",
+  "block": "",
+  "prefecture": "愛知県",
+  "wins": 1,
+  "birthDate": "1973-12-18",
+  "age": 52,
+  "career": [
+    "元経済産業省化学物質管理課長",
+    "内閣府参事官"
+  ],
+  "photo": "/data/photos/hr-0379.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 69,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

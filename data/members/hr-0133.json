@@ -1,0 +1,23 @@
+{
+  "id": "hr-0133",
+  "name": "岸田文雄",
+  "nameKana": "きしだふみお",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "広島1区",
+  "block": "",
+  "prefecture": "広島県",
+  "wins": 12,
+  "birthDate": "1957-07-29",
+  "age": 68,
+  "career": [
+    "元首相",
+    "党政調会長",
+    "外相"
+  ],
+  "photo": "/data/photos/hr-0133.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 27,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

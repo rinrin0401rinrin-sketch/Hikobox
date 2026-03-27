@@ -1,0 +1,23 @@
+{
+  "id": "hr-0407",
+  "name": "茂木敏充",
+  "nameKana": "もてぎとしみつ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "栃木5区",
+  "block": "",
+  "prefecture": "栃木県",
+  "wins": 12,
+  "birthDate": "1955-10-07",
+  "age": 70,
+  "career": [
+    "外相",
+    "党幹事長",
+    "経済再生担当相"
+  ],
+  "photo": "/data/photos/hr-0407.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 73,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0445",
+  "name": "渡辺勝幸",
+  "nameKana": "わたなべかつゆき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "宮城2区",
+  "block": "",
+  "prefecture": "宮城県",
+  "wins": 1,
+  "birthDate": "1975-05-10",
+  "age": 50,
+  "career": [
+    "元宮城県議",
+    "東北大院非常勤講師",
+    "議員秘書"
+  ],
+  "photo": "/data/photos/hr-0445.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 80,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用最終セットとして作成。UI通し確認完了。"
+}

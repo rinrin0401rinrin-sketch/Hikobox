@@ -1,0 +1,52 @@
+[
+  {
+    "id": "g01-single-basic",
+    "name": "小選挙区基本型",
+    "status": "verified",
+    "priority": 1,
+    "basedOnMemberId": "hr-0001",
+    "targetCount": 10,
+    "memberIds": [
+      "hr-0453",
+      "hr-0454",
+      "hr-0455",
+      "hr-0456",
+      "hr-0457",
+      "hr-0458",
+      "hr-0460",
+      "hr-0463",
+      "hr-0464",
+      "hr-0465"
+    ],
+    "memberNames": [
+      "井林辰憲",
+      "井原巧",
+      "岩屋毅",
+      "上杉謙太郎",
+      "上田英俊",
+      "岩田和親",
+      "後藤茂之",
+      "古川禎久",
+      "古屋圭司",
+      "穂坂泰"
+    ]
+  },
+  {
+    "id": "g03-proportional",
+    "name": "比例代表型",
+    "status": "verified",
+    "priority": 2,
+    "basedOnMemberId": "hr-0001",
+    "targetCount": 3,
+    "memberIds": [
+      "hr-0459",
+      "hr-0461",
+      "hr-0462"
+    ],
+    "memberNames": [
+      "小林修平",
+      "後藤祐一",
+      "今洋佑"
+    ]
+  }
+]

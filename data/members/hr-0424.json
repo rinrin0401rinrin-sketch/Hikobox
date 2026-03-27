@@ -1,0 +1,22 @@
+{
+  "id": "hr-0424",
+  "name": "山田瑛理",
+  "nameKana": "やまだえり",
+  "party": "チームみらい",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1982-11-08",
+  "age": 43,
+  "career": [
+    "元川崎市議",
+    "会社員"
+  ],
+  "photo": "/data/photos/hr-0424.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 76,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

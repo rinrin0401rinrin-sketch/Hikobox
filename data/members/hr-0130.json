@@ -1,0 +1,22 @@
+{
+  "id": "hr-0130",
+  "name": "川松真一朗",
+  "nameKana": "かわまつしんいちろう",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京23区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 1,
+  "birthDate": "1980-12-08",
+  "age": 45,
+  "career": [
+    "元都議",
+    "テレビ朝日アナウンサー"
+  ],
+  "photo": "/data/photos/hr-0130.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 26,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

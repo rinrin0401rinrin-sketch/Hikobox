@@ -1,0 +1,23 @@
+{
+  "id": "hr-0245",
+  "name": "玉木雄一郎",
+  "nameKana": "たまきゆういちろう",
+  "party": "国民民主党",
+  "electionType": "single",
+  "district": "香川2区",
+  "block": "",
+  "prefecture": "香川県",
+  "wins": 7,
+  "birthDate": "1969-05-01",
+  "age": 56,
+  "career": [
+    "党代表",
+    "民進党幹事長代理",
+    "財務省主査"
+  ],
+  "photo": "/data/photos/hr-0245.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 46,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

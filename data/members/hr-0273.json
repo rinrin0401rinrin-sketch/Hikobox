@@ -1,0 +1,23 @@
+{
+  "id": "hr-0273",
+  "name": "中曽根康隆",
+  "nameKana": "なかそねやすたか",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "群馬1区",
+  "block": "",
+  "prefecture": "群馬県",
+  "wins": 4,
+  "birthDate": "1982-01-19",
+  "age": 44,
+  "career": [
+    "党国対副委員長",
+    "防衛政務官",
+    "参院議員秘書"
+  ],
+  "photo": "/data/photos/hr-0273.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 51,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

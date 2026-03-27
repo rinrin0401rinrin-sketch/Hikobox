@@ -1,0 +1,21 @@
+{
+  "id": "hr-0337",
+  "name": "日野紗里亜",
+  "nameKana": "ひのさりあ",
+  "party": "国民民主党",
+  "electionType": "single",
+  "district": "愛知7区",
+  "block": "",
+  "prefecture": "愛知県",
+  "wins": 2,
+  "birthDate": "1987-11-26",
+  "age": 38,
+  "career": [
+    "元三菱商事社員"
+  ],
+  "photo": "/data/photos/hr-0337.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 61,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

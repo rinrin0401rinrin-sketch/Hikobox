@@ -1,0 +1,23 @@
+{
+  "id": "hr-0187",
+  "name": "佐藤英道",
+  "nameKana": "さとうひでみち",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北海道",
+  "prefecture": "",
+  "wins": 6,
+  "birthDate": "1960-09-26",
+  "age": 65,
+  "career": [
+    "元厚労副大臣",
+    "公明幹事長代理",
+    "道議"
+  ],
+  "photo": "/data/photos/hr-0187.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 36,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

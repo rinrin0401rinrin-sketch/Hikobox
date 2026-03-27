@@ -1,0 +1,23 @@
+{
+  "id": "hr-0465",
+  "name": "穂坂泰",
+  "nameKana": "ほさかやすし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "埼玉4区",
+  "block": "",
+  "prefecture": "埼玉県",
+  "wins": 4,
+  "birthDate": "1974-02-17",
+  "age": 51,
+  "career": [
+    "党部会長代理",
+    "内閣府副大臣",
+    "市議"
+  ],
+  "photo": "/data/photos/hr-0465.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 66,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用補正セットとして作成。UI通し確認完了。"
+}

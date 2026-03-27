@@ -1,0 +1,23 @@
+{
+  "id": "hr-0418",
+  "name": "山口俊一",
+  "nameKana": "やまぐちしゅんいち",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "徳島2区",
+  "block": "",
+  "prefecture": "徳島県",
+  "wins": 13,
+  "birthDate": "1950-02-28",
+  "age": 75,
+  "career": [
+    "沖北担当相",
+    "議運委員長",
+    "首相補佐官"
+  ],
+  "photo": "/data/photos/hr-0418.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 75,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

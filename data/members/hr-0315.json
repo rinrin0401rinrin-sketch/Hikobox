@@ -1,0 +1,24 @@
+{
+  "id": "hr-0315",
+  "name": "萩生田光一",
+  "nameKana": "はぎうだこういち",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京24区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 8,
+  "birthDate": "1963-08-31",
+  "age": 62,
+  "career": [
+    "党幹事長代行",
+    "党政調会長",
+    "経産相",
+    "文科相"
+  ],
+  "photo": "/data/photos/hr-0315.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 58,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

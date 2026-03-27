@@ -1,0 +1,23 @@
+{
+  "id": "hr-0447",
+  "name": "早稲田夕季",
+  "nameKana": "わせだゆき",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 4,
+  "birthDate": "1958-12-06",
+  "age": 67,
+  "career": [
+    "元厚労委理事",
+    "立民組織委員長代理",
+    "神奈川県議"
+  ],
+  "photo": "/data/photos/hr-0447.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 80,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用最終セットとして作成。UI通し確認完了。"
+}

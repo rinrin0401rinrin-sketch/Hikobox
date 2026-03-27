@@ -1,0 +1,23 @@
+{
+  "id": "hr-0181",
+  "name": "坂井学",
+  "nameKana": "さかいまなぶ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "神奈川5区",
+  "block": "",
+  "prefecture": "神奈川県",
+  "wins": 7,
+  "birthDate": "1965-09-04",
+  "age": 60,
+  "career": [
+    "前国家公安委員長",
+    "官房副長官",
+    "衆院議員秘書"
+  ],
+  "photo": "/data/photos/hr-0181.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 35,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

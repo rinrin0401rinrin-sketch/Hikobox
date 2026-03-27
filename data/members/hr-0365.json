@@ -1,0 +1,23 @@
+{
+  "id": "hr-0365",
+  "name": "細野豪志",
+  "nameKana": "ほそのごうし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "静岡5区",
+  "block": "",
+  "prefecture": "静岡県",
+  "wins": 10,
+  "birthDate": "1971-08-21",
+  "age": 54,
+  "career": [
+    "元党政調会長代理",
+    "環境相",
+    "首相補佐官"
+  ],
+  "photo": "/data/photos/hr-0365.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 66,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

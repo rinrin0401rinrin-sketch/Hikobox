@@ -1,0 +1,23 @@
+{
+  "id": "hr-0453",
+  "name": "井林辰憲",
+  "nameKana": "いばやしたつのり",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "静岡2区",
+  "block": "",
+  "prefecture": "静岡県",
+  "wins": 6,
+  "birthDate": "1976-07-18",
+  "age": 49,
+  "career": [
+    "党情報調査局長",
+    "内閣府副大臣",
+    "国交省職員"
+  ],
+  "photo": "/data/photos/hr-0453.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 13,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用補正セットとして作成。UI通し確認完了。"
+}

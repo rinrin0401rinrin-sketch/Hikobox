@@ -1,0 +1,22 @@
+{
+  "id": "hr-0341",
+  "name": "福田かおる",
+  "nameKana": "ふくだかおる",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京18区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 2,
+  "birthDate": "1985-05-10",
+  "age": 40,
+  "career": [
+    "文科政務官",
+    "農林水産省職員"
+  ],
+  "photo": "/data/photos/hr-0341.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 62,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

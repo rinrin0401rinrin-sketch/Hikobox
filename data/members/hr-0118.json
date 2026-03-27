@@ -1,0 +1,23 @@
+{
+  "id": "hr-0118",
+  "name": "金子恵美",
+  "nameKana": "かねこえみ",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東北",
+  "prefecture": "",
+  "wins": 5,
+  "birthDate": "1965-07-07",
+  "age": 60,
+  "career": [
+    "元農水委理事",
+    "復興政務官",
+    "参院議員"
+  ],
+  "photo": "/data/photos/hr-0118.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 24,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

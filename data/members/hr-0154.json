@@ -1,0 +1,22 @@
+{
+  "id": "hr-0154",
+  "name": "黒崎祐一",
+  "nameKana": "くろさきゆういち",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京27区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 1,
+  "birthDate": "1976-11-19",
+  "age": 49,
+  "career": [
+    "元区議",
+    "日商岩井社員"
+  ],
+  "photo": "/data/photos/hr-0154.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 30,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

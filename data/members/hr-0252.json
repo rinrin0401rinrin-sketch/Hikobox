@@ -1,0 +1,22 @@
+{
+  "id": "hr-0252",
+  "name": "田宮裕児",
+  "nameKana": "たみやひさと",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "千葉9区",
+  "block": "",
+  "prefecture": "千葉県",
+  "wins": 1,
+  "birthDate": "1989-03-26",
+  "age": 36,
+  "career": [
+    "元財務省課長補佐",
+    "首相秘書官付"
+  ],
+  "photo": "/data/photos/hr-0252.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 47,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

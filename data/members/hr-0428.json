@@ -1,0 +1,22 @@
+{
+  "id": "hr-0428",
+  "name": "横田光弘",
+  "nameKana": "よこたみつひろ",
+  "party": "日本維新の会",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1957-11-24",
+  "age": 68,
+  "career": [
+    "ソフトウエア会社社長",
+    "神奈川県議"
+  ],
+  "photo": "/data/photos/hr-0428.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 77,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

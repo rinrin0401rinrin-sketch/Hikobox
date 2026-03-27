@@ -1,0 +1,23 @@
+{
+  "id": "hr-0374",
+  "name": "松本洋平",
+  "nameKana": "まつもとようへい",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "東京19区",
+  "block": "",
+  "prefecture": "東京都",
+  "wins": 7,
+  "birthDate": "1973-08-31",
+  "age": 52,
+  "career": [
+    "文科相",
+    "経産副大臣",
+    "UFJ銀行員"
+  ],
+  "photo": "/data/photos/hr-0374.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 68,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

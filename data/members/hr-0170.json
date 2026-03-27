@@ -1,0 +1,23 @@
+{
+  "id": "hr-0170",
+  "name": "小森卓郎",
+  "nameKana": "こもりたくお",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "石川1区",
+  "block": "",
+  "prefecture": "石川県",
+  "wins": 3,
+  "birthDate": "1970-05-21",
+  "age": 55,
+  "career": [
+    "経産政務官",
+    "総務政務官",
+    "金融庁課長"
+  ],
+  "photo": "/data/photos/hr-0170.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 33,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

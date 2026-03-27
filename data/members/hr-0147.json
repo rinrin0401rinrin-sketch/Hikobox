@@ -1,0 +1,23 @@
+{
+  "id": "hr-0147",
+  "name": "工藤彰三",
+  "nameKana": "くどうしょうぞう",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "愛知4区",
+  "block": "",
+  "prefecture": "愛知県",
+  "wins": 6,
+  "birthDate": "1964-12-08",
+  "age": 61,
+  "career": [
+    "元経産委員長",
+    "内閣府副大臣",
+    "市議"
+  ],
+  "photo": "/data/photos/hr-0147.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 29,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

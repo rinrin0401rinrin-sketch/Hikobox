@@ -1,0 +1,23 @@
+{
+  "id": "hr-0433",
+  "name": "吉村悠",
+  "nameKana": "よしむらはるか",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "福岡10区",
+  "block": "",
+  "prefecture": "福岡県",
+  "wins": 1,
+  "birthDate": "1985-10-23",
+  "age": 40,
+  "career": [
+    "党福岡県常任顧問",
+    "党県青年局長",
+    "県議"
+  ],
+  "photo": "/data/photos/hr-0433.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 78,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0390",
+  "name": "宮下一郎",
+  "nameKana": "みやしたいちろう",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "長野5区",
+  "block": "",
+  "prefecture": "長野県",
+  "wins": 8,
+  "birthDate": "1958-08-01",
+  "age": 67,
+  "career": [
+    "元農相",
+    "災害特別委員長",
+    "党政調会長代理"
+  ],
+  "photo": "/data/photos/hr-0390.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 71,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

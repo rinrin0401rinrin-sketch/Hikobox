@@ -1,0 +1,23 @@
+{
+  "id": "hr-0173",
+  "name": "斎藤洋明",
+  "nameKana": "さいとうひろあき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "新潟3区",
+  "block": "",
+  "prefecture": "新潟県",
+  "wins": 6,
+  "birthDate": "1976-12-08",
+  "age": 49,
+  "career": [
+    "前文科委員長",
+    "財務副大臣",
+    "公取委職員"
+  ],
+  "photo": "/data/photos/hr-0173.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 34,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

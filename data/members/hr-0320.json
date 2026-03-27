@@ -1,0 +1,23 @@
+{
+  "id": "hr-0320",
+  "name": "野村美穂",
+  "nameKana": "のむらみほ",
+  "party": "国民民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東海",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1969-05-08",
+  "age": 56,
+  "career": [
+    "党岐阜県幹事長",
+    "県議",
+    "商社員"
+  ],
+  "photo": "/data/photos/hr-0320.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 58,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

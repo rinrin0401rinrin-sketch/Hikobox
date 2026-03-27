@@ -1,0 +1,23 @@
+{
+  "id": "hr-0201",
+  "name": "鈴木淳司",
+  "nameKana": "すずきじゅんじ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東海",
+  "prefecture": "",
+  "wins": 7,
+  "birthDate": "1958-04-07",
+  "age": 67,
+  "career": [
+    "元総務相",
+    "党報道局長",
+    "総務副大臣"
+  ],
+  "photo": "/data/photos/hr-0201.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 39,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

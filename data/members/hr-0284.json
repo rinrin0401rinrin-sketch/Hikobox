@@ -1,0 +1,23 @@
+{
+  "id": "hr-0284",
+  "name": "中司宏",
+  "nameKana": "なかつかひろし",
+  "party": "日本維新の会",
+  "electionType": "single",
+  "district": "大阪11区",
+  "block": "",
+  "prefecture": "大阪府",
+  "wins": 3,
+  "birthDate": "1956-03-11",
+  "age": 69,
+  "career": [
+    "党幹事長",
+    "選対本部長",
+    "国対委員長代理"
+  ],
+  "photo": "/data/photos/hr-0284.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 52,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

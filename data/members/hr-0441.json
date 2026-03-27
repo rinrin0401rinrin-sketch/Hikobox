@@ -1,0 +1,23 @@
+{
+  "id": "hr-0441",
+  "name": "笠浩史",
+  "nameKana": "りゅうひろふみ",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 9,
+  "birthDate": "1965-01-03",
+  "age": 61,
+  "career": [
+    "党共同国対委員長",
+    "文科副大臣",
+    "民放記者"
+  ],
+  "photo": "/data/photos/hr-0441.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 79,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用最終セットとして作成。UI通し確認完了。"
+}

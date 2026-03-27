@@ -1,0 +1,21 @@
+{
+  "id": "hr-0188",
+  "name": "佐藤主迪",
+  "nameKana": "さとうまさし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "神奈川16区",
+  "block": "",
+  "prefecture": "神奈川県",
+  "wins": 1,
+  "birthDate": "1994-09-04",
+  "age": 31,
+  "career": [
+    "元外資系証券会社員"
+  ],
+  "photo": "/data/photos/hr-0188.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 36,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

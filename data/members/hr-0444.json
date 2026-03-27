@@ -1,0 +1,22 @@
+{
+  "id": "hr-0444",
+  "name": "渡辺藍理",
+  "nameKana": "わたなべあいり",
+  "party": "参政党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東海",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1982-09-27",
+  "age": 43,
+  "career": [
+    "元ダンス講師",
+    "学習塾講師"
+  ],
+  "photo": "/data/photos/hr-0444.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 80,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用最終セットとして作成。UI通し確認完了。"
+}

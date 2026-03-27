@@ -1,0 +1,22 @@
+{
+  "id": "hr-0367",
+  "name": "牧島かれん",
+  "nameKana": "まきしまかれん",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "神奈川17区",
+  "block": "",
+  "prefecture": "神奈川県",
+  "wins": 6,
+  "birthDate": "1976-11-01",
+  "age": 49,
+  "career": [
+    "元デジタル相",
+    "大学客員教授"
+  ],
+  "photo": "/data/photos/hr-0367.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 67,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

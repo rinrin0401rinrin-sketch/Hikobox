@@ -1,0 +1,23 @@
+{
+  "id": "hr-0369",
+  "name": "堀内詔子",
+  "nameKana": "ほりうちのりこ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "山梨2区",
+  "block": "",
+  "prefecture": "山梨県",
+  "wins": 6,
+  "birthDate": "1965-10-28",
+  "age": 60,
+  "career": [
+    "総務副大臣",
+    "ワクチン担当相",
+    "美術館長"
+  ],
+  "photo": "/data/photos/hr-0369.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 67,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

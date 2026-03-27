@@ -1,0 +1,23 @@
+{
+  "id": "hr-0358",
+  "name": "古川元久",
+  "nameKana": "ふるかわもとひさ",
+  "party": "国民民主党",
+  "electionType": "single",
+  "district": "愛知2区",
+  "block": "",
+  "prefecture": "愛知県",
+  "wins": 11,
+  "birthDate": "1965-12-06",
+  "age": 60,
+  "career": [
+    "党代表代行",
+    "国対委員長",
+    "国家戦略担当相"
+  ],
+  "photo": "/data/photos/hr-0358.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 65,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

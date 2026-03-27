@@ -1,0 +1,21 @@
+{
+  "id": "hr-0432",
+  "name": "吉田有理",
+  "nameKana": "よしだゆうり",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北海道",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1986-10-29",
+  "age": 39,
+  "career": [
+    "会社員"
+  ],
+  "photo": "/data/photos/hr-0432.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 78,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

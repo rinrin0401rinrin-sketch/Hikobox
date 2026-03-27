@@ -1,0 +1,23 @@
+{
+  "id": "hr-0288",
+  "name": "中根一幸",
+  "nameKana": "なかねかずゆき",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北関東",
+  "prefecture": "",
+  "wins": 6,
+  "birthDate": "1969-07-11",
+  "age": 56,
+  "career": [
+    "元内閣府副大臣",
+    "国交委員長",
+    "市議"
+  ],
+  "photo": "/data/photos/hr-0288.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 53,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

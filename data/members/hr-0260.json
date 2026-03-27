@@ -1,0 +1,23 @@
+{
+  "id": "hr-0260",
+  "name": "津島淳",
+  "nameKana": "つしまじゅん",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "青森1区",
+  "block": "",
+  "prefecture": "青森県",
+  "wins": 6,
+  "birthDate": "1966-10-18",
+  "age": 59,
+  "career": [
+    "内閣府副大臣",
+    "法務副大臣",
+    "衆院議員秘書"
+  ],
+  "photo": "/data/photos/hr-0260.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 48,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

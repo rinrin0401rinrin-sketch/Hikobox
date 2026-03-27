@@ -1,0 +1,22 @@
+{
+  "id": "hr-0148",
+  "name": "工藤聖子",
+  "nameKana": "くどうせいこ",
+  "party": "参政党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1979-03-05",
+  "age": 46,
+  "career": [
+    "代替医療会社役員",
+    "イタリア語教室経営"
+  ],
+  "photo": "/data/photos/hr-0148.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 29,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

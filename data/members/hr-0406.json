@@ -1,0 +1,22 @@
+{
+  "id": "hr-0406",
+  "name": "村木汀",
+  "nameKana": "むらきなぎさ",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "北海道",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "2000-02-14",
+  "age": 25,
+  "career": [
+    "会社員",
+    "党道学生部長"
+  ],
+  "photo": "/data/photos/hr-0406.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 73,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

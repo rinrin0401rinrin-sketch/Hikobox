@@ -1,0 +1,21 @@
+{
+  "id": "hr-0221",
+  "name": "高沢一基",
+  "nameKana": "たかざわかずもと",
+  "party": "国民民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東京",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1974-11-10",
+  "age": 51,
+  "career": [
+    "元板橋区議"
+  ],
+  "photo": "/data/photos/hr-0221.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 42,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

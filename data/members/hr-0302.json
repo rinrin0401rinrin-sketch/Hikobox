@@ -1,0 +1,23 @@
+{
+  "id": "hr-0302",
+  "name": "西田薫",
+  "nameKana": "にしだかおる",
+  "party": "日本維新の会",
+  "electionType": "single",
+  "district": "大阪6区",
+  "block": "",
+  "prefecture": "大阪府",
+  "wins": 2,
+  "birthDate": "1967-04-30",
+  "age": 58,
+  "career": [
+    "元環境委理事",
+    "拉致特別委員",
+    "大阪府議"
+  ],
+  "photo": "/data/photos/hr-0302.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 55,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

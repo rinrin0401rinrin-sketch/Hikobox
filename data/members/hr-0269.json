@@ -1,0 +1,23 @@
+{
+  "id": "hr-0269",
+  "name": "中川康洋",
+  "nameKana": "なかがわやすひろ",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東海",
+  "prefecture": "",
+  "wins": 4,
+  "birthDate": "1968-02-12",
+  "age": 57,
+  "career": [
+    "党共同国対委員長",
+    "環境政務官",
+    "三重県議"
+  ],
+  "photo": "/data/photos/hr-0269.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 50,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

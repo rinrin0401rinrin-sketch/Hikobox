@@ -1,0 +1,22 @@
+{
+  "id": "hr-0368",
+  "name": "牧野俊一",
+  "nameKana": "まきのしゅんいち",
+  "party": "参政党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "九州",
+  "prefecture": "",
+  "wins": 1,
+  "birthDate": "1985-08-13",
+  "age": 40,
+  "career": [
+    "救急クリニック医師",
+    "訪問診療施設院長"
+  ],
+  "photo": "/data/photos/hr-0368.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 67,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,23 +1,22 @@
 {
   "id": "hr-0106",
-  "name": "梶山弘志",
-  "nameKana": "かじやまひろし",
+  "name": "鹿嶋祐介",
+  "nameKana": "かしまゆうすけ",
   "party": "自由民主党",
   "electionType": "single",
-  "district": "茨城4区",
+  "district": "千葉4区",
   "block": "",
-  "prefecture": "茨城県",
-  "wins": 10,
-  "birthDate": "1955-10-18",
-  "age": 70,
+  "prefecture": "千葉県",
+  "wins": 1,
+  "birthDate": "1980-11-23",
+  "age": 45,
   "career": [
-    "党国対委員長",
-    "経産相",
-    "地方創生相"
+    "元参院議員秘書",
+    "陸上自衛官"
   ],
   "photo": "/data/photos/hr-0106.jpg",
   "sourcePdf": "/data/source-pdf/members.pdf",
   "sourcePage": 22,
   "status": "verified",
-  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
 }

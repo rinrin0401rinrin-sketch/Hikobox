@@ -1,0 +1,23 @@
+{
+  "id": "hr-0184",
+  "name": "塩崎彰久",
+  "nameKana": "しおざきあきひさ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "愛媛1区",
+  "block": "",
+  "prefecture": "愛媛県",
+  "wins": 3,
+  "birthDate": "1976-09-09",
+  "age": 49,
+  "career": [
+    "党財務金融部会長代理",
+    "弁護士",
+    "厚労政務官"
+  ],
+  "photo": "/data/photos/hr-0184.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 36,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0172",
+  "name": "斉藤鉄夫",
+  "nameKana": "さいとうてつお",
+  "party": "公明党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "中国",
+  "prefecture": "",
+  "wins": 12,
+  "birthDate": "1952-02-05",
+  "age": 74,
+  "career": [
+    "党共同代表",
+    "前公明代表",
+    "国交相"
+  ],
+  "photo": "/data/photos/hr-0172.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 34,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

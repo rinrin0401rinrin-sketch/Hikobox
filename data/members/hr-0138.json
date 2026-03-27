@@ -1,0 +1,23 @@
+{
+  "id": "hr-0138",
+  "name": "岸信千世",
+  "nameKana": "きしのぶちよ",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "山口2区",
+  "block": "",
+  "prefecture": "山口県",
+  "wins": 3,
+  "birthDate": "1991-05-16",
+  "age": 34,
+  "career": [
+    "党文科部会長代理",
+    "内閣府政務官",
+    "議員秘書"
+  ],
+  "photo": "/data/photos/hr-0138.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 27,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

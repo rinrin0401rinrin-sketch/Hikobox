@@ -1,0 +1,23 @@
+{
+  "id": "hr-0120",
+  "name": "金子恭之",
+  "nameKana": "かねこやすし",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "熊本4区",
+  "block": "",
+  "prefecture": "熊本県",
+  "wins": 10,
+  "birthDate": "1961-02-27",
+  "age": 64,
+  "career": [
+    "国交相",
+    "総務相",
+    "党政調会長代理"
+  ],
+  "photo": "/data/photos/hr-0120.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 24,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

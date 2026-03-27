@@ -1,0 +1,23 @@
+{
+  "id": "hr-0313",
+  "name": "沼崎満子",
+  "nameKana": "ぬまざきみつこ",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "南関東",
+  "prefecture": "",
+  "wins": 2,
+  "birthDate": "1973-02-24",
+  "age": 52,
+  "career": [
+    "医師",
+    "予算委員",
+    "病院手術部長"
+  ],
+  "photo": "/data/photos/hr-0313.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 57,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

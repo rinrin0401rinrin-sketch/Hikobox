@@ -1,0 +1,23 @@
+{
+  "id": "hr-0185",
+  "name": "重徳和彦",
+  "nameKana": "しげとくかずひこ",
+  "party": "中道改革連合",
+  "electionType": "proportional",
+  "district": "",
+  "block": "東海",
+  "prefecture": "",
+  "wins": 6,
+  "birthDate": "1970-12-21",
+  "age": 55,
+  "career": [
+    "元予算委員",
+    "立民政調会長",
+    "総務省職員"
+  ],
+  "photo": "/data/photos/hr-0185.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 36,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

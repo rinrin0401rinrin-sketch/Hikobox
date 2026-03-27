@@ -1,0 +1,23 @@
+{
+  "id": "hr-0250",
+  "name": "丹野みどり",
+  "nameKana": "たんのみどり",
+  "party": "国民民主党",
+  "electionType": "single",
+  "district": "愛知11区",
+  "block": "",
+  "prefecture": "愛知県",
+  "wins": 2,
+  "birthDate": "1973-07-03",
+  "age": 52,
+  "career": [
+    "党政調副会長",
+    "国対副委員長",
+    "ＣＢＣアナウンサー"
+  ],
+  "photo": "/data/photos/hr-0250.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 47,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

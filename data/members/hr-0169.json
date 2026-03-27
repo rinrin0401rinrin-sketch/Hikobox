@@ -1,0 +1,23 @@
+{
+  "id": "hr-0169",
+  "name": "小林史明",
+  "nameKana": "こばやしふみあき",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "広島6区",
+  "block": "",
+  "prefecture": "広島県",
+  "wins": 6,
+  "birthDate": "1983-04-08",
+  "age": 42,
+  "career": [
+    "党経済産業部会長",
+    "環境副大臣",
+    "通信会社員"
+  ],
+  "photo": "/data/photos/hr-0169.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 33,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

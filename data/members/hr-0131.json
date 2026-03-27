@@ -1,0 +1,23 @@
+{
+  "id": "hr-0131",
+  "name": "城内実",
+  "nameKana": "きうちみのる",
+  "party": "自由民主党",
+  "electionType": "single",
+  "district": "静岡7区",
+  "block": "",
+  "prefecture": "静岡県",
+  "wins": 8,
+  "birthDate": "1965-04-19",
+  "age": 60,
+  "career": [
+    "経済財政相",
+    "経済安保相",
+    "外務副大臣"
+  ],
+  "photo": "/data/photos/hr-0131.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 26,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hr-0264",
+  "name": "寺田稔",
+  "nameKana": "てらだみのる",
+  "party": "自由民主党",
+  "electionType": "proportional",
+  "district": "",
+  "block": "中国",
+  "prefecture": "",
+  "wins": 8,
+  "birthDate": "1958-01-24",
+  "age": 68,
+  "career": [
+    "党総務副会長",
+    "総務相",
+    "首相補佐官"
+  ],
+  "photo": "/data/photos/hr-0264.jpg",
+  "sourcePdf": "/data/source-pdf/members.pdf",
+  "sourcePage": 49,
+  "status": "verified",
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
+}

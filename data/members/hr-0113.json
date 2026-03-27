@@ -1,23 +1,23 @@
 {
   "id": "hr-0113",
-  "name": "門山宏哲",
-  "nameKana": "かどやまひろあき",
+  "name": "加藤勝信",
+  "nameKana": "かとうかつのぶ",
   "party": "自由民主党",
   "electionType": "single",
-  "district": "千葉1区",
+  "district": "岡山5区",
   "block": "",
-  "prefecture": "千葉県",
-  "wins": 5,
-  "birthDate": "1964-09-03",
-  "age": 61,
+  "prefecture": "岡山県",
+  "wins": 9,
+  "birthDate": "1955-11-22",
+  "age": 70,
   "career": [
-    "弁護士",
-    "法務副大臣",
-    "党副幹事長"
+    "前財務相",
+    "厚労相",
+    "官房長官"
   ],
   "photo": "/data/photos/hr-0113.jpg",
   "sourcePdf": "/data/source-pdf/members.pdf",
   "sourcePage": 23,
   "status": "verified",
-  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認は未実施。"
+  "notes": "members.pdf の掲載情報を転記。単語帳用25名セットとして作成。UI通し確認完了。"
 }
