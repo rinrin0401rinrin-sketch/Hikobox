@@ -297,6 +297,17 @@ h2 {
   color: var(--text-muted);
 }
 
+.front-location {
+  position: relative;
+  z-index: 1;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 247, 239, 0.9);
+  border: 1px solid rgba(163, 73, 47, 0.16);
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
 .status-pill,
 .party-chip {
   display: inline-flex;

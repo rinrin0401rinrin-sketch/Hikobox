@@ -3,13 +3,13 @@ import {
   STATUS_LABELS,
   getLocationLabel,
   normalizeText,
-} from "./member-schema.js";
+} from "./member-schema.js?v=20260330-photofix54";
 import {
   buildFilterOptions,
   filterMemberSummaries,
   loadMember,
   loadMemberIndex,
-} from "./member-store.js";
+} from "./member-store.js?v=20260330-photofix54";
 
 const elements = {
   heroCopy: document.querySelector("#hero-copy"),
@@ -209,6 +209,7 @@ function renderCard() {
   const member = state.selectedMember;
   const summaryIndex = state.filteredMembers.findIndex((item) => item.id === member.id);
   const locationLabel = getLocationLabel(member);
+  const prefectureLabel = normalizeText(member.prefecture) || "未設定";
   const careerItems = member.career.length
     ? member.career.map((item) => `<li>${escapeHtml(item)}</li>`).join("")
     : "<li>TODO: 主な経歴を追加</li>";
@@ -220,6 +221,7 @@ function renderCard() {
       <div class="front-photo-shell">
         <img class="card-photo card-photo-front" src="${escapeHtml(member.photo)}" alt="${escapeHtml(member.name)} の写真" />
       </div>
+      <p class="front-location">${escapeHtml(locationLabel)}</p>
       <p class="front-position">${summaryIndex + 1} / ${state.filteredMembers.length}</p>
     </section>
 
@@ -228,10 +230,17 @@ function renderCard() {
         <p class="status-pill">${escapeHtml(STATUS_LABELS[member.status] ?? member.status)}</p>
         <h3 class="card-name">${escapeHtml(member.name)}</h3>
         ${nameKana ? `<p class="name-kana">${escapeHtml(nameKana)}</p>` : ""}
-        <p class="party-chip">${escapeHtml(member.party)}</p>
       </div>
 
       <div class="back-grid">
+        <section class="detail-block">
+          <p class="detail-label">所属政党</p>
+          <p class="detail-value">${escapeHtml(member.party)}</p>
+        </section>
+        <section class="detail-block">
+          <p class="detail-label">都道府県</p>
+          <p class="detail-value">${escapeHtml(prefectureLabel)}</p>
+        </section>
         <section class="detail-block">
           <p class="detail-label">選出区分</p>
           <p class="detail-value">${escapeHtml(ELECTION_TYPE_LABELS[member.electionType] ?? member.electionType)}</p>

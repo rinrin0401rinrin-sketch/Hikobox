@@ -1,4 +1,6 @@
-import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js";
+import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js?v=20260330-photofix54";
+
+const CENTRIST_PARTIES = new Set(["中道改革連合", "公明党", "立憲民主党"]);
 
 export async function loadMemberIndex() {
   const subset = new URLSearchParams(window.location.search).get("subset");
@@ -22,7 +24,7 @@ export function normalizeMember(input = {}) {
     id: input.id ?? "",
     name: input.name ?? "",
     nameKana: input.nameKana ?? "",
-    party: input.party ?? "",
+    party: normalizePartyLabel(input.party ?? ""),
     electionType: input.electionType ?? "single",
     district: input.district ?? "",
     block: input.block ?? "",
@@ -41,6 +43,11 @@ export function normalizeMember(input = {}) {
   };
 }
 
+export function normalizePartyLabel(party) {
+  const normalizedParty = normalizeText(party);
+  return CENTRIST_PARTIES.has(normalizedParty) ? "中道" : normalizedParty;
+}
+
 function withPhotoCacheBust(photoPath) {
   if (!photoPath) {
     return "";
@@ -51,7 +58,7 @@ function withPhotoCacheBust(photoPath) {
   }
 
   const separator = photoPath.includes("?") ? "&" : "?";
-  return `${photoPath}${separator}v=20260327-fix0465q`;
+  return `${photoPath}${separator}v=20260330-photofix54`;
 }
 
 export function validateMember(member) {
@@ -107,7 +114,7 @@ export function buildFilterOptions(members, key, labelMap = {}) {
 }
 
 export function filterMemberSummaries(members, filters) {
-  return applyMemberFilters(
+  const filteredMembers = applyMemberFilters(
     members,
     {
       search: "",
@@ -120,12 +127,15 @@ export function filterMemberSummaries(members, filters) {
     },
     createEmptyProgress(),
   );
+
+  return sortFilteredMembers(filteredMembers, filters);
 }
 
 export function applyMemberFilters(members, filters, progress = createEmptyProgress()) {
   const search = normalizeText(filters.search).toLowerCase();
   const learnedIds = new Set(progress.learnedIds ?? []);
   const weakIds = new Set(progress.weakIds ?? []);
+  const activeFilters = resolveEffectiveFilters(filters);
 
   return members.filter((member) => {
     const normalized = normalizeMember(member);
@@ -142,12 +152,12 @@ export function applyMemberFilters(members, filters, progress = createEmptyProgr
       .toLowerCase()
       .includes(search);
 
-    const matchesParty = matchesFilter(normalized.party, filters.party);
-    const matchesElectionType = matchesFilter(normalized.electionType, filters.electionType);
-    const matchesPrefecture = matchesFilter(normalized.prefecture, filters.prefecture);
-    const matchesBlock = matchesFilter(normalized.block, filters.block);
-    const matchesTracking = matchesTrackingFilter(normalized.id, filters.tracking, learnedIds, weakIds);
-    const matchesWeakOnly = filters.weakOnly ? weakIds.has(normalized.id) : true;
+    const matchesParty = matchesFilter(normalized.party, activeFilters.party);
+    const matchesElectionType = matchesFilter(normalized.electionType, activeFilters.electionType);
+    const matchesPrefecture = matchesFilter(normalized.prefecture, activeFilters.prefecture);
+    const matchesBlock = matchesFilter(normalized.block, activeFilters.block);
+    const matchesTracking = matchesTrackingFilter(normalized.id, activeFilters.tracking, learnedIds, weakIds);
+    const matchesWeakOnly = activeFilters.weakOnly ? weakIds.has(normalized.id) : true;
 
     return matchesSearch
       && matchesParty
@@ -157,6 +167,17 @@ export function applyMemberFilters(members, filters, progress = createEmptyProgr
       && matchesTracking
       && matchesWeakOnly;
   });
+}
+
+export function sortFilteredMembers(members, filters = {}) {
+  const activeFilters = resolveEffectiveFilters(filters);
+  const shouldSortByDistrict = activeFilters.prefecture !== "all" && activeFilters.electionType !== "proportional";
+
+  if (!shouldSortByDistrict) {
+    return members;
+  }
+
+  return [...members].sort((left, right) => compareByDistrictOrder(left, right));
 }
 
 export function createEmptyProgress() {
@@ -250,4 +271,39 @@ function matchesTrackingFilter(id, tracking, learnedIds, weakIds) {
   }
 
   return true;
+}
+
+function resolveEffectiveFilters(filters = {}) {
+  const electionType = filters.electionType ?? "all";
+  const wantsProportional = electionType === "proportional";
+  const wantsSingle = electionType === "single";
+  const wantsSpecificBlock = filters.block && filters.block !== "all";
+
+  return {
+    ...filters,
+    electionType,
+    party: filters.party ?? "all",
+    prefecture: wantsProportional || wantsSpecificBlock ? "all" : filters.prefecture ?? "all",
+    block: wantsSingle ? "all" : filters.block ?? "all",
+    tracking: filters.tracking ?? "all",
+    weakOnly: Boolean(filters.weakOnly),
+  };
+}
+
+function compareByDistrictOrder(leftMember, rightMember) {
+  const left = normalizeMember(leftMember);
+  const right = normalizeMember(rightMember);
+  const leftOrder = extractDistrictOrder(left.district);
+  const rightOrder = extractDistrictOrder(right.district);
+
+  if (leftOrder !== rightOrder) {
+    return leftOrder - rightOrder;
+  }
+
+  return left.id.localeCompare(right.id, "ja");
+}
+
+function extractDistrictOrder(district) {
+  const match = normalizeText(district).match(/(\d+)\s*区/);
+  return match ? Number(match[1]) : Number.POSITIVE_INFINITY;
 }
