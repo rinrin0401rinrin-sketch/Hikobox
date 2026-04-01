@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>オフライン | 衆議院議員単語帳</title>
+    <meta name="theme-color" content="#8a3d27" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell offline-shell">
+      <section class="panel offline-panel">
+        <p class="section-label">Offline</p>
+        <h1>いまは通信できません</h1>
+        <p class="hero-copy">
+          アプリ本体や、すでに開いた議員データは使える場合があります。通信が戻ったら再読み込みしてください。
+        </p>
+        <div class="offline-actions">
+          <button type="button" onclick="location.href='/'">アプリへ戻る</button>
+          <button class="secondary-button" type="button" onclick="location.reload()">再読み込み</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

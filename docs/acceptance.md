@@ -17,8 +17,10 @@
 
 ## 土台の合格条件
 - `docs/spec.md` `docs/rules.md` `docs/acceptance.md` `docs/batch-plan.md` がある
+- `docs/spec-465-pwa.md` があり、iPhone / PWA 前提の判断が文書化されている
 - `data/members/index.json` とバッチ manifest がある
 - `scripts/validate-members.js` がある
+- `scripts/audit-members.js` がある
 - validate で以下を検知できる
   - 必須項目不足
   - ID 重複
@@ -38,6 +40,18 @@
 - 青山繁晴の完成見本を見れば、追加時の粒度と書き方がわかる
 - 追加作業が差分で追える
 - 20名セットを基準に batch-02-50 へ進める
+
+## PWA / iPhone 受け入れ条件
+- `小選挙区` `比例代表` `検索` の3タブがある
+- 小選挙区は都道府県から選挙区へ辿れる
+- 比例代表はブロック単位で辿れる
+- 検索で氏名、政党、都道府県、区分の複合絞り込みができる
+- 0件時の空状態がある
+- 再読込後に直前タブと主な検索条件が復元される
+- 表裏カードが切り替わる
+- `manifest.webmanifest` と `sw.js` が存在する
+- ホーム画面追加の案内が表示できる
+- Mac Safari の狭幅確認か iPhone 実機確認のどちらかを行う
 
 ## batch-02-50 の現在位置
 - `hr-0021` から `hr-0040` は UI 確認まで完了し、台帳上も `verified`

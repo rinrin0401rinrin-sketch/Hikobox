@@ -1,6 +1,6 @@
-import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js?v=20260330-photofix54";
+import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js";
 
-const CENTRIST_PARTIES = new Set(["中道改革連合", "公明党", "立憲民主党"]);
+const PHOTO_CACHE_VERSION = "20260401-pwa465";
 
 export async function loadMemberIndex() {
   const subset = new URLSearchParams(window.location.search).get("subset");
@@ -8,6 +8,7 @@ export async function loadMemberIndex() {
     ? "./data/members/index-first140.json"
     : "./data/members/index.json";
   const index = await fetchJson(indexPath);
+
   return {
     ...index,
     members: Array.isArray(index.members) ? index.members.map(normalizeMember) : [],
@@ -20,75 +21,99 @@ export async function loadMember(memberPath) {
 }
 
 export function normalizeMember(input = {}) {
+  const electionType = normalizeText(input.districtType || input.electionType) || "single";
+  const districtName = normalizeText(input.districtName || input.district);
+  const proportionalBlock = normalizeText(input.proportionalBlock || input.block);
+  const prefecture = normalizeText(input.prefecture);
+  const party = normalizeText(input.party);
+  const image = withPhotoCacheBust(normalizeText(input.image || input.photo));
+  const normalizedCareer = Array.isArray(input.career)
+    ? input.career.filter((item) => normalizeText(item))
+    : [];
+
   return {
-    id: input.id ?? "",
-    name: input.name ?? "",
-    nameKana: input.nameKana ?? "",
-    party: normalizePartyLabel(input.party ?? ""),
-    electionType: input.electionType ?? "single",
-    district: input.district ?? "",
-    block: input.block ?? "",
-    prefecture: input.prefecture ?? "",
+    id: normalizeText(input.id),
+    name: normalizeText(input.name),
+    nameKana: normalizeText(input.nameKana),
+    party,
+    partyGroup: normalizePartyGroupLabel(party),
+    electionType,
+    districtType: electionType,
+    electionLabel: formatElectionType(electionType),
+    district: districtName,
+    districtName,
+    block: proportionalBlock,
+    proportionalBlock,
+    prefecture,
+    districtOrBlockLabel: electionType === "single"
+      ? districtName || "未設定"
+      : proportionalBlock || "未設定",
     wins: Number.isInteger(input.wins) ? input.wins : 0,
-    birthDate: input.birthDate ?? "",
-    age: input.age ?? null,
-    career: Array.isArray(input.career) ? input.career : [],
-    photo: withPhotoCacheBust(input.photo ?? ""),
-    sourcePdf: input.sourcePdf ?? "",
-    sourcePage: input.sourcePage ?? null,
-    status: input.status ?? "draft",
-    notes: input.notes ?? "",
-    memberPath: input.memberPath ?? "",
-    batchId: input.batchId ?? "",
+    birthDate: normalizeText(input.birthDate),
+    age: Number.isInteger(input.age) ? input.age : null,
+    career: normalizedCareer,
+    photo: image,
+    image,
+    sourcePdf: normalizeText(input.sourcePdf),
+    sourcePage: Number.isInteger(input.sourcePage) ? input.sourcePage : null,
+    status: normalizeText(input.status) || "draft",
+    notes: normalizeText(input.notes),
+    memberPath: normalizeText(input.memberPath),
+    batchId: normalizeText(input.batchId),
+    isActive: Boolean(input.isActive),
+    searchText: [
+      normalizeText(input.name),
+      normalizeText(input.nameKana),
+      party,
+      prefecture,
+      districtName,
+      proportionalBlock,
+      ...normalizedCareer,
+    ]
+      .join(" ")
+      .toLowerCase(),
   };
 }
 
-export function normalizePartyLabel(party) {
+export function normalizePartyGroupLabel(party) {
   const normalizedParty = normalizeText(party);
-  return CENTRIST_PARTIES.has(normalizedParty) ? "中道" : normalizedParty;
-}
 
-function withPhotoCacheBust(photoPath) {
-  if (!photoPath) {
-    return "";
+  if (normalizedParty === "中道改革連合" || normalizedParty === "公明党" || normalizedParty === "立憲民主党") {
+    return "中道";
   }
 
-  if (typeof window === "undefined") {
-    return photoPath;
-  }
-
-  const separator = photoPath.includes("?") ? "&" : "?";
-  return `${photoPath}${separator}v=20260330-photofix54`;
+  return normalizedParty;
 }
 
 export function validateMember(member) {
+  const normalized = normalizeMember(member);
   const errors = [];
 
-  if (!normalizeText(member.id)) {
+  if (!normalized.id) {
     errors.push("id は必須です");
   }
 
-  if (!normalizeText(member.name)) {
+  if (!normalized.name) {
     errors.push("name は必須です");
   }
 
-  if (!normalizeText(member.party)) {
+  if (!normalized.party) {
     errors.push("party は必須です");
   }
 
-  if (!normalizeText(member.photo)) {
+  if (!normalized.photo) {
     errors.push("photo は必須です");
   }
 
-  if (!normalizeText(member.status)) {
+  if (!normalized.status) {
     errors.push("status は必須です");
   }
 
-  if (member.electionType === "single" && !normalizeText(member.district)) {
+  if (normalized.electionType === "single" && !normalized.districtName) {
     errors.push("小選挙区は district が必須です");
   }
 
-  if (member.electionType === "proportional" && !normalizeText(member.block)) {
+  if (normalized.electionType === "proportional" && !normalized.proportionalBlock) {
     errors.push("比例代表は block が必須です");
   }
 
@@ -99,7 +124,9 @@ export function buildFilterOptions(members, key, labelMap = {}) {
   const values = new Set();
 
   members.forEach((member) => {
-    const value = typeof member[key] === "string" ? member[key].trim() : "";
+    const normalized = normalizeMember(member);
+    const value = typeof normalized[key] === "string" ? normalized[key].trim() : "";
+
     if (value) {
       values.add(value);
     }
@@ -139,23 +166,11 @@ export function applyMemberFilters(members, filters, progress = createEmptyProgr
 
   return members.filter((member) => {
     const normalized = normalizeMember(member);
-    const matchesSearch = !search || [
-      normalized.name,
-      normalized.nameKana,
-      normalized.party,
-      normalized.district,
-      normalized.block,
-      normalized.prefecture,
-      ...normalized.career,
-    ]
-      .join(" ")
-      .toLowerCase()
-      .includes(search);
-
+    const matchesSearch = !search || normalized.searchText.includes(search);
     const matchesParty = matchesFilter(normalized.party, activeFilters.party);
     const matchesElectionType = matchesFilter(normalized.electionType, activeFilters.electionType);
     const matchesPrefecture = matchesFilter(normalized.prefecture, activeFilters.prefecture);
-    const matchesBlock = matchesFilter(normalized.block, activeFilters.block);
+    const matchesBlock = matchesFilter(normalized.proportionalBlock, activeFilters.block);
     const matchesTracking = matchesTrackingFilter(normalized.id, activeFilters.tracking, learnedIds, weakIds);
     const matchesWeakOnly = activeFilters.weakOnly ? weakIds.has(normalized.id) : true;
 
@@ -174,10 +189,74 @@ export function sortFilteredMembers(members, filters = {}) {
   const shouldSortByDistrict = activeFilters.prefecture !== "all" && activeFilters.electionType !== "proportional";
 
   if (!shouldSortByDistrict) {
-    return members;
+    return sortMembersByBrowseOrder(members);
   }
 
   return [...members].sort((left, right) => compareByDistrictOrder(left, right));
+}
+
+export function sortMembersByBrowseOrder(members) {
+  return [...members].sort(compareMembersByBrowseOrder);
+}
+
+export function compareMembersByBrowseOrder(leftMember, rightMember) {
+  const left = normalizeMember(leftMember);
+  const right = normalizeMember(rightMember);
+
+  if (left.electionType !== right.electionType) {
+    return left.electionType.localeCompare(right.electionType, "ja");
+  }
+
+  if (left.electionType === "single") {
+    const prefectureOrder = left.prefecture.localeCompare(right.prefecture, "ja");
+    if (prefectureOrder !== 0) {
+      return prefectureOrder;
+    }
+
+    const districtOrder = compareByDistrictOrder(left, right);
+    if (districtOrder !== 0) {
+      return districtOrder;
+    }
+  }
+
+  if (left.electionType === "proportional") {
+    const blockOrder = left.proportionalBlock.localeCompare(right.proportionalBlock, "ja");
+    if (blockOrder !== 0) {
+      return blockOrder;
+    }
+  }
+
+  return left.name.localeCompare(right.name, "ja");
+}
+
+export function groupMembersByPrefecture(members) {
+  const grouped = new Map();
+
+  sortMembersByBrowseOrder(members)
+    .filter((member) => normalizeMember(member).electionType === "single")
+    .forEach((member) => {
+      const normalized = normalizeMember(member);
+      const current = grouped.get(normalized.prefecture) ?? [];
+      current.push(normalized);
+      grouped.set(normalized.prefecture, current);
+    });
+
+  return grouped;
+}
+
+export function groupMembersByBlock(members) {
+  const grouped = new Map();
+
+  sortMembersByBrowseOrder(members)
+    .filter((member) => normalizeMember(member).electionType === "proportional")
+    .forEach((member) => {
+      const normalized = normalizeMember(member);
+      const current = grouped.get(normalized.proportionalBlock) ?? [];
+      current.push(normalized);
+      grouped.set(normalized.proportionalBlock, current);
+    });
+
+  return grouped;
 }
 
 export function createEmptyProgress() {
@@ -226,9 +305,7 @@ export function formatElectionType(electionType) {
 }
 
 export function getMemberLocationLabel(member) {
-  return normalizeMember(member).electionType === "single"
-    ? normalizeText(member.district)
-    : normalizeText(member.block);
+  return normalizeMember(member).districtOrBlockLabel;
 }
 
 async function fetchJson(path) {
@@ -243,6 +320,23 @@ async function fetchJson(path) {
   }
 
   return response.json();
+}
+
+function withPhotoCacheBust(photoPath) {
+  if (!photoPath) {
+    return "";
+  }
+
+  if (photoPath.includes(`v=${PHOTO_CACHE_VERSION}`)) {
+    return photoPath;
+  }
+
+  if (typeof window === "undefined") {
+    return photoPath;
+  }
+
+  const separator = photoPath.includes("?") ? "&" : "?";
+  return `${photoPath}${separator}v=${PHOTO_CACHE_VERSION}`;
 }
 
 function matchesFilter(source, filterValue) {
@@ -293,8 +387,8 @@ function resolveEffectiveFilters(filters = {}) {
 function compareByDistrictOrder(leftMember, rightMember) {
   const left = normalizeMember(leftMember);
   const right = normalizeMember(rightMember);
-  const leftOrder = extractDistrictOrder(left.district);
-  const rightOrder = extractDistrictOrder(right.district);
+  const leftOrder = extractDistrictOrder(left.districtName);
+  const rightOrder = extractDistrictOrder(right.districtName);
 
   if (leftOrder !== rightOrder) {
     return leftOrder - rightOrder;

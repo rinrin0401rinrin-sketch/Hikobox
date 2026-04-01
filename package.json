@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "audit": "node ./scripts/audit-members.js",
+    "smoke:ui": "python3 ./scripts/check-pwa-ui.py",
     "test": "node --test",
     "validate": "node ./scripts/validate-members.js"
   }

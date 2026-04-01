@@ -1,0 +1,25 @@
+{
+  "name": "衆議院議員単語帳",
+  "short_name": "衆議院単語帳",
+  "description": "衆議院議員465名を、小選挙区・比例代表・検索の3導線で学べる PWA 単語帳。",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4ede3",
+  "theme_color": "#8a3d27",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
