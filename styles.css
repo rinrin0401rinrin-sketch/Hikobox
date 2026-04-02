@@ -308,6 +308,22 @@ h2 {
   padding: 12px 14px;
 }
 
+.search-input-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.search-input-row button,
+.control-actions button {
+  min-height: 48px;
+}
+
+.control-actions {
+  display: grid;
+  align-items: end;
+}
+
 .control-field-search {
   grid-column: 1 / -1;
 }
@@ -653,6 +669,10 @@ h2 {
   .filter-grid,
   .back-grid,
   .card-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .search-input-row {
     grid-template-columns: 1fr;
   }
 

@@ -1,4 +1,4 @@
-const CACHE_VERSION = "hiko-pwa-v1";
+const CACHE_VERSION = "hiko-pwa-v3";
 const APP_CACHE = `${CACHE_VERSION}-app`;
 const DATA_CACHE = `${CACHE_VERSION}-data`;
 const PHOTO_CACHE = `${CACHE_VERSION}-photos`;
@@ -13,6 +13,7 @@ const APP_SHELL = [
   "/src/member-schema.js",
   "/src/pwa.js",
   "/data/members/index.json",
+  "/data/members/search-index.json",
   "/manifest.webmanifest",
   "/icons/icon-192.png",
   "/icons/icon-512.png",
@@ -61,7 +62,7 @@ self.addEventListener("fetch", (event) => {
   }
 
   if (APP_SHELL.includes(url.pathname)) {
-    event.respondWith(staleWhileRevalidate(request, APP_CACHE));
+    event.respondWith(networkFirst(request, APP_CACHE, "/offline.html"));
   }
 });
 

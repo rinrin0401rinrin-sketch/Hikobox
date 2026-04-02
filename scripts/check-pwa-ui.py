@@ -89,8 +89,9 @@ def main():
             session_id,
             """
             const input = document.querySelector('[data-control="search-query"]');
-            input.value = '青山';
+            input.value = 'あおやま';
             input.dispatchEvent(new Event('input', { bubbles: true }));
+            document.querySelector('[data-control="search-apply"]')?.click();
             return true;
             """,
         )
@@ -115,6 +116,7 @@ def main():
             const input = document.querySelector('[data-control="search-query"]');
             input.value = '__no_match__';
             input.dispatchEvent(new Event('input', { bubbles: true }));
+            document.querySelector('[data-control="search-apply"]')?.click();
             return true;
             """,
         )
@@ -134,8 +136,9 @@ def main():
             session_id,
             """
             const input = document.querySelector('[data-control="search-query"]');
-            input.value = '青山';
+            input.value = 'あおやま';
             input.dispatchEvent(new Event('input', { bubbles: true }));
+            document.querySelector('[data-control="search-apply"]')?.click();
             return true;
             """,
         )
@@ -217,7 +220,7 @@ def main():
             failures.append("flip")
         if narrow.get("overflow"):
             failures.append("narrow-overflow")
-        if restored["activeTab"] != "検索" or "青山" not in restored["query"]:
+        if restored["activeTab"] != "検索" or "あおやま" not in restored["query"]:
             failures.append("state-restore")
 
         if failures:

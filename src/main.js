@@ -2,7 +2,7 @@ import {
   ELECTION_TYPE_LABELS,
   STATUS_LABELS,
   normalizeText,
-} from "./member-schema.js";
+} from "./member-schema.js?v=20260402-searchkana2";
 import {
   buildFilterOptions,
   formatElectionType,
@@ -11,10 +11,11 @@ import {
   groupMembersByPrefecture,
   loadMember,
   loadMemberIndex,
+  loadMemberSearchIndex,
   normalizeMember,
   sortMembersByBrowseOrder,
-} from "./member-store.js";
-import { registerPwaServiceWorker, setupInstallBanner, setupNetworkBanner } from "./pwa.js";
+} from "./member-store.js?v=20260402-searchkana2";
+import { registerPwaServiceWorker, setupInstallBanner, setupNetworkBanner } from "./pwa.js?v=20260402-searchkana2";
 
 const SEARCH_PAGE_SIZE = 60;
 const UI_STATE_STORAGE_KEY = "hiko-ui-state-v1";
@@ -55,6 +56,7 @@ const elements = {
 
 const state = {
   members: [],
+  searchMembers: [],
   selectedTab: "single",
   selectedId: null,
   selectedSummary: null,
@@ -62,7 +64,6 @@ const state = {
   isMemberLoading: false,
   side: "front",
   searchVisibleLimit: SEARCH_PAGE_SIZE,
-  searchDebounceId: null,
   cache: new Map(),
   filters: {
     single: {
@@ -84,6 +85,7 @@ const state = {
     blocks: [],
     parties: [],
   },
+  renderedToolbarMode: null,
 };
 
 bindEvents();
@@ -91,8 +93,12 @@ await initialize();
 
 async function initialize() {
   try {
-    const index = await loadMemberIndex();
+    const [index, searchIndex] = await Promise.all([
+      loadMemberIndex(),
+      loadMemberSearchIndex().catch(() => ({ members: [] })),
+    ]);
     state.members = sortMembersByBrowseOrder(index.members ?? []);
+    state.searchMembers = searchIndex.members?.length ? searchIndex.members : state.members;
 
     const singleGroups = groupMembersByPrefecture(state.members);
     const blockGroups = groupMembersByBlock(state.members);
@@ -175,12 +181,51 @@ function bindEvents() {
       return;
     }
 
-    window.clearTimeout(state.searchDebounceId);
-    state.searchDebounceId = window.setTimeout(async () => {
-      state.filters.search.query = target.value;
+    state.filters.search.query = target.value;
+  });
+
+  elements.browseToolbar.addEventListener("keydown", async (event) => {
+    const target = event.target;
+    if (!(target instanceof HTMLInputElement) || target.dataset.control !== "search-query") {
+      return;
+    }
+
+    if (event.key !== "Enter") {
+      return;
+    }
+
+    event.preventDefault();
+    await applySearchFilters();
+  });
+
+  elements.browseToolbar.addEventListener("click", async (event) => {
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) {
+      return;
+    }
+
+    const button = target.closest("button[data-control]");
+    if (!(button instanceof HTMLButtonElement)) {
+      return;
+    }
+
+    if (button.dataset.control === "search-apply") {
+      await applySearchFilters();
+      return;
+    }
+
+    if (button.dataset.control === "search-reset") {
+      state.filters.search = {
+        query: "",
+        party: "all",
+        prefecture: "all",
+        electionType: "all",
+      };
       state.searchVisibleLimit = SEARCH_PAGE_SIZE;
+      persistUiState();
+      state.renderedToolbarMode = null;
       await syncVisibleSelection();
-    }, 120);
+    }
   });
 
   elements.browseSubnav.addEventListener("click", async (event) => {
@@ -389,7 +434,7 @@ function renderBrowse() {
 
   elements.browseTitle.textContent = heading;
   elements.browseMeta.textContent = getBrowseMetaText(visibleMembers);
-  elements.browseToolbar.innerHTML = renderBrowseToolbar();
+  syncBrowseToolbar();
   elements.browseSubnav.innerHTML = renderBrowseSubnav(visibleMembers);
   elements.browseSummary.innerHTML = renderBrowseSummary(visibleMembers, renderedMembers.length);
   elements.memberGrid.innerHTML = renderMemberGrid(renderedMembers, visibleMembers.length);
@@ -566,7 +611,7 @@ function getProportionalMembers() {
 function getSearchMembers() {
   const query = normalizeText(state.filters.search.query).toLowerCase();
 
-  return state.members.filter((member) => {
+  return state.searchMembers.filter((member) => {
     if (state.filters.search.party !== "all" && member.party !== state.filters.search.party) {
       return false;
     }
@@ -641,19 +686,24 @@ function renderBrowseToolbar() {
 
   return `
     <div class="filter-grid">
-      <label class="control-field control-field-search">
+      <div class="control-field control-field-search">
         <span>氏名検索</span>
-        <input
-          type="search"
-          inputmode="search"
-          autocapitalize="off"
-          autocomplete="off"
-          spellcheck="false"
-          placeholder="氏名を入力"
-          value="${escapeHtml(state.filters.search.query)}"
-          data-control="search-query"
-        />
-      </label>
+        <div class="search-input-row">
+          <input
+            type="text"
+            inputmode="search"
+            enterkeyhint="search"
+            autocapitalize="off"
+            autocomplete="off"
+            autocorrect="off"
+            spellcheck="false"
+            placeholder="氏名を入力"
+            value="${escapeHtml(state.filters.search.query)}"
+            data-control="search-query"
+          />
+          <button type="button" data-control="search-apply">検索する</button>
+        </div>
+      </div>
       <label class="control-field">
         <span>区分</span>
         <select data-control="search-election">
@@ -679,8 +729,59 @@ function renderBrowseToolbar() {
           )}
         </select>
       </label>
+      <div class="control-actions">
+        <button class="secondary-button" type="button" data-control="search-reset">条件をクリア</button>
+      </div>
     </div>
   `;
+}
+
+function syncBrowseToolbar() {
+  const shouldRebuild =
+    state.renderedToolbarMode !== state.selectedTab
+    || !elements.browseToolbar.hasChildNodes();
+
+  if (shouldRebuild) {
+    elements.browseToolbar.innerHTML = renderBrowseToolbar();
+    state.renderedToolbarMode = state.selectedTab;
+  }
+
+  if (state.selectedTab === "single") {
+    const prefectureSelect = elements.browseToolbar.querySelector('[data-control="single-prefecture"]');
+    if (prefectureSelect instanceof HTMLSelectElement) {
+      prefectureSelect.value = state.filters.single.prefecture;
+    }
+    return;
+  }
+
+  if (state.selectedTab === "proportional") {
+    const blockSelect = elements.browseToolbar.querySelector('[data-control="proportional-block"]');
+    if (blockSelect instanceof HTMLSelectElement) {
+      blockSelect.value = state.filters.proportional.block;
+    }
+    return;
+  }
+
+  const queryInput = elements.browseToolbar.querySelector('[data-control="search-query"]');
+  const partySelect = elements.browseToolbar.querySelector('[data-control="search-party"]');
+  const prefectureSelect = elements.browseToolbar.querySelector('[data-control="search-prefecture"]');
+  const electionTypeSelect = elements.browseToolbar.querySelector('[data-control="search-election"]');
+
+  if (queryInput instanceof HTMLInputElement && document.activeElement !== queryInput) {
+    queryInput.value = state.filters.search.query;
+  }
+
+  if (partySelect instanceof HTMLSelectElement) {
+    partySelect.value = state.filters.search.party;
+  }
+
+  if (prefectureSelect instanceof HTMLSelectElement) {
+    prefectureSelect.value = state.filters.search.prefecture;
+  }
+
+  if (electionTypeSelect instanceof HTMLSelectElement) {
+    electionTypeSelect.value = state.filters.search.electionType;
+  }
 }
 
 function renderBrowseSubnav(visibleMembers) {
@@ -974,4 +1075,14 @@ function persistUiState() {
   } catch (error) {
     console.warn("Failed to persist UI state.", error);
   }
+}
+
+async function applySearchFilters() {
+  if (state.selectedTab !== "search") {
+    return;
+  }
+
+  state.searchVisibleLimit = SEARCH_PAGE_SIZE;
+  persistUiState();
+  await syncVisibleSelection();
 }

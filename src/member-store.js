@@ -1,13 +1,14 @@
-import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js";
+import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js?v=20260402-searchkana2";
 
 const PHOTO_CACHE_VERSION = "20260401-pwa465";
+const DATA_CACHE_VERSION = "20260402-searchkana2";
 
 export async function loadMemberIndex() {
   const subset = new URLSearchParams(window.location.search).get("subset");
   const indexPath = subset === "first140"
     ? "./data/members/index-first140.json"
     : "./data/members/index.json";
-  const index = await fetchJson(indexPath);
+  const index = await fetchJson(withDataCacheBust(indexPath));
 
   return {
     ...index,
@@ -15,8 +16,17 @@ export async function loadMemberIndex() {
   };
 }
 
+export async function loadMemberSearchIndex() {
+  const searchIndex = await fetchJson(withDataCacheBust("./data/members/search-index.json"));
+
+  return {
+    ...searchIndex,
+    members: Array.isArray(searchIndex.members) ? searchIndex.members.map(normalizeMember) : [],
+  };
+}
+
 export async function loadMember(memberPath) {
-  const member = await fetchJson(memberPath);
+  const member = await fetchJson(withDataCacheBust(memberPath));
   return normalizeMember(member);
 }
 
@@ -337,6 +347,19 @@ function withPhotoCacheBust(photoPath) {
 
   const separator = photoPath.includes("?") ? "&" : "?";
   return `${photoPath}${separator}v=${PHOTO_CACHE_VERSION}`;
+}
+
+function withDataCacheBust(path) {
+  if (!path) {
+    return "";
+  }
+
+  if (path.includes(`v=${DATA_CACHE_VERSION}`)) {
+    return path;
+  }
+
+  const separator = path.includes("?") ? "&" : "?";
+  return `${path}${separator}v=${DATA_CACHE_VERSION}`;
 }
 
 function matchesFilter(source, filterValue) {

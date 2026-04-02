@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "audit": "node ./scripts/audit-members.js",
+    "build:search-index": "node ./scripts/build-search-index.mjs",
     "smoke:ui": "python3 ./scripts/check-pwa-ui.py",
     "test": "node --test",
     "validate": "node ./scripts/validate-members.js"

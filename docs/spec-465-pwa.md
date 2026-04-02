@@ -13,6 +13,7 @@
 ## データ構造
 ### 正規ソース
 - 一覧入口: `data/members/index.json`
+- 検索入口: `data/members/search-index.json`
 - 個票: `data/members/hr-XXXX.json`
 - 写真: `data/photos/hr-XXXX.jpg`
 - 元資料: `members.pdf` と `data/source-pdf/members.pdf`
@@ -63,6 +64,7 @@
 - 小選挙区の都道府県別閲覧
 - 比例代表のブロック別閲覧
 - 氏名検索と複合絞り込み
+- `nameKana` を使ったひらがな検索
 - 直前のタブ、選択議員、主な絞り込み条件の保持
 - PWA 追加案内
 - Service Worker による最低限のオフライン利用

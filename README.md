@@ -19,6 +19,7 @@
 
 ## データの置き場
 - 一覧入口: `data/members/index.json`
+- 検索用一覧: `data/members/search-index.json`
 - 個票データ: `data/members/hr-XXXX.json`
 - 顔写真: `data/photos/hr-XXXX.jpg`
 - バッチ台帳: `data/batches/*`
@@ -28,8 +29,9 @@
 1. 対象の個票 JSON を開く
 2. `name` `party` `electionType` `district` `block` `prefecture` などを修正する
 3. 必要に応じて `index.json` の該当 summary も同期する
-4. `npm run validate` を実行する
-5. アプリを開いて、対象議員のカード表面と裏面を確認する
+4. `npm run build:search-index` を実行して検索用 index を更新する
+5. `npm run validate` を実行する
+6. アプリを開いて、対象議員のカード表面と裏面を確認する
 
 ### 判断メモ
 - `districtType` `districtName` `proportionalBlock` `image` などの追加項目は、今は元 JSON に直接書き込まず、`src/member-store.js` で派生項目として生成しています
@@ -67,7 +69,8 @@
 ## 保守向けチェック
 - `npm run validate`: ID、必須項目、写真参照、区分整合性の確認
 - `npm run audit`: 重複名、重複写真参照、index と個票の食い違い確認
-- `npm run smoke:ui`: SafariDriver で 3 タブ、検索、カード裏面、狭幅の最低限を確認
+- `npm run build:search-index`: `nameKana` を含む検索用 index を更新
+- `npm run smoke:ui`: SafariDriver で 3 タブ、ひらがな検索、0件表示、カード裏面、狭幅の最低限を確認
 - `npm run smoke:ui` は検索0件表示と再読込後の状態復元も確認する
 - 個別確認: `data/members/hr-XXXX.json` と `data/photos/hr-XXXX.jpg` を対で見る
 - オフライン確認: いったん読み込んだ後に通信を切り、退避画面または保存済み表示が成立するかを見る
