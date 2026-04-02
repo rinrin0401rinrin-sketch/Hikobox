@@ -16,6 +16,7 @@
 - 検索入口: `data/members/search-index.json`
 - 個票: `data/members/hr-XXXX.json`
 - 写真: `data/photos/hr-XXXX.jpg`
+- 一覧用サムネイル: `data/photos/thumbs/hr-XXXX.jpg`
 - 元資料: `members.pdf` と `data/source-pdf/members.pdf`
 - バッチ台帳: `data/batches/*`
 
@@ -26,6 +27,7 @@
 - `districtName`: `district` の UI 用別名
 - `proportionalBlock`: `block` の UI 用別名
 - `image`: `photo` の UI 用別名
+- `thumbnail`: 一覧用サムネイルへの派生パス
 - `districtOrBlockLabel`: 区分に応じた表示用ラベル
 - `searchText`: 検索用の連結文字列
 
@@ -106,6 +108,7 @@
 
 ## パフォーマンス方針
 - 一覧画像は `loading="lazy"` を使う
+- 一覧は元写真ではなくサムネイルを優先して読む
 - 検索結果は段階表示し、iPhone での一括描画を抑える
 - 詳細 JSON は必要時読み込みし、選択済みデータはメモリキャッシュする
 - Service Worker はアプリ殻と一覧入口を事前キャッシュし、詳細 JSON と画像は実行時キャッシュする

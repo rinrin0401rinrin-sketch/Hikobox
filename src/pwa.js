@@ -1,4 +1,5 @@
 const DISMISS_STORAGE_KEY = "hiko-pwa-banner-dismissed";
+const PWA_INSTRUCTIONS_STORAGE_KEY = "hiko-pwa-ios-instructions-seen";
 
 export async function registerPwaServiceWorker() {
   if (!("serviceWorker" in navigator)) {
@@ -36,6 +37,7 @@ export function setupInstallBanner(elements) {
   const state = {
     deferredPrompt: null,
     dismissed: window.sessionStorage.getItem(DISMISS_STORAGE_KEY) === "1",
+    iosInstructionsSeen: window.localStorage.getItem(PWA_INSTRUCTIONS_STORAGE_KEY) === "1",
   };
 
   const isIos = /iphone|ipad|ipod/i.test(window.navigator.userAgent);
@@ -64,9 +66,11 @@ export function setupInstallBanner(elements) {
     }
 
     if (isIos) {
-      elements.copy.textContent = "iPhone では Safari の共有メニューから「ホーム画面に追加」を選ぶと PWA として使えます。";
+      elements.copy.textContent = state.iosInstructionsSeen
+        ? "iPhone では共有メニューから「ホーム画面に追加」でホーム画面版を試せます。"
+        : "iPhone では Safari の共有メニューから「ホーム画面に追加」を選ぶと PWA として使えます。";
       elements.installButton.hidden = false;
-      elements.installButton.textContent = "追加手順を表示";
+      elements.installButton.textContent = state.iosInstructionsSeen ? "もう一度手順を見る" : "追加手順を表示";
       return;
     }
 
@@ -97,6 +101,8 @@ export function setupInstallBanner(elements) {
 
     if (isIos) {
       elements.copy.textContent = "Safari 下部の共有ボタンを押して、「ホーム画面に追加」を選んでください。";
+      state.iosInstructionsSeen = true;
+      window.localStorage.setItem(PWA_INSTRUCTIONS_STORAGE_KEY, "1");
     }
   });
 

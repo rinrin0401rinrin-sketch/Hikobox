@@ -3,6 +3,7 @@
   "short_name": "衆議院単語帳",
   "description": "衆議院議員465名を、小選挙区・比例代表・検索の3導線で学べる PWA 単語帳。",
   "lang": "ja",
+  "id": "./",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

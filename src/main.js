@@ -2,7 +2,7 @@ import {
   ELECTION_TYPE_LABELS,
   STATUS_LABELS,
   normalizeText,
-} from "./member-schema.js?v=20260402-finishpass1";
+} from "./member-schema.js?v=20260402-thumbpass1";
 import {
   buildFilterOptions,
   formatElectionType,
@@ -15,17 +15,17 @@ import {
   loadMemberSearchIndex,
   normalizeMember,
   sortMembersByBrowseOrder,
-} from "./member-store.js?v=20260402-finishpass1";
+} from "./member-store.js?v=20260402-thumbpass1";
 import {
   registerPwaServiceWorker,
   setupDisplayMode,
   setupInstallBanner,
   setupNetworkBanner,
-} from "./pwa.js?v=20260402-finishpass1";
+} from "./pwa.js?v=20260402-thumbpass1";
 
 const SEARCH_PAGE_SIZE = 60;
 const UI_STATE_STORAGE_KEY = "hiko-ui-state-v1";
-const APP_BUILD_LABEL = "テスト版 2026-04-02 / build finishpass1";
+const APP_BUILD_LABEL = "テスト版 2026-04-02 / build thumbpass1";
 const TAB_LABELS = {
   single: "小選挙区",
   proportional: "比例代表",
@@ -904,13 +904,14 @@ function renderMemberTile(member) {
       <span class="member-tile-photo">
         <img
           class="member-thumb"
-          src="${escapeHtml(member.image)}"
+          src="${escapeHtml(member.thumbnail || member.image)}"
           alt="${escapeHtml(member.name)} の写真"
           width="360"
           height="480"
           loading="lazy"
           decoding="async"
           fetchpriority="low"
+          onerror="this.onerror=null;this.src='${escapeHtml(member.image)}';"
         />
       </span>
       <span class="member-tile-body">

@@ -24,6 +24,7 @@
 - 検索用一覧: `data/members/search-index.json`
 - 個票データ: `data/members/hr-XXXX.json`
 - 顔写真: `data/photos/hr-XXXX.jpg`
+- 一覧用サムネイル: `data/photos/thumbs/hr-XXXX.jpg`
 - バッチ台帳: `data/batches/*`
 - 参照資料: `members.pdf` と `data/source-pdf/members.pdf`
 
@@ -42,8 +43,9 @@
 ## 画像差し替え方法
 1. `data/photos/hr-XXXX.jpg` を差し替える
 2. 対応する `data/members/hr-XXXX.json` の `photo` が同じ ID を指しているか確認する
-3. アプリ上で該当議員を開き、顔写真と氏名の対応が正しいか目視確認する
-4. `npm run validate` を実行する
+3. `npm run build:thumbnails` を実行して一覧用サムネイルを更新する
+4. アプリ上で該当議員を開き、顔写真と氏名の対応が正しいか目視確認する
+5. `npm run validate` を実行する
 
 ## iPhone で確認する方法
 1. 同じネットワーク上でローカルサーバーを起動する
@@ -74,6 +76,7 @@
 - `npm run validate`: ID、必須項目、写真参照、区分整合性の確認
 - `npm run audit`: 重複名、重複写真参照、index と個票の食い違い確認
 - `npm run build:search-index`: `nameKana` を含む検索用 index を更新
+- `npm run build:thumbnails`: 一覧用サムネイルを `data/photos/thumbs/` に再生成する
 - `npm run smoke:ui`: SafariDriver で 3 タブ、ひらがな検索、0件表示、カード裏面、狭幅の最低限を確認
 - `npm run smoke:ui` は検索0件表示と再読込後の状態復元も確認する
 - 個別確認: `data/members/hr-XXXX.json` と `data/photos/hr-XXXX.jpg` を対で見る

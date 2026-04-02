@@ -59,6 +59,7 @@ export function normalizeMember(input = {}) {
   const prefecture = normalizeText(input.prefecture);
   const party = normalizeText(input.party);
   const image = withPhotoCacheBust(normalizeText(input.image || input.photo));
+  const thumbnail = withPhotoCacheBust(getThumbnailPath(normalizeText(input.image || input.photo)));
   const normalizedCareer = Array.isArray(input.career)
     ? input.career.filter((item) => normalizeText(item))
     : [];
@@ -86,6 +87,7 @@ export function normalizeMember(input = {}) {
     career: normalizedCareer,
     photo: image,
     image,
+    thumbnail,
     sourcePdf: normalizeText(input.sourcePdf),
     sourcePage: Number.isInteger(input.sourcePage) ? input.sourcePage : null,
     status: normalizeText(input.status) || "draft",
@@ -441,6 +443,26 @@ function withDataCacheBust(path) {
 
   const separator = path.includes("?") ? "&" : "?";
   return `${path}${separator}v=${DATA_CACHE_VERSION}`;
+}
+
+function getThumbnailPath(photoPath) {
+  if (!photoPath) {
+    return "";
+  }
+
+  const normalizedPath = String(photoPath).trim();
+  if (!normalizedPath) {
+    return "";
+  }
+
+  const lastSlashIndex = normalizedPath.lastIndexOf("/");
+  if (lastSlashIndex < 0) {
+    return normalizedPath;
+  }
+
+  const directory = normalizedPath.slice(0, lastSlashIndex);
+  const filename = normalizedPath.slice(lastSlashIndex + 1);
+  return `${directory}/thumbs/${filename}`;
 }
 
 function matchesFilter(source, filterValue) {
