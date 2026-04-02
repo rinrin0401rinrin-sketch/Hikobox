@@ -2,7 +2,7 @@ import {
   ELECTION_TYPE_LABELS,
   STATUS_LABELS,
   normalizeText,
-} from "./member-schema.js?v=20260402-frontphoto1";
+} from "./member-schema.js?v=20260402-finishpass1";
 import {
   buildFilterOptions,
   formatElectionType,
@@ -15,12 +15,17 @@ import {
   loadMemberSearchIndex,
   normalizeMember,
   sortMembersByBrowseOrder,
-} from "./member-store.js?v=20260402-frontphoto1";
-import { registerPwaServiceWorker, setupInstallBanner, setupNetworkBanner } from "./pwa.js?v=20260402-frontphoto1";
+} from "./member-store.js?v=20260402-finishpass1";
+import {
+  registerPwaServiceWorker,
+  setupDisplayMode,
+  setupInstallBanner,
+  setupNetworkBanner,
+} from "./pwa.js?v=20260402-finishpass1";
 
 const SEARCH_PAGE_SIZE = 60;
 const UI_STATE_STORAGE_KEY = "hiko-ui-state-v1";
-const APP_BUILD_LABEL = "テスト版 2026-04-02 / build frontphoto1";
+const APP_BUILD_LABEL = "テスト版 2026-04-02 / build finishpass1";
 const TAB_LABELS = {
   single: "小選挙区",
   proportional: "比例代表",
@@ -116,6 +121,7 @@ async function initialize() {
     hydrateUiStateFromStorage();
 
     renderHero(index);
+    setupDisplayMode();
     setupInstallBanner({
       banner: elements.installBanner,
       copy: elements.installCopy,
@@ -505,6 +511,8 @@ function renderCard() {
           class="card-photo card-photo-front"
           src="${escapeHtml(member.image)}"
           alt="${escapeHtml(member.name)} の写真"
+          width="680"
+          height="900"
           loading="eager"
           decoding="async"
           fetchpriority="high"
@@ -898,8 +906,11 @@ function renderMemberTile(member) {
           class="member-thumb"
           src="${escapeHtml(member.image)}"
           alt="${escapeHtml(member.name)} の写真"
+          width="360"
+          height="480"
           loading="lazy"
           decoding="async"
+          fetchpriority="low"
         />
       </span>
       <span class="member-tile-body">

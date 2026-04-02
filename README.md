@@ -9,6 +9,7 @@
 詳しい基準仕様は [`docs/spec-465-pwa.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/spec-465-pwa.md) を参照してください。
 仕上げ前の短い確認項目は [`docs/finish-checklist.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/finish-checklist.md) にまとめています。
 共有テスト版の最短手順は [`docs/tester-quickstart.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/tester-quickstart.md) に切り出しています。
+共有 URL を外に送る前の確認は [`docs/share-url-checklist.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/share-url-checklist.md) に切り出しています。
 
 ## 起動方法
 - ローカルサーバー起動: `python3 -m http.server 8000`
@@ -84,3 +85,4 @@
 - 画像サムネイル最適化
 - 更新日時や差分履歴の一覧表示
 - 監査結果の JSON 出力や簡易 HTML レポート化
+- 共有 URL の固定運用

@@ -13,6 +13,25 @@ export async function registerPwaServiceWorker() {
   }
 }
 
+export function setupDisplayMode() {
+  const root = document.documentElement;
+  const standaloneMedia = window.matchMedia("(display-mode: standalone)");
+
+  function render() {
+    const isStandalone = standaloneMedia.matches || window.navigator.standalone === true;
+    root.dataset.displayMode = isStandalone ? "standalone" : "browser";
+  }
+
+  if (typeof standaloneMedia.addEventListener === "function") {
+    standaloneMedia.addEventListener("change", render);
+  } else if (typeof standaloneMedia.addListener === "function") {
+    standaloneMedia.addListener(render);
+  }
+
+  render();
+  return { render };
+}
+
 export function setupInstallBanner(elements) {
   const state = {
     deferredPrompt: null,
