@@ -1,4 +1,4 @@
-const CACHE_VERSION = "hiko-pwa-v4";
+const CACHE_VERSION = "hiko-pwa-v5";
 const APP_CACHE = `${CACHE_VERSION}-app`;
 const DATA_CACHE = `${CACHE_VERSION}-data`;
 const PHOTO_CACHE = `${CACHE_VERSION}-photos`;

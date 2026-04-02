@@ -65,6 +65,7 @@ def main():
               selectedName: document.querySelector('#detail-title')?.textContent?.trim() || '',
               tiles: document.querySelectorAll('.member-tile').length,
               hasCard: Boolean(document.querySelector('.card-photo-front')),
+              buildBadge: document.querySelector('#build-badge')?.textContent?.trim() || '',
             };
             """,
         )
@@ -208,6 +209,8 @@ def main():
             failures.append("tab-count")
         if not overview["hasCard"]:
             failures.append("missing-card-photo")
+        if "テスト版" not in overview["buildBadge"]:
+            failures.append("build-badge")
         if proportional["activeTab"] != "比例代表":
             failures.append("proportional-tab")
         if search["activeTab"] != "検索":

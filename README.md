@@ -8,6 +8,7 @@
 
 詳しい基準仕様は [`docs/spec-465-pwa.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/spec-465-pwa.md) を参照してください。
 仕上げ前の短い確認項目は [`docs/finish-checklist.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/finish-checklist.md) にまとめています。
+共有テスト版の最短手順は [`docs/tester-quickstart.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/tester-quickstart.md) に切り出しています。
 
 ## 起動方法
 - ローカルサーバー起動: `python3 -m http.server 8000`
@@ -46,10 +47,11 @@
 ## iPhone で確認する方法
 1. 同じネットワーク上でローカルサーバーを起動する
 2. iPhone Safari で `http://<PCのIPアドレス>:8000/` を開く
-3. `小選挙区` `比例代表` `検索` を順に確認する
-4. `小選挙区` の都道府県が `北海道 / 東北 / 関東 / 中部 / 近畿 / 中国 / 四国 / 九州・沖縄` の地域順で並ぶか確認する
-5. カードの表裏切り替え、前へ / 次へ、検索0件表示を確認する
-6. 画像の崩れ、タップしにくさ、スクロール詰まりがないか見る
+3. 画面上部の `テスト版` 表示が想定した版になっているか確認する
+4. `小選挙区` `比例代表` `検索` を順に確認する
+5. `小選挙区` の都道府県が `北海道 / 東北 / 関東 / 中部 / 近畿 / 中国 / 四国 / 九州・沖縄` の地域順で並ぶか確認する
+6. カードの表裏切り替え、前へ / 次へ、検索0件表示を確認する
+7. 画像の崩れ、タップしにくさ、スクロール詰まりがないか見る
 
 ### 実機がつながらない時の代替確認
 1. Mac Safari で `http://127.0.0.1:8000/` を開く

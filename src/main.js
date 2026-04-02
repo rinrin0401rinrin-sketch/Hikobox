@@ -2,7 +2,7 @@ import {
   ELECTION_TYPE_LABELS,
   STATUS_LABELS,
   normalizeText,
-} from "./member-schema.js?v=20260402-prefectureorder1";
+} from "./member-schema.js?v=20260402-sharetest1";
 import {
   buildFilterOptions,
   formatElectionType,
@@ -15,11 +15,12 @@ import {
   loadMemberSearchIndex,
   normalizeMember,
   sortMembersByBrowseOrder,
-} from "./member-store.js?v=20260402-prefectureorder1";
-import { registerPwaServiceWorker, setupInstallBanner, setupNetworkBanner } from "./pwa.js?v=20260402-prefectureorder1";
+} from "./member-store.js?v=20260402-sharetest1";
+import { registerPwaServiceWorker, setupInstallBanner, setupNetworkBanner } from "./pwa.js?v=20260402-sharetest1";
 
 const SEARCH_PAGE_SIZE = 60;
 const UI_STATE_STORAGE_KEY = "hiko-ui-state-v1";
+const APP_BUILD_LABEL = "テスト版 2026-04-02 / build sharetest1";
 const TAB_LABELS = {
   single: "小選挙区",
   proportional: "比例代表",
@@ -32,6 +33,7 @@ const elements = {
   heroTargetMembers: document.querySelector("#hero-target-members"),
   heroSingleMembers: document.querySelector("#hero-single-members"),
   heroProportionalMembers: document.querySelector("#hero-proportional-members"),
+  buildBadge: document.querySelector("#build-badge"),
   tabButtons: Array.from(document.querySelectorAll("[data-tab]")),
   browseTitle: document.querySelector("#browse-title"),
   browseMeta: document.querySelector("#browse-meta"),
@@ -418,6 +420,10 @@ function renderHero(index) {
   if (elements.heroCopy) {
     elements.heroCopy.textContent =
       "iPhone での見やすさを優先しつつ、顔写真と氏名の対応を壊さないまま、小選挙区・比例代表・検索の3導線で学べる PWA に整理する。";
+  }
+
+  if (elements.buildBadge) {
+    elements.buildBadge.textContent = APP_BUILD_LABEL;
   }
 }
 

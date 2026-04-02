@@ -1,7 +1,7 @@
-import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js?v=20260402-prefectureorder1";
+import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js?v=20260402-sharetest1";
 
 const PHOTO_CACHE_VERSION = "20260401-pwa465";
-const DATA_CACHE_VERSION = "20260402-prefectureorder1";
+const DATA_CACHE_VERSION = "20260402-sharetest1";
 const PREFECTURE_REGION_GROUPS = [
   { region: "北海道", prefectures: ["北海道"] },
   { region: "東北", prefectures: ["青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県"] },
