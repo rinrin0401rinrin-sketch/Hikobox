@@ -7,6 +7,7 @@
 ブラウザでは、直前のタブ、選択議員、主な絞り込み条件を `localStorage` に保持し、再訪時の確認を少し楽にしています。
 
 詳しい基準仕様は [`docs/spec-465-pwa.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/spec-465-pwa.md) を参照してください。
+最終確認の 1 枚版は [`docs/final-check.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/final-check.md) にまとめています。
 仕上げ前の短い確認項目は [`docs/finish-checklist.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/finish-checklist.md) にまとめています。
 共有テスト版の最短手順は [`docs/tester-quickstart.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/tester-quickstart.md) に切り出しています。
 共有 URL を外に送る前の確認は [`docs/share-url-checklist.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/share-url-checklist.md) に切り出しています。
