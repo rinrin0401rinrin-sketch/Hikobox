@@ -17,6 +17,8 @@
 - テスト: `npm test`
 - データ整合性チェック: `npm run validate`
 - 監査補助: `npm run audit`
+- 資産確認: `npm run verify:assets`
+- 公開前の通し確認: `npm run verify:release`
 - Safari UI スモーク確認: `npm run smoke:ui`
 
 ## データの置き場
@@ -77,6 +79,8 @@
 - `npm run audit`: 重複名、重複写真参照、index と個票の食い違い確認
 - `npm run build:search-index`: `nameKana` を含む検索用 index を更新
 - `npm run build:thumbnails`: 一覧用サムネイルを `data/photos/thumbs/` に再生成する
+- `npm run verify:assets`: 写真、サムネイル、検索 index の取りこぼしを確認する
+- `npm run verify:release`: validate、audit、asset verify、test を順に実行し、可能なら smoke UI まで自動確認する
 - `npm run smoke:ui`: SafariDriver で 3 タブ、ひらがな検索、0件表示、カード裏面、狭幅の最低限を確認
 - `npm run smoke:ui` は検索0件表示と再読込後の状態復元も確認する
 - 個別確認: `data/members/hr-XXXX.json` と `data/photos/hr-XXXX.jpg` を対で見る

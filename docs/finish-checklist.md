@@ -2,7 +2,7 @@
 
 ## 5分で見る項目
 - `python3 -m http.server 8000` で起動できる
-- `npm test` `npm run validate` `npm run audit` `npm run smoke:ui` が通る
+- `npm run verify:release` が通る
 - `小選挙区` タブで都道府県と選挙区チップが機能する
 - `比例代表` タブでブロック切り替えが機能する
 - `検索` タブでヒットあり、0件、再読込後の復元が機能する
