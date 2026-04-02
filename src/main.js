@@ -2,7 +2,7 @@ import {
   ELECTION_TYPE_LABELS,
   STATUS_LABELS,
   normalizeText,
-} from "./member-schema.js?v=20260402-sharetest1";
+} from "./member-schema.js?v=20260402-frontphoto1";
 import {
   buildFilterOptions,
   formatElectionType,
@@ -15,12 +15,12 @@ import {
   loadMemberSearchIndex,
   normalizeMember,
   sortMembersByBrowseOrder,
-} from "./member-store.js?v=20260402-sharetest1";
-import { registerPwaServiceWorker, setupInstallBanner, setupNetworkBanner } from "./pwa.js?v=20260402-sharetest1";
+} from "./member-store.js?v=20260402-frontphoto1";
+import { registerPwaServiceWorker, setupInstallBanner, setupNetworkBanner } from "./pwa.js?v=20260402-frontphoto1";
 
 const SEARCH_PAGE_SIZE = 60;
 const UI_STATE_STORAGE_KEY = "hiko-ui-state-v1";
-const APP_BUILD_LABEL = "テスト版 2026-04-02 / build sharetest1";
+const APP_BUILD_LABEL = "テスト版 2026-04-02 / build frontphoto1";
 const TAB_LABELS = {
   single: "小選挙区",
   proportional: "比例代表",
@@ -510,13 +510,6 @@ function renderCard() {
           fetchpriority="high"
         />
       </div>
-      <div class="front-meta">
-        <p class="front-label">${escapeHtml(member.electionLabel)}</p>
-        <h3 class="card-name">${escapeHtml(member.name)}</h3>
-        ${member.nameKana ? `<p class="name-kana">${escapeHtml(member.nameKana)}</p>` : ""}
-        <p class="front-location">${escapeHtml(locationLabel)}</p>
-        <p class="party-chip">${escapeHtml(member.party)}</p>
-      </div>
     </section>
 
     <section class="card-face card-face-back">
@@ -559,7 +552,7 @@ function renderCard() {
   `;
 
   elements.cardStatus.textContent = state.side === "front"
-    ? "表面は写真・氏名・選挙区情報を表示しています。カードをタップすると裏面に切り替わります。"
+    ? "表面は顔写真だけを表示しています。カードをタップすると裏面で氏名や所属情報を確認できます。"
     : "裏面は所属政党、都道府県、区分、補助情報を表示しています。";
 }
 

@@ -481,7 +481,7 @@ h2 {
 
 .card-face-front {
   justify-items: center;
-  align-content: start;
+  align-content: center;
   background: linear-gradient(180deg, #fffaf5 0%, #f5ece1 100%);
 }
 
@@ -507,7 +507,6 @@ h2 {
 }
 
 .front-photo-shell,
-.front-meta,
 .back-header,
 .back-grid {
   position: relative;
@@ -515,23 +514,19 @@ h2 {
 }
 
 .front-photo-shell {
-  width: min(100%, 320px);
+  width: min(100%, 100%);
+  display: grid;
+  place-items: center;
 }
 
 .card-photo-front {
   width: 100%;
-  max-height: 420px;
+  max-width: 340px;
+  max-height: 500px;
   object-fit: contain;
   object-position: center top;
   border-radius: 24px;
   background: linear-gradient(180deg, #f7eee3 0%, #ebddcc 100%);
-}
-
-.front-meta {
-  width: 100%;
-  display: grid;
-  gap: 10px;
-  text-align: center;
 }
 
 .front-label,
@@ -552,25 +547,9 @@ h2 {
   font-size: 0.88rem;
 }
 
-.party-chip {
-  font-weight: 700;
-}
-
 .card-name {
   font-size: clamp(1.7rem, 4.8vw, 2.3rem);
   line-height: 1.1;
-}
-
-.name-kana {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-}
-
-.front-location {
-  padding: 12px 14px;
-  border-radius: 18px;
-  background: rgba(255, 248, 241, 0.84);
-  font-weight: 700;
 }
 
 .back-grid {
@@ -718,11 +697,12 @@ h2 {
   }
 
   .front-photo-shell {
-    width: min(100%, 280px);
+    width: 100%;
   }
 
   .card-photo-front {
-    max-height: 320px;
+    max-width: 280px;
+    max-height: 360px;
   }
 
   .detail-block-wide {
