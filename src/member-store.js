@@ -1,7 +1,29 @@
-import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js?v=20260402-searchkana2";
+import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js?v=20260402-prefectureorder1";
 
 const PHOTO_CACHE_VERSION = "20260401-pwa465";
-const DATA_CACHE_VERSION = "20260402-searchkana2";
+const DATA_CACHE_VERSION = "20260402-prefectureorder1";
+const PREFECTURE_REGION_GROUPS = [
+  { region: "北海道", prefectures: ["北海道"] },
+  { region: "東北", prefectures: ["青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県"] },
+  { region: "関東", prefectures: ["茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県"] },
+  { region: "中部", prefectures: ["新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県", "岐阜県", "静岡県", "愛知県"] },
+  { region: "近畿", prefectures: ["三重県", "滋賀県", "京都府", "大阪府", "兵庫県", "奈良県", "和歌山県"] },
+  { region: "中国", prefectures: ["鳥取県", "島根県", "岡山県", "広島県", "山口県"] },
+  { region: "四国", prefectures: ["徳島県", "香川県", "愛媛県", "高知県"] },
+  { region: "九州・沖縄", prefectures: ["福岡県", "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"] },
+];
+const PREFECTURE_ORDER = new Map();
+const PREFECTURE_REGION_BY_NAME = new Map(
+  PREFECTURE_REGION_GROUPS.flatMap((group) => group.prefectures.map((prefecture) => [prefecture, group.region])),
+);
+
+let prefectureOrderIndex = 0;
+PREFECTURE_REGION_GROUPS.forEach((group) => {
+  group.prefectures.forEach((prefecture) => {
+    PREFECTURE_ORDER.set(prefecture, prefectureOrderIndex);
+    prefectureOrderIndex += 1;
+  });
+});
 
 export async function loadMemberIndex() {
   const subset = new URLSearchParams(window.location.search).get("subset");
@@ -143,7 +165,9 @@ export function buildFilterOptions(members, key, labelMap = {}) {
   });
 
   return Array.from(values)
-    .sort((left, right) => left.localeCompare(right, "ja"))
+    .sort((left, right) => (key === "prefecture"
+      ? compareByPrefectureOrder(left, right)
+      : left.localeCompare(right, "ja")))
     .map((value) => ({
       value,
       label: labelMap[value] ?? value,
@@ -218,7 +242,7 @@ export function compareMembersByBrowseOrder(leftMember, rightMember) {
   }
 
   if (left.electionType === "single") {
-    const prefectureOrder = left.prefecture.localeCompare(right.prefecture, "ja");
+    const prefectureOrder = compareByPrefectureOrder(left.prefecture, right.prefecture);
     if (prefectureOrder !== 0) {
       return prefectureOrder;
     }
@@ -267,6 +291,63 @@ export function groupMembersByBlock(members) {
     });
 
   return grouped;
+}
+
+export function compareByPrefectureOrder(leftPrefecture, rightPrefecture) {
+  const left = normalizeText(leftPrefecture);
+  const right = normalizeText(rightPrefecture);
+  const leftIndex = PREFECTURE_ORDER.get(left);
+  const rightIndex = PREFECTURE_ORDER.get(right);
+
+  if (leftIndex != null && rightIndex != null && leftIndex !== rightIndex) {
+    return leftIndex - rightIndex;
+  }
+
+  if (leftIndex != null && rightIndex == null) {
+    return -1;
+  }
+
+  if (leftIndex == null && rightIndex != null) {
+    return 1;
+  }
+
+  return left.localeCompare(right, "ja");
+}
+
+export function getPrefectureGroups(prefectures) {
+  const grouped = new Map(PREFECTURE_REGION_GROUPS.map((group) => [group.region, []]));
+  const extra = [];
+
+  sortPrefectures(prefectures).forEach((prefecture) => {
+    const region = PREFECTURE_REGION_BY_NAME.get(prefecture);
+
+    if (!region) {
+      extra.push(prefecture);
+      return;
+    }
+
+    grouped.get(region)?.push(prefecture);
+  });
+
+  const orderedGroups = PREFECTURE_REGION_GROUPS
+    .map((group) => ({
+      region: group.region,
+      prefectures: grouped.get(group.region) ?? [],
+    }))
+    .filter((group) => group.prefectures.length > 0);
+
+  if (extra.length > 0) {
+    orderedGroups.push({
+      region: "未分類",
+      prefectures: extra,
+    });
+  }
+
+  return orderedGroups;
+}
+
+export function sortPrefectures(prefectures) {
+  return [...new Set(prefectures.filter(Boolean))].sort(compareByPrefectureOrder);
 }
 
 export function createEmptyProgress() {

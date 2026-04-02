@@ -2,11 +2,12 @@ import {
   ELECTION_TYPE_LABELS,
   STATUS_LABELS,
   normalizeText,
-} from "./member-schema.js?v=20260402-searchkana2";
+} from "./member-schema.js?v=20260402-prefectureorder1";
 import {
   buildFilterOptions,
   formatElectionType,
   getMemberLocationLabel,
+  getPrefectureGroups,
   groupMembersByBlock,
   groupMembersByPrefecture,
   loadMember,
@@ -14,8 +15,8 @@ import {
   loadMemberSearchIndex,
   normalizeMember,
   sortMembersByBrowseOrder,
-} from "./member-store.js?v=20260402-searchkana2";
-import { registerPwaServiceWorker, setupInstallBanner, setupNetworkBanner } from "./pwa.js?v=20260402-searchkana2";
+} from "./member-store.js?v=20260402-prefectureorder1";
+import { registerPwaServiceWorker, setupInstallBanner, setupNetworkBanner } from "./pwa.js?v=20260402-prefectureorder1";
 
 const SEARCH_PAGE_SIZE = 60;
 const UI_STATE_STORAGE_KEY = "hiko-ui-state-v1";
@@ -82,6 +83,7 @@ const state = {
   },
   directory: {
     prefectures: [],
+    prefectureGroups: [],
     blocks: [],
     parties: [],
   },
@@ -104,6 +106,7 @@ async function initialize() {
     const blockGroups = groupMembersByBlock(state.members);
 
     state.directory.prefectures = Array.from(singleGroups.keys()).filter(Boolean);
+    state.directory.prefectureGroups = getPrefectureGroups(state.directory.prefectures);
     state.directory.blocks = Array.from(blockGroups.keys()).filter(Boolean);
     state.directory.parties = buildFilterOptions(state.members, "party");
     state.filters.single.prefecture = state.directory.prefectures[0] ?? "";
@@ -659,11 +662,7 @@ function renderBrowseToolbar() {
       <label class="control-field">
         <span>都道府県</span>
         <select data-control="single-prefecture">
-          ${state.directory.prefectures.map((prefecture) => `
-            <option value="${escapeHtml(prefecture)}" ${prefecture === state.filters.single.prefecture ? "selected" : ""}>
-              ${escapeHtml(prefecture)}
-            </option>
-          `).join("")}
+          ${renderPrefectureGroups(state.directory.prefectureGroups, state.filters.single.prefecture)}
         </select>
       </label>
     `;
@@ -723,10 +722,8 @@ function renderBrowseToolbar() {
       <label class="control-field">
         <span>都道府県</span>
         <select data-control="search-prefecture">
-          ${renderOptions(
-            [{ value: "all", label: "すべての都道府県" }, ...buildFilterOptions(state.members, "prefecture")],
-            state.filters.search.prefecture,
-          )}
+          <option value="all" ${state.filters.search.prefecture === "all" ? "selected" : ""}>すべての都道府県</option>
+          ${renderPrefectureGroups(state.directory.prefectureGroups, state.filters.search.prefecture)}
         </select>
       </label>
       <div class="control-actions">
@@ -816,6 +813,18 @@ function renderBrowseSubnav(visibleMembers) {
       `).join("")}
     </div>
   `;
+}
+
+function renderPrefectureGroups(groups, selectedValue) {
+  return groups.map((group) => `
+    <optgroup label="${escapeHtml(group.region)}">
+      ${group.prefectures.map((prefecture) => `
+        <option value="${escapeHtml(prefecture)}" ${prefecture === selectedValue ? "selected" : ""}>
+          ${escapeHtml(prefecture)}
+        </option>
+      `).join("")}
+    </optgroup>
+  `).join("");
 }
 
 function renderBrowseSummary(visibleMembers, renderedCount) {

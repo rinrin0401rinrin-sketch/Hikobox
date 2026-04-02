@@ -3,10 +3,12 @@ import assert from "node:assert/strict";
 
 import {
   applyMemberFilters,
+  compareMembersByBrowseOrder,
   createEmptyProgress,
   deriveAgeFromBirthDate,
   formatElectionType,
   getMemberLocationLabel,
+  getPrefectureGroups,
   normalizeMember,
   toggleTrackedId,
   validateMember,
@@ -103,4 +105,53 @@ test("createEmptyProgress returns the default shape", () => {
     learnedIds: [],
     weakIds: [],
   });
+});
+
+test("compareMembersByBrowseOrder sorts single-seat prefectures from Hokkaido to Okinawa", () => {
+  const members = [
+    normalizeMember({
+      id: "hr-okinawa",
+      name: "沖縄見本",
+      party: "見本党",
+      electionType: "single",
+      district: "沖縄1区",
+      prefecture: "沖縄県",
+      photo: "./data/photos/hr-okinawa.svg",
+      status: "verified",
+    }),
+    normalizeMember({
+      id: "hr-hokkaido",
+      name: "北海道見本",
+      party: "見本党",
+      electionType: "single",
+      district: "北海道1区",
+      prefecture: "北海道",
+      photo: "./data/photos/hr-hokkaido.svg",
+      status: "verified",
+    }),
+    normalizeMember({
+      id: "hr-tokyo",
+      name: "東京見本",
+      party: "見本党",
+      electionType: "single",
+      district: "東京1区",
+      prefecture: "東京都",
+      photo: "./data/photos/hr-tokyo.svg",
+      status: "verified",
+    }),
+  ];
+
+  const sorted = [...members].sort(compareMembersByBrowseOrder);
+
+  assert.deepEqual(sorted.map((member) => member.prefecture), ["北海道", "東京都", "沖縄県"]);
+});
+
+test("getPrefectureGroups returns prefectures grouped by region order", () => {
+  const groups = getPrefectureGroups(["沖縄県", "東京都", "北海道", "福岡県"]);
+
+  assert.deepEqual(groups, [
+    { region: "北海道", prefectures: ["北海道"] },
+    { region: "関東", prefectures: ["東京都"] },
+    { region: "九州・沖縄", prefectures: ["福岡県", "沖縄県"] },
+  ]);
 });
