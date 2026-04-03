@@ -433,15 +433,20 @@ html[data-display-mode="standalone"] .detail-panel {
 
 .member-tile-photo {
   display: block;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #f6ede2 0%, #eadccb 100%);
 }
 
 .member-thumb {
   width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: contain;
-  object-position: center top;
-  border-radius: 16px;
-  background: linear-gradient(180deg, #f6ede2 0%, #eadccb 100%);
+  height: 100%;
+  object-fit: cover;
+  object-position: center 14%;
+  transform: scale(1.08);
+  border-radius: 0;
+  background: transparent;
 }
 
 .member-tile-body {
@@ -504,7 +509,7 @@ html[data-display-mode="standalone"] .detail-panel {
 
 .card-face-front {
   justify-items: center;
-  align-content: center;
+  align-content: stretch;
   background: linear-gradient(180deg, #fffaf5 0%, #f5ece1 100%);
 }
 
@@ -539,17 +544,32 @@ html[data-display-mode="standalone"] .detail-panel {
 .front-photo-shell {
   width: min(100%, 100%);
   display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  height: 100%;
+}
+
+.front-photo-frame {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  display: grid;
   place-items: center;
+  overflow: hidden;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #f6ede2 0%, #eadccb 100%);
+  border: 1px solid rgba(122, 100, 76, 0.12);
 }
 
 .card-photo-front {
   width: 100%;
-  max-width: 340px;
-  max-height: 500px;
-  object-fit: contain;
-  object-position: center top;
-  border-radius: 24px;
-  background: linear-gradient(180deg, #f7eee3 0%, #ebddcc 100%);
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  object-position: center 16%;
+  transform: scale(1.1);
+  border-radius: 0;
+  background: transparent;
 }
 
 .front-label,
@@ -573,6 +593,12 @@ html[data-display-mode="standalone"] .detail-panel {
 .card-name {
   font-size: clamp(1.7rem, 4.8vw, 2.3rem);
   line-height: 1.1;
+}
+
+.back-name-kana {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .back-grid {
@@ -731,9 +757,18 @@ html[data-display-mode="standalone"] .detail-panel {
     width: 100%;
   }
 
+  .front-photo-frame {
+    border-radius: 24px;
+  }
+
   .card-photo-front {
-    max-width: 280px;
-    max-height: 360px;
+    object-position: center 14%;
+    transform: scale(1.13);
+  }
+
+  .member-thumb {
+    object-position: center 12%;
+    transform: scale(1.1);
   }
 
   .detail-block-wide {

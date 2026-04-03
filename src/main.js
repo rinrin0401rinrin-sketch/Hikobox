@@ -2,7 +2,7 @@ import {
   ELECTION_TYPE_LABELS,
   STATUS_LABELS,
   normalizeText,
-} from "./member-schema.js?v=20260402-thumbpass1";
+} from "./member-schema.js?v=20260403-ghpages1";
 import {
   buildFilterOptions,
   formatElectionType,
@@ -15,17 +15,17 @@ import {
   loadMemberSearchIndex,
   normalizeMember,
   sortMembersByBrowseOrder,
-} from "./member-store.js?v=20260402-thumbpass1";
+} from "./member-store.js?v=20260403-ghpages1";
 import {
   registerPwaServiceWorker,
   setupDisplayMode,
   setupInstallBanner,
   setupNetworkBanner,
-} from "./pwa.js?v=20260402-thumbpass1";
+} from "./pwa.js?v=20260403-ghpages1";
 
 const SEARCH_PAGE_SIZE = 60;
 const UI_STATE_STORAGE_KEY = "hiko-ui-state-v1";
-const APP_BUILD_LABEL = "テスト版 2026-04-02 / build thumbpass1";
+const APP_BUILD_LABEL = "テスト版 2026-04-03 / build ghpages1";
 const TAB_LABELS = {
   single: "小選挙区",
   proportional: "比例代表",
@@ -474,7 +474,7 @@ function renderDetailHeader() {
   const currentIndex = visibleMembers.findIndex((member) => member.id === state.selectedMember.id);
   const prefix = currentIndex >= 0 ? `${currentIndex + 1} / ${visibleMembers.length}` : `${visibleMembers.length}件`;
 
-  elements.detailTitle.textContent = state.selectedMember.name || "議員詳細";
+  elements.detailTitle.textContent = "単語帳カード";
   elements.detailMeta.textContent = state.isMemberLoading ? `${prefix} ・ 詳細読み込み中` : prefix;
 }
 
@@ -507,16 +507,18 @@ function renderCard() {
   elements.flashcard.innerHTML = `
     <section class="card-face card-face-front">
       <div class="front-photo-shell">
-        <img
-          class="card-photo card-photo-front"
-          src="${escapeHtml(member.image)}"
-          alt="${escapeHtml(member.name)} の写真"
-          width="680"
-          height="900"
-          loading="eager"
-          decoding="async"
-          fetchpriority="high"
-        />
+        <div class="front-photo-frame">
+          <img
+            class="card-photo card-photo-front"
+            src="${escapeHtml(member.image)}"
+            alt="${escapeHtml(member.name)} の写真"
+            width="680"
+            height="900"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
       </div>
     </section>
 
@@ -524,6 +526,7 @@ function renderCard() {
       <div class="back-header">
         <p class="status-pill">${escapeHtml(STATUS_LABELS[member.status] ?? member.status)}</p>
         <h3 class="card-name">${escapeHtml(member.name)}</h3>
+        <p class="back-name-kana">${escapeHtml(member.nameKana)}</p>
         <p class="meta-note">${escapeHtml(locationLabel)}</p>
       </div>
       <div class="back-grid">
@@ -560,8 +563,8 @@ function renderCard() {
   `;
 
   elements.cardStatus.textContent = state.side === "front"
-    ? "表面は顔写真だけを表示しています。カードをタップすると裏面で氏名や所属情報を確認できます。"
-    : "裏面は所属政党、都道府県、区分、補助情報を表示しています。";
+    ? "表面は顔写真のみを表示しています。カードをタップすると裏面で氏名、ふりがな、所属情報を確認できます。"
+    : "裏面は氏名、ふりがな、所属政党、都道府県、区分、補助情報を表示しています。";
 }
 
 function updateControls() {

@@ -11,9 +11,12 @@
 仕上げ前の短い確認項目は [`docs/finish-checklist.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/finish-checklist.md) にまとめています。
 共有テスト版の最短手順は [`docs/tester-quickstart.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/tester-quickstart.md) に切り出しています。
 共有 URL を外に送る前の確認は [`docs/share-url-checklist.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/share-url-checklist.md) に切り出しています。
+Mac ログイン時の自動起動は [`docs/mac-login-autostart.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/mac-login-autostart.md) にまとめています。
 
 ## 起動方法
 - ローカルサーバー起動: `python3 -m http.server 8000`
+- Mac常駐向け起動: [`start_app.command`](/Users/hasegawaakihiko/Codex/New%20project/start_app.command)
+- build込み起動: [`start_app_with_build.command`](/Users/hasegawaakihiko/Codex/New%20project/start_app_with_build.command)
 - ブラウザ表示: `http://127.0.0.1:8000/`
 - テスト: `npm test`
 - データ整合性チェック: `npm run validate`

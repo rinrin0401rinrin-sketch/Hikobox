@@ -66,7 +66,8 @@ def main():
               tiles: document.querySelectorAll('.member-tile').length,
               hasCard: Boolean(document.querySelector('.card-photo-front')),
               buildBadge: document.querySelector('#build-badge')?.textContent?.trim() || '',
-              frontOnlyPhoto: !document.querySelector('.card-face-front .card-name') && !document.querySelector('.card-face-front .front-label'),
+              frontHasName: Boolean(document.querySelector('.card-face-front .front-card-name')),
+              frontHasKana: Boolean(document.querySelector('.card-face-front .front-card-kana')),
             };
             """,
         )
@@ -159,7 +160,8 @@ def main():
             """
             return {
               side: document.querySelector('#flashcard')?.dataset.side || '',
-              detailLabels: Array.from(document.querySelectorAll('.detail-label')).slice(0, 4).map((node) => node.textContent.trim())
+              detailLabels: Array.from(document.querySelectorAll('.detail-label')).slice(0, 4).map((node) => node.textContent.trim()),
+              hasBackKana: Boolean(document.querySelector('.back-name-kana')),
             };
             """,
         )
@@ -180,7 +182,7 @@ def main():
         except Exception as exc:
             narrow = {"error": str(exc)}
 
-        js(session_id, "location.reload(); return true;")
+        js(session_id, f"window.location.href = {json.dumps(TARGET)}; return true;")
         time.sleep(1.2)
         restored = js(
             session_id,
@@ -212,8 +214,10 @@ def main():
             failures.append("missing-card-photo")
         if "テスト版" not in overview["buildBadge"]:
             failures.append("build-badge")
-        if not overview["frontOnlyPhoto"]:
-            failures.append("front-only-photo")
+        if overview["frontHasName"] or overview["frontHasKana"]:
+            failures.append("front-photo-only")
+        if overview["selectedName"] != "単語帳カード":
+            failures.append("detail-header-title")
         if proportional["activeTab"] != "比例代表":
             failures.append("proportional-tab")
         if search["activeTab"] != "検索":
@@ -224,6 +228,8 @@ def main():
             failures.append("empty-search")
         if flip["side"] != "back":
             failures.append("flip")
+        if not flip["hasBackKana"]:
+            failures.append("back-kana")
         if narrow.get("overflow"):
             failures.append("narrow-overflow")
         if restored["activeTab"] != "検索" or "あおやま" not in restored["query"]:

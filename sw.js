@@ -1,24 +1,28 @@
-const CACHE_VERSION = "hiko-pwa-v8";
+const CACHE_VERSION = "hiko-pwa-v11";
 const APP_CACHE = `${CACHE_VERSION}-app`;
 const DATA_CACHE = `${CACHE_VERSION}-data`;
 const PHOTO_CACHE = `${CACHE_VERSION}-photos`;
+const APP_BASE = new URL("./", self.location.href);
+const BASE_PATH = APP_BASE.pathname;
 
-const APP_SHELL = [
-  "/",
-  "/index.html",
-  "/offline.html",
-  "/styles.css",
-  "/src/main.js",
-  "/src/member-store.js",
-  "/src/member-schema.js",
-  "/src/pwa.js",
-  "/data/members/index.json",
-  "/data/members/search-index.json",
-  "/manifest.webmanifest",
-  "/icons/icon-192.png",
-  "/icons/icon-512.png",
-  "/icons/apple-touch-icon.png",
+const APP_SHELL_PATHS = [
+  "",
+  "index.html",
+  "offline.html",
+  "styles.css",
+  "src/main.js",
+  "src/member-store.js",
+  "src/member-schema.js",
+  "src/pwa.js",
+  "data/members/index.json",
+  "data/members/search-index.json",
+  "manifest.webmanifest",
+  "icons/icon-192.png",
+  "icons/icon-512.png",
+  "icons/apple-touch-icon.png",
 ];
+const APP_SHELL = APP_SHELL_PATHS.map((path) => new URL(path || "./", APP_BASE).toString());
+const OFFLINE_URL = new URL("offline.html", APP_BASE).toString();
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -47,24 +51,34 @@ self.addEventListener("fetch", (event) => {
   }
 
   if (request.mode === "navigate") {
-    event.respondWith(networkFirst(request, APP_CACHE, "/offline.html"));
+    event.respondWith(networkFirst(request, APP_CACHE, OFFLINE_URL));
     return;
   }
 
-  if (url.pathname.startsWith("/data/photos/")) {
+  const relativePath = getRelativePath(url.pathname);
+
+  if (relativePath?.startsWith("data/photos/")) {
     event.respondWith(cacheFirst(request, PHOTO_CACHE));
     return;
   }
 
-  if (url.pathname.startsWith("/data/members/")) {
+  if (relativePath?.startsWith("data/members/")) {
     event.respondWith(staleWhileRevalidate(request, DATA_CACHE));
     return;
   }
 
-  if (APP_SHELL.includes(url.pathname)) {
-    event.respondWith(networkFirst(request, APP_CACHE, "/offline.html"));
+  if (relativePath !== null && APP_SHELL_PATHS.includes(relativePath)) {
+    event.respondWith(networkFirst(request, APP_CACHE, OFFLINE_URL));
   }
 });
+
+function getRelativePath(pathname) {
+  if (!pathname.startsWith(BASE_PATH)) {
+    return null;
+  }
+
+  return pathname.slice(BASE_PATH.length);
+}
 
 async function networkFirst(request, cacheName, fallbackPath) {
   const cache = await caches.open(cacheName);
