@@ -1,7 +1,7 @@
-import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js?v=20260403-ghpages1";
+import { ELECTION_TYPE_LABELS, normalizeText } from "./member-schema.js?v=20260406-ghpages2";
 
 const PHOTO_CACHE_VERSION = "20260401-pwa465";
-const DATA_CACHE_VERSION = "20260403-ghpages1";
+const DATA_CACHE_VERSION = "20260406-ghpages2";
 const PREFECTURE_REGION_GROUPS = [
   { region: "北海道", prefectures: ["北海道"] },
   { region: "東北", prefectures: ["青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県"] },
@@ -58,7 +58,7 @@ export function normalizeMember(input = {}) {
   const proportionalBlock = normalizeText(input.proportionalBlock || input.block);
   const prefecture = normalizeText(input.prefecture);
   const party = normalizeText(input.party);
-  const image = withPhotoCacheBust(normalizeText(input.image || input.photo));
+  const image = withPhotoCacheBust(resolveAppPath(normalizeText(input.image || input.photo)));
   const thumbnail = withPhotoCacheBust(getThumbnailPath(normalizeText(input.image || input.photo)));
   const normalizedCareer = Array.isArray(input.career)
     ? input.career.filter((item) => normalizeText(item))
@@ -88,11 +88,11 @@ export function normalizeMember(input = {}) {
     photo: image,
     image,
     thumbnail,
-    sourcePdf: normalizeText(input.sourcePdf),
+    sourcePdf: resolveAppPath(normalizeText(input.sourcePdf)),
     sourcePage: Number.isInteger(input.sourcePage) ? input.sourcePage : null,
     status: normalizeText(input.status) || "draft",
     notes: normalizeText(input.notes),
-    memberPath: normalizeText(input.memberPath),
+    memberPath: resolveAppPath(normalizeText(input.memberPath)),
     batchId: normalizeText(input.batchId),
     isActive: Boolean(input.isActive),
     searchText: [
@@ -450,7 +450,7 @@ function getThumbnailPath(photoPath) {
     return "";
   }
 
-  const normalizedPath = String(photoPath).trim();
+  const normalizedPath = resolveAppPath(String(photoPath).trim());
   if (!normalizedPath) {
     return "";
   }
@@ -463,6 +463,27 @@ function getThumbnailPath(photoPath) {
   const directory = normalizedPath.slice(0, lastSlashIndex);
   const filename = normalizedPath.slice(lastSlashIndex + 1);
   return `${directory}/thumbs/${filename}`;
+}
+
+function resolveAppPath(path) {
+  if (!path) {
+    return "";
+  }
+
+  const normalizedPath = String(path).trim();
+  if (!normalizedPath) {
+    return "";
+  }
+
+  if (/^[a-z]+:\/\//i.test(normalizedPath) || !normalizedPath.startsWith("/")) {
+    return normalizedPath;
+  }
+
+  if (typeof window === "undefined") {
+    return normalizedPath;
+  }
+
+  return new URL(`.${normalizedPath}`, window.location.href).toString();
 }
 
 function matchesFilter(source, filterValue) {
