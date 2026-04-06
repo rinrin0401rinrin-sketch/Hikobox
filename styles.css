@@ -256,8 +256,10 @@ h2 {
   position: sticky;
   top: 10px;
   z-index: 20;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  scrollbar-width: none;
   gap: 10px;
   margin-top: 18px;
   padding: 10px;
@@ -267,11 +269,17 @@ h2 {
   backdrop-filter: blur(8px);
 }
 
+.tab-bar::-webkit-scrollbar {
+  display: none;
+}
+
 html[data-display-mode="standalone"] .tab-bar {
   top: calc(6px + env(safe-area-inset-top));
 }
 
 .tab-button {
+  flex: 0 0 auto;
+  min-width: max-content;
   border-radius: 999px;
   background: transparent;
   border-color: transparent;

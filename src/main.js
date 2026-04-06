@@ -2,7 +2,7 @@ import {
   ELECTION_TYPE_LABELS,
   STATUS_LABELS,
   normalizeText,
-} from "./member-schema.js?v=20260406-ghpages2";
+} from "./member-schema.js?v=20260406-quicktabs1";
 import {
   buildFilterOptions,
   formatElectionType,
@@ -15,21 +15,26 @@ import {
   loadMemberSearchIndex,
   normalizeMember,
   sortMembersByBrowseOrder,
-} from "./member-store.js?v=20260406-ghpages2";
+} from "./member-store.js?v=20260406-quicktabs1";
 import {
   registerPwaServiceWorker,
   setupDisplayMode,
   setupInstallBanner,
   setupNetworkBanner,
-} from "./pwa.js?v=20260406-ghpages2";
+} from "./pwa.js?v=20260406-quicktabs1";
 
 const SEARCH_PAGE_SIZE = 60;
 const UI_STATE_STORAGE_KEY = "hiko-ui-state-v1";
-const APP_BUILD_LABEL = "テスト版 2026-04-06 / build ghpages2";
+const APP_BUILD_LABEL = "テスト版 2026-04-06 / build quicktabs1";
+const MEMBER_GROUPS_URL = "./data/member-groups.json?v=20260406-quicktabs1";
 const TAB_LABELS = {
   single: "小選挙区",
   proportional: "比例代表",
   search: "検索",
+  freshman: "当選1回生",
+  party: "政党別",
+  random: "465ランダム",
+  women: "女性議員のみ",
 };
 
 const elements = {
@@ -87,6 +92,9 @@ const state = {
       prefecture: "all",
       electionType: "all",
     },
+    partyBrowse: {
+      party: "",
+    },
   },
   directory: {
     prefectures: [],
@@ -94,6 +102,10 @@ const state = {
     blocks: [],
     parties: [],
   },
+  groups: {
+    womenIds: [],
+  },
+  randomOrder: [],
   renderedToolbarMode: null,
 };
 
@@ -102,12 +114,16 @@ await initialize();
 
 async function initialize() {
   try {
-    const [index, searchIndex] = await Promise.all([
+    const [index, searchIndex, memberGroups] = await Promise.all([
       loadMemberIndex(),
       loadMemberSearchIndex().catch(() => ({ members: [] })),
+      loadMemberGroups().catch(() => ({ womenIds: [] })),
     ]);
-    state.members = sortMembersByBrowseOrder(index.members ?? []);
-    state.searchMembers = searchIndex.members?.length ? searchIndex.members : state.members;
+    const mergedMembers = mergeMemberCollections(index.members ?? [], searchIndex.members ?? []);
+    state.members = sortMembersByBrowseOrder(mergedMembers);
+    state.searchMembers = state.members;
+    state.groups.womenIds = Array.isArray(memberGroups.womenIds) ? memberGroups.womenIds : [];
+    state.randomOrder = shuffleIds(state.members.map((member) => member.id));
 
     const singleGroups = groupMembersByPrefecture(state.members);
     const blockGroups = groupMembersByBlock(state.members);
@@ -118,7 +134,11 @@ async function initialize() {
     state.directory.parties = buildFilterOptions(state.members, "party");
     state.filters.single.prefecture = state.directory.prefectures[0] ?? "";
     state.filters.proportional.block = state.directory.blocks[0] ?? "";
+    state.filters.partyBrowse.party = state.directory.parties[0]?.value ?? "";
     hydrateUiStateFromStorage();
+    if (!state.directory.parties.some((party) => party.value === state.filters.partyBrowse.party)) {
+      state.filters.partyBrowse.party = state.directory.parties[0]?.value ?? "";
+    }
 
     renderHero(index);
     setupDisplayMode();
@@ -149,6 +169,9 @@ function bindEvents() {
       }
 
       state.selectedTab = nextTab;
+      state.selectedId = null;
+      state.selectedSummary = null;
+      state.selectedMember = null;
       state.searchVisibleLimit = SEARCH_PAGE_SIZE;
       persistUiState();
       await syncVisibleSelection();
@@ -236,6 +259,13 @@ function bindEvents() {
       persistUiState();
       state.renderedToolbarMode = null;
       await syncVisibleSelection();
+      return;
+    }
+
+    if (button.dataset.control === "random-reshuffle") {
+      state.randomOrder = shuffleIds(state.members.map((member) => member.id));
+      persistUiState();
+      await syncVisibleSelection();
     }
   });
 
@@ -294,6 +324,9 @@ async function handleBrowseControlChange(target) {
       break;
     case "search-election":
       state.filters.search.electionType = target.value;
+      break;
+    case "party-browse":
+      state.filters.partyBrowse.party = target.value;
       break;
     default:
       return;
@@ -425,7 +458,7 @@ function renderHero(index) {
 
   if (elements.heroCopy) {
     elements.heroCopy.textContent =
-      "iPhone での見やすさを優先しつつ、顔写真と氏名の対応を壊さないまま、小選挙区・比例代表・検索の3導線で学べる PWA に整理する。";
+      "iPhone での見やすさを優先しつつ、顔写真と氏名の対応を壊さないまま、小選挙区・比例代表・検索に加え、1回生、政党別、ランダム、女性議員の導線でも学べる PWA に整理する。";
   }
 
   if (elements.buildBadge) {
@@ -453,7 +486,7 @@ function renderBrowse() {
   elements.browseSubnav.innerHTML = renderBrowseSubnav(visibleMembers);
   elements.browseSummary.innerHTML = renderBrowseSummary(visibleMembers, renderedMembers.length);
   elements.memberGrid.innerHTML = renderMemberGrid(renderedMembers, visibleMembers.length);
-  elements.loadMoreButton.hidden = !(state.selectedTab === "search" && visibleMembers.length > renderedMembers.length);
+  elements.loadMoreButton.hidden = !(isPagedTab(state.selectedTab) && visibleMembers.length > renderedMembers.length);
 }
 
 function renderDetail() {
@@ -584,6 +617,14 @@ function getVisibleMembers() {
       return getProportionalMembers();
     case "search":
       return getSearchMembers();
+    case "freshman":
+      return getFreshmanMembers();
+    case "party":
+      return getPartyMembers();
+    case "random":
+      return getRandomMembers();
+    case "women":
+      return getWomenMembers();
     default:
       return [];
   }
@@ -645,8 +686,29 @@ function getSearchMembers() {
   });
 }
 
+function getFreshmanMembers() {
+  return state.members.filter((member) => Number(member.wins) === 1);
+}
+
+function getPartyMembers() {
+  const activeParty = state.filters.partyBrowse.party;
+  return state.members.filter((member) => !activeParty || member.party === activeParty);
+}
+
+function getRandomMembers() {
+  const byId = new Map(state.members.map((member) => [member.id, member]));
+  return state.randomOrder
+    .map((id) => byId.get(id))
+    .filter(Boolean);
+}
+
+function getWomenMembers() {
+  const womenIds = new Set(state.groups.womenIds);
+  return state.members.filter((member) => womenIds.has(member.id));
+}
+
 function getRenderedMembers(visibleMembers) {
-  if (state.selectedTab !== "search") {
+  if (!isPagedTab(state.selectedTab)) {
     return visibleMembers;
   }
 
@@ -661,6 +723,22 @@ function getBrowseMetaText(visibleMembers) {
 
   if (state.selectedTab === "proportional") {
     return `${visibleMembers.length}名 / ${state.filters.proportional.block || "比例ブロック未選択"}`;
+  }
+
+  if (state.selectedTab === "freshman") {
+    return `${visibleMembers.length}名 / 当選1回`;
+  }
+
+  if (state.selectedTab === "party") {
+    return `${visibleMembers.length}名 / ${state.filters.partyBrowse.party || "政党未選択"}`;
+  }
+
+  if (state.selectedTab === "random") {
+    return `${visibleMembers.length}名をランダム順で表示`;
+  }
+
+  if (state.selectedTab === "women") {
+    return `${visibleMembers.length}名 / 補助台帳ベース`;
   }
 
   return `${visibleMembers.length}件ヒット`;
@@ -691,6 +769,29 @@ function renderBrowseToolbar() {
         </select>
       </label>
     `;
+  }
+
+  if (state.selectedTab === "party") {
+    return `
+      <label class="control-field">
+        <span>政党</span>
+        <select data-control="party-browse">
+          ${renderOptions(state.directory.parties, state.filters.partyBrowse.party)}
+        </select>
+      </label>
+    `;
+  }
+
+  if (state.selectedTab === "random") {
+    return `
+      <div class="control-actions">
+        <button type="button" data-control="random-reshuffle">並び替え直す</button>
+      </div>
+    `;
+  }
+
+  if (state.selectedTab === "freshman" || state.selectedTab === "women") {
+    return "";
   }
 
   return `
@@ -766,6 +867,18 @@ function syncBrowseToolbar() {
     if (blockSelect instanceof HTMLSelectElement) {
       blockSelect.value = state.filters.proportional.block;
     }
+    return;
+  }
+
+  if (state.selectedTab === "party") {
+    const partyBrowseSelect = elements.browseToolbar.querySelector('[data-control="party-browse"]');
+    if (partyBrowseSelect instanceof HTMLSelectElement) {
+      partyBrowseSelect.value = state.filters.partyBrowse.party;
+    }
+    return;
+  }
+
+  if (state.selectedTab === "random" || state.selectedTab === "freshman" || state.selectedTab === "women") {
     return;
   }
 
@@ -856,6 +969,42 @@ function renderBrowseSummary(visibleMembers, renderedCount) {
     `;
   }
 
+  if (state.selectedTab === "freshman") {
+    return `
+      <p class="summary-copy">
+        当選回数が1回の議員だけをまとめています。
+        初当選メンバーを続けて確認できます。
+      </p>
+    `;
+  }
+
+  if (state.selectedTab === "party") {
+    return `
+      <p class="summary-copy">
+        ${escapeHtml(state.filters.partyBrowse.party || "政党未選択")}の議員だけを表示しています。
+        同じ政党をまとめて見たい時の確認用です。
+      </p>
+    `;
+  }
+
+  if (state.selectedTab === "random") {
+    return `
+      <p class="summary-copy">
+        465名をランダム順で表示しています。
+        「並び替え直す」を押すと毎回違う順番で見直せます。
+      </p>
+    `;
+  }
+
+  if (state.selectedTab === "women") {
+    return `
+      <p class="summary-copy">
+        補助台帳に登録した女性議員をまとめて表示しています。
+        判定は <code>data/member-groups.json</code> で今後も修正できます。
+      </p>
+    `;
+  }
+
   if (visibleMembers.length === 0) {
     return `
       <div class="empty-state">
@@ -881,7 +1030,7 @@ function renderMemberGrid(renderedMembers, totalCount) {
     `;
   }
 
-  const description = state.selectedTab === "search" && totalCount > renderedMembers.length
+  const description = isPagedTab(state.selectedTab) && totalCount > renderedMembers.length
     ? `<p class="result-note">${renderedMembers.length} / ${totalCount} 件を表示中</p>`
     : "";
 
@@ -940,7 +1089,7 @@ function renderOptions(items, selectedValue) {
 }
 
 function ensureSearchLimitIncludesSelected(visibleMembers) {
-  if (state.selectedTab !== "search" || !state.selectedId) {
+  if (!isPagedTab(state.selectedTab) || !state.selectedId) {
     return;
   }
 
@@ -952,6 +1101,10 @@ function ensureSearchLimitIncludesSelected(visibleMembers) {
   while (state.searchVisibleLimit <= selectedIndex) {
     state.searchVisibleLimit += SEARCH_PAGE_SIZE;
   }
+}
+
+function isPagedTab(tab) {
+  return ["search", "freshman", "party", "random", "women"].includes(tab);
 }
 
 function warmMemberCache(visibleMembers, selectedId) {
@@ -1079,6 +1232,10 @@ function hydrateUiStateFromStorage() {
     if (saved.filters?.search?.electionType) {
       state.filters.search.electionType = saved.filters.search.electionType;
     }
+
+    if (saved.filters?.partyBrowse?.party) {
+      state.filters.partyBrowse.party = saved.filters.partyBrowse.party;
+    }
   } catch (error) {
     console.warn("Failed to restore UI state.", error);
   }
@@ -1108,4 +1265,50 @@ async function applySearchFilters() {
   state.searchVisibleLimit = SEARCH_PAGE_SIZE;
   persistUiState();
   await syncVisibleSelection();
+}
+
+async function loadMemberGroups() {
+  const response = await fetch(MEMBER_GROUPS_URL, {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to load ${MEMBER_GROUPS_URL}: ${response.status}`);
+  }
+
+  return response.json();
+}
+
+function mergeMemberCollections(indexMembers, searchMembers) {
+  const searchById = new Map(searchMembers.map((member) => [member.id, normalizeMember(member)]));
+
+  if (indexMembers.length === 0) {
+    return searchMembers.map((member) => normalizeMember(member));
+  }
+
+  return indexMembers.map((member) => {
+    const enriched = searchById.get(member.id);
+    return normalizeMember({
+      ...enriched,
+      ...member,
+      wins: enriched?.wins ?? member.wins,
+      career: enriched?.career ?? member.career,
+      nameKana: enriched?.nameKana ?? member.nameKana,
+      memberPath: member.memberPath ?? enriched?.memberPath,
+      photo: member.photo ?? enriched?.photo,
+    });
+  });
+}
+
+function shuffleIds(ids) {
+  const next = [...ids];
+
+  for (let index = next.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [next[index], next[swapIndex]] = [next[swapIndex], next[index]];
+  }
+
+  return next;
 }

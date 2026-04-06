@@ -1,4 +1,4 @@
-const CACHE_VERSION = "hiko-pwa-v12";
+const CACHE_VERSION = "hiko-pwa-v13";
 const APP_CACHE = `${CACHE_VERSION}-app`;
 const DATA_CACHE = `${CACHE_VERSION}-data`;
 const PHOTO_CACHE = `${CACHE_VERSION}-photos`;
@@ -14,6 +14,7 @@ const APP_SHELL_PATHS = [
   "src/member-store.js",
   "src/member-schema.js",
   "src/pwa.js",
+  "data/member-groups.json",
   "data/members/index.json",
   "data/members/search-index.json",
   "manifest.webmanifest",

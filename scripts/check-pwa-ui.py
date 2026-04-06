@@ -86,12 +86,67 @@ def main():
             """,
         )
 
+        js(session_id, "document.querySelector('[data-tab=\"freshman\"]')?.click(); return true;")
+        time.sleep(0.4)
+        freshman = js(
+            session_id,
+            """
+            return {
+              activeTab: document.querySelector('.tab-button.is-active')?.textContent?.trim() || '',
+              tiles: document.querySelectorAll('.member-tile').length,
+              summary: document.querySelector('#browse-summary')?.textContent?.trim() || ''
+            };
+            """,
+        )
+
+        js(session_id, "document.querySelector('[data-tab=\"party\"]')?.click(); return true;")
+        time.sleep(0.4)
+        party = js(
+            session_id,
+            """
+            return {
+              activeTab: document.querySelector('.tab-button.is-active')?.textContent?.trim() || '',
+              tiles: document.querySelectorAll('.member-tile').length,
+              partyValue: document.querySelector('[data-control=\"party-browse\"]')?.value || ''
+            };
+            """,
+        )
+
+        js(session_id, "document.querySelector('[data-tab=\"random\"]')?.click(); return true;")
+        time.sleep(0.4)
+        random_tab = js(
+            session_id,
+            """
+            return {
+              activeTab: document.querySelector('.tab-button.is-active')?.textContent?.trim() || '',
+              tiles: document.querySelectorAll('.member-tile').length,
+              summary: document.querySelector('#browse-summary')?.textContent?.trim() || ''
+            };
+            """,
+        )
+
+        js(session_id, "document.querySelector('[data-tab=\"women\"]')?.click(); return true;")
+        time.sleep(0.4)
+        women = js(
+            session_id,
+            """
+            return {
+              activeTab: document.querySelector('.tab-button.is-active')?.textContent?.trim() || '',
+              tiles: document.querySelectorAll('.member-tile').length,
+              summary: document.querySelector('#browse-summary')?.textContent?.trim() || ''
+            };
+            """,
+        )
+
         js(session_id, "document.querySelector('[data-tab=\"search\"]')?.click(); return true;")
         time.sleep(0.4)
         js(
             session_id,
             """
             const input = document.querySelector('[data-control="search-query"]');
+            if (!input) {
+              return false;
+            }
             input.value = 'あおやま';
             input.dispatchEvent(new Event('input', { bubbles: true }));
             document.querySelector('[data-control="search-apply"]')?.click();
@@ -117,6 +172,9 @@ def main():
             session_id,
             """
             const input = document.querySelector('[data-control="search-query"]');
+            if (!input) {
+              return false;
+            }
             input.value = '__no_match__';
             input.dispatchEvent(new Event('input', { bubbles: true }));
             document.querySelector('[data-control="search-apply"]')?.click();
@@ -139,6 +197,9 @@ def main():
             session_id,
             """
             const input = document.querySelector('[data-control="search-query"]');
+            if (!input) {
+              return false;
+            }
             input.value = 'あおやま';
             input.dispatchEvent(new Event('input', { bubbles: true }));
             document.querySelector('[data-control="search-apply"]')?.click();
@@ -198,6 +259,10 @@ def main():
         result = {
             "overview": overview,
             "proportional": proportional,
+            "freshman": freshman,
+            "party": party,
+            "random": random_tab,
+            "women": women,
             "search": search,
             "emptySearch": empty_search,
             "flip": flip,
@@ -208,7 +273,7 @@ def main():
         print(json.dumps(result, ensure_ascii=False, indent=2))
 
         failures = []
-        if overview["tabCount"] != 3:
+        if overview["tabCount"] != 7:
             failures.append("tab-count")
         if not overview["hasCard"]:
             failures.append("missing-card-photo")
@@ -220,6 +285,14 @@ def main():
             failures.append("detail-header-title")
         if proportional["activeTab"] != "比例代表":
             failures.append("proportional-tab")
+        if freshman["activeTab"] != "当選1回生" or freshman["tiles"] < 1:
+            failures.append("freshman-tab")
+        if party["activeTab"] != "政党別" or party["tiles"] < 1 or not party["partyValue"]:
+            failures.append("party-tab")
+        if random_tab["activeTab"] != "465ランダム" or random_tab["tiles"] < 1:
+            failures.append("random-tab")
+        if women["activeTab"] != "女性議員のみ" or women["tiles"] < 1:
+            failures.append("women-tab")
         if search["activeTab"] != "検索":
             failures.append("search-tab")
         if search["tiles"] < 1 or "青山" not in search["firstTile"]:

@@ -2,7 +2,7 @@
 
 衆議院議員465名を、顔写真つきカードで学べる iPhone 優先の PWA 単語帳アプリです。
 
-既存の `data/` を正規データとして維持しながら、`小選挙区` `比例代表` `検索` の3導線で見やすく確認できる構成にしています。顔写真と氏名の対応を最重要とし、既存データを壊さない前提で UI と運用を整理しています。
+既存の `data/` を正規データとして維持しながら、`小選挙区` `比例代表` `検索` `当選1回生` `政党別` `465ランダム` `女性議員のみ` の導線で見やすく確認できる構成にしています。顔写真と氏名の対応を最重要とし、既存データを壊さない前提で UI と運用を整理しています。
 
 ブラウザでは、直前のタブ、選択議員、主な絞り込み条件を `localStorage` に保持し、再訪時の確認を少し楽にしています。
 
@@ -28,6 +28,7 @@ Mac ログイン時の自動起動は [`docs/mac-login-autostart.md`](/Users/has
 ## データの置き場
 - 一覧入口: `data/members/index.json`
 - 検索用一覧: `data/members/search-index.json`
+- 補助台帳: `data/member-groups.json`
 - 個票データ: `data/members/hr-XXXX.json`
 - 顔写真: `data/photos/hr-XXXX.jpg`
 - 一覧用サムネイル: `data/photos/thumbs/hr-XXXX.jpg`
@@ -41,6 +42,11 @@ Mac ログイン時の自動起動は [`docs/mac-login-autostart.md`](/Users/has
 4. `npm run build:search-index` を実行して検索用 index を更新する
 5. `npm run validate` を実行する
 6. アプリを開いて、対象議員のカード表面と裏面を確認する
+
+### 補助台帳メモ
+- `当選1回生` は `search-index.json` の `wins` を使っています
+- `女性議員のみ` は `data/member-groups.json` の `womenIds` を使っています
+- 元の個票 JSON に女性区分を直接足さず、補助台帳で持つのは、既存データ構造を壊さずに修正しやすくするためです
 
 ### 判断メモ
 - `districtType` `districtName` `proportionalBlock` `image` などの追加項目は、今は元 JSON に直接書き込まず、`src/member-store.js` で派生項目として生成しています
@@ -85,7 +91,7 @@ Mac ログイン時の自動起動は [`docs/mac-login-autostart.md`](/Users/has
 - `npm run build:thumbnails`: 一覧用サムネイルを `data/photos/thumbs/` に再生成する
 - `npm run verify:assets`: 写真、サムネイル、検索 index の取りこぼしを確認する
 - `npm run verify:release`: validate、audit、asset verify、test を順に実行し、可能なら smoke UI まで自動確認する
-- `npm run smoke:ui`: SafariDriver で 3 タブ、ひらがな検索、0件表示、カード裏面、狭幅の最低限を確認
+- `npm run smoke:ui`: SafariDriver で 7 タブ、ひらがな検索、0件表示、カード裏面、狭幅の最低限を確認
 - `npm run smoke:ui` は検索0件表示と再読込後の状態復元も確認する
 - 個別確認: `data/members/hr-XXXX.json` と `data/photos/hr-XXXX.jpg` を対で見る
 - オフライン確認: いったん読み込んだ後に通信を切り、退避画面または保存済み表示が成立するかを見る
