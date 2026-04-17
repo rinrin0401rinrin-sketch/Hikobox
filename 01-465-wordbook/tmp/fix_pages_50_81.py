@@ -8,7 +8,7 @@ from collections import defaultdict
 from pathlib import Path
 
 
-ROOT = Path("/Users/hasegawaakihiko/Documents/New project")
+ROOT = Path("/Users/hasegawaakihiko/Codex/Codex-議員単語帳-POG/01-465-wordbook")
 MODULE_CACHE = "/tmp/modulecache"
 VERTICAL = [(195, 118), (195, 874), (195, 1630), (835, 118), (835, 874), (835, 1630)]
 RIGHT_ONLY = [(835, 118), (835, 874), (835, 1630)]

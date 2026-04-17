@@ -1,8 +1,0 @@
-interface:
-  display_name: "POG Selector"
-  short_description: "日本競馬POGの候補抽出、危険馬精査、最終30頭統合を行う"
-  default_prompt: "Use $pog-selector to research and rank Japanese POG turf prospects, emphasizing early debut and realistic one-win probability by the Derby."
-
-policy:
-  allow_implicit_invocation: true
-

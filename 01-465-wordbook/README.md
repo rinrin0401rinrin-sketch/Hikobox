@@ -6,17 +6,17 @@
 
 ブラウザでは、直前のタブ、選択議員、主な絞り込み条件を `localStorage` に保持し、再訪時の確認を少し楽にしています。
 
-詳しい基準仕様は [`docs/spec-465-pwa.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/spec-465-pwa.md) を参照してください。
-最終確認の 1 枚版は [`docs/final-check.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/final-check.md) にまとめています。
-仕上げ前の短い確認項目は [`docs/finish-checklist.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/finish-checklist.md) にまとめています。
-共有テスト版の最短手順は [`docs/tester-quickstart.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/tester-quickstart.md) に切り出しています。
-共有 URL を外に送る前の確認は [`docs/share-url-checklist.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/share-url-checklist.md) に切り出しています。
-Mac ログイン時の自動起動は [`docs/mac-login-autostart.md`](/Users/hasegawaakihiko/Codex/New%20project/docs/mac-login-autostart.md) にまとめています。
+詳しい基準仕様は [`docs/spec-465-pwa.md`](/Users/hasegawaakihiko/Codex/Codex-議員単語帳-POG/01-465-wordbook/docs/spec-465-pwa.md) を参照してください。
+最終確認の 1 枚版は [`docs/final-check.md`](/Users/hasegawaakihiko/Codex/Codex-議員単語帳-POG/01-465-wordbook/docs/final-check.md) にまとめています。
+仕上げ前の短い確認項目は [`docs/finish-checklist.md`](/Users/hasegawaakihiko/Codex/Codex-議員単語帳-POG/01-465-wordbook/docs/finish-checklist.md) にまとめています。
+共有テスト版の最短手順は [`docs/tester-quickstart.md`](/Users/hasegawaakihiko/Codex/Codex-議員単語帳-POG/01-465-wordbook/docs/tester-quickstart.md) に切り出しています。
+共有 URL を外に送る前の確認は [`docs/share-url-checklist.md`](/Users/hasegawaakihiko/Codex/Codex-議員単語帳-POG/01-465-wordbook/docs/share-url-checklist.md) に切り出しています。
+Mac ログイン時の自動起動は [`docs/mac-login-autostart.md`](/Users/hasegawaakihiko/Codex/Codex-議員単語帳-POG/01-465-wordbook/docs/mac-login-autostart.md) にまとめています。
 
 ## 起動方法
 - ローカルサーバー起動: `python3 -m http.server 8000`
-- Mac常駐向け起動: [`start_app.command`](/Users/hasegawaakihiko/Codex/New%20project/start_app.command)
-- build込み起動: [`start_app_with_build.command`](/Users/hasegawaakihiko/Codex/New%20project/start_app_with_build.command)
+- Mac常駐向け起動: [`start_app.command`](/Users/hasegawaakihiko/Codex/Codex-議員単語帳-POG/01-465-wordbook/start_app.command)
+- build込み起動: [`start_app_with_build.command`](/Users/hasegawaakihiko/Codex/Codex-議員単語帳-POG/01-465-wordbook/start_app_with_build.command)
 - ブラウザ表示: `http://127.0.0.1:8000/`
 - テスト: `npm test`
 - データ整合性チェック: `npm run validate`
